@@ -15,7 +15,12 @@ if ( nb >= 70 && nb <= 80  ) {
     document.write ("C");
 }
 
-
+if ( nb >= 60 && nb <70 ){
+    document.write ("D");
+}
+if ( nb < 60){
+    document.write ("E");
+}
 
 
 
