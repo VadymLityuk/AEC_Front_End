@@ -14,10 +14,6 @@ if ( nb1 < 60 ) {
 }
 else if ( nb1 => 90 ) {
     document.write (" A ") ;
-}
-else  ( nb1 => 70 ) {
-    document.write (" C ");
-}
 
 
 
