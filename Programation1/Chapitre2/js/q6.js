@@ -1,19 +1,20 @@
 
 
-
-var nb1 = prompt("entrez le nombre : ") ;
-
-nb1 = 90 ;
-A = nb1;
+var nb = prompt("Enter the number") ;
 
 
-
-if ( nb1 < 60 ) {
-  document.write ("E") ;
-
+if ( nb >= "80" && nb <= 90  ) {
+    document.write ("B");
 }
-else if ( nb1 => 90 ) {
-    document.write (" A ") ;
+
+if ( nb >= 90 ){
+    document.write ( "A ");
+}
+
+if ( nb >= 70 && nb <= 80  ) {
+    document.write ("C");
+}
+
 
 
 
