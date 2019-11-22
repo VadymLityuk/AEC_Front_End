@@ -6,6 +6,17 @@ body {
 }
 body {
     background: url("https://assets.awwwards.com/awards/images/2015/04/pattern.jpg");
+  
+
+
+
+}
+body{
+    border-style: outset;
+    border-radius: 50px;
+    border-width: 6px;
+    border-color: #564487;
+
 }
 
 h1,h2,h2,h3,h4,h5 {
