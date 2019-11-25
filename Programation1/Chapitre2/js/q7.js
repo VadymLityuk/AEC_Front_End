@@ -1,23 +1,13 @@
+var nb;
 
-var nb = prompt("Enter the number") ;
+nb = (prompt("Entrez un numero"));
 
-
-if ( nb >= "80" && nb <= 90  ) {
-    document.write ("C");
+if (nb <0) {
+    document.write("negatif");
 }
-
-if ( nb >= 90 ){
-    document.write ( "E ");
+else if (nb >0){
+    document.write("positif");
 }
-
-if ( nb >= 70 && nb <= 80  ) {
-    document.write ("D");
+else{
+    document.write("zero");
 }
-
-if ( nb >= 60 && nb <70 ){
-    document.write ("B");
-}
-if ( nb < 60){
-    document.write ("A");
-}
-
