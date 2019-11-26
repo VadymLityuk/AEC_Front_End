@@ -1,6 +1,6 @@
 
 
-var nb = prompt("Enter the number") ;
+var nb = Number (prompt("Enter the number")) ;
 
 
 if ( nb >= "80" && nb <= 90  ) {

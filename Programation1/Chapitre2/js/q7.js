@@ -1,6 +1,6 @@
 var nb;
 
-nb = (prompt("Entrez un numero"));
+nb = Number(prompt("Entrez un numero"));
 
 if (nb <0) {
     document.write("negatif");
