@@ -5,7 +5,7 @@ body {
     width : 1900px;
 }
 body {
-    background: url("https://assets.awwwards.com/awards/images/2015/04/pattern.jpg");
+    background: url("https://img.wallpapersafari.com/desktop/1600/900/62/81/iU6oQ8.jpg");
 
 
 
@@ -84,4 +84,10 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 900px;
+}
+.plum {
+    color : darkviolet;
+}
+.pink {
+    color: rebeccapurple;
 }

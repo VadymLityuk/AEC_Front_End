@@ -45,7 +45,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Integration1/Exercise2/JeMePresente" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -85,7 +85,8 @@
       <workItem from="1574709665459" duration="1867000" />
       <workItem from="1574711551465" duration="123000" />
       <workItem from="1574803004289" duration="2929000" />
-      <workItem from="1574806238705" duration="268000" />
+      <workItem from="1574806238705" duration="626000" />
+      <workItem from="1574815106760" duration="1118000" />
     </task>
     <servers />
   </component>
