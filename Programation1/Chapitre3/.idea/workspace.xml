@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87be0e55-4775-4405-9c54-7a319a5a029b" name="Default Changelist" comment="" />
+    <list default="true" id="2059f089-00f2-4938-b1a2-45ee1ac59676" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,20 +17,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1TNzH6C7DSwhI6Hsneu6peQdXDm" />
+  <component name="ProjectId" id="1UuEu5Q4GK6CgWzitj1YBnUFylA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/Examen1" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -39,8 +37,8 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\vadim\Documents\GitHub\AEC_Front_End\Integration1\Exercise2\JeMePresente" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vadim\Documents\GitHub\AEC_Front_End\Programation1\Chapitre3\JS" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -60,20 +58,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="87be0e55-4775-4405-9c54-7a319a5a029b" name="Default Changelist" comment="" />
-      <created>1573315249708</created>
+      <changelist id="2059f089-00f2-4938-b1a2-45ee1ac59676" name="Default Changelist" comment="" />
+      <created>1576198299476</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1573315249708</updated>
-      <workItem from="1573315250775" duration="6153000" />
-      <workItem from="1573404297743" duration="474000" />
-      <workItem from="1573406836891" duration="2254000" />
-      <workItem from="1573776750156" duration="29000" />
-      <workItem from="1574379512106" duration="11116000" />
-      <workItem from="1574514629431" duration="639000" />
-      <workItem from="1574815122421" duration="1955000" />
-      <workItem from="1575725716987" duration="2874000" />
-      <workItem from="1575818567583" duration="72000" />
+      <updated>1576198299476</updated>
+      <workItem from="1576198302424" duration="8865000" />
+      <workItem from="1576207289988" duration="1740000" />
+      <workItem from="1576800777359" duration="1614000" />
+      <workItem from="1576804876425" duration="1326000" />
     </task>
     <servers />
   </component>
