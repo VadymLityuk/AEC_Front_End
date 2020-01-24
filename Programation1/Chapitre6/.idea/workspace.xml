@@ -29,7 +29,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/учеба Вадим/IntegrationWEB/Examen1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Integration1/Bootsta" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -61,6 +61,8 @@
       <updated>1578615099519</updated>
       <workItem from="1578615100655" duration="6598000" />
       <workItem from="1578755654841" duration="49000" />
+      <workItem from="1579218559666" duration="7160000" />
+      <workItem from="1579822360182" duration="55000" />
     </task>
     <servers />
   </component>
