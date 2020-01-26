@@ -9,7 +9,7 @@ h1,h2{
 }
 h1{
     font-size: 370%;
-    text-shadow: 2px 2px #191970;
+    text-shadow: 2px 2px #001f4d;
 }
 p{
     font-family: 'Lato', sans-serif;
@@ -23,9 +23,26 @@ p2 {
     font-size: 12px;
     color: white;
 }
+p3{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    color: black;
+
+}
 
 h2{
     color: #FFB300 ;
+}
+h3{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    color: #002752;
+
+}
+h1, h2, h3 {
+    text-align: center;
 }
 
 .header {
@@ -57,4 +74,12 @@ h2{
     font-family: 'Cinzel', serif;
 
 }
+i {
+    color: #F8B34F;
+    padding-bottom: 1rem;
+}
+.wolf{
+    padding: 0 2rem 8rem;
+    text-align: center;
 
+}
