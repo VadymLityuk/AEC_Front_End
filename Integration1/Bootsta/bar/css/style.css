@@ -1,4 +1,17 @@
-.fa-facebook-square{
-    color: black;
+body,html {
+    margin: 0;
+    height: 100%;
 
+}
+.parallax{
+    background-image: url("../media/spm3.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tittle1{
+    background-color: yellow;
 }
