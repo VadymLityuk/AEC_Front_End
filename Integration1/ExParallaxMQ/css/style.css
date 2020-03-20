@@ -1,17 +1,77 @@
-body,html {
+html,body{
     margin: 0;
     height: 100%;
+}
+@font-face {
+
+  url('https://fonts.googleapis.com/css?family=Lacquer&display=swap');
+
+    font-family: 'Lacquer';
+}
+@font-face {
+
+
+url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+    font-family: 'Permanent Marker';
+}
+p{
+    font-family: Lacquer;
+    color: #DB7093;
 
 }
+h2{
+    font-family: "Permanent Marker" ;
+    color: #DC143C;
+}
+
+a{
+    /*border-radius: 15em;*/
+}
+.p_25{
+    padding: 25vh 0vh;
+}
+
+
 .parallax{
-    background-image: url("../media/926723.jpg");
-    height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+#head{
+    background-image: url("../media/head.jpg");
+}
+#spiderverse{
+    height: 200px;
+    width: 450px;
+}
 
-.tittle1{
-    background-color: yellow;
+
+#newyork{
+    background-image: url("../media/city.jpg");
+}
+#city{
+    background-image: url("../media/cityNIGHT.jpg");
+}
+@media only screen and (max-width: 580px){
+    #head{
+        background-image: url("../media/head.jpg");
+    }
+    #spidercity{
+        display: none;
+    }
+    #newyork{
+        text-align: center;
+    }
+    #newyork div{
+        display: inline-block;
+    }
+    #city div{
+        height: auto;
+        padding: 0vh;
+    }
+    #ghost{
+        display: none;
+    }
 }

@@ -1,0 +1,52 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.image-comparison{
+    position: relative;
+    display: inline-block;
+    width: 800px;
+    overflow: hidden;
+}
+
+.image-comparison_before{
+    position: absolute;
+    width: 50%;
+    overflow: hidden;
+}
+
+.image-comparison_image {
+    display: block;
+}
+.image-comparison_slider{
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    cursor: col-resize;
+    outline: none;
+}
+ .image-comparison_slider:before{
+     content: '';
+     position: absolute;
+     left: -14px;
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     background-color: white;
+ }
+
+ .image-comparison_slider:hover,
+ .image-comparison_slider:focus,
+ .image-comparison_slider:hover::before,
+ .image-comparison_slider:focus::before{
+     background-color: #ccc;
+ }

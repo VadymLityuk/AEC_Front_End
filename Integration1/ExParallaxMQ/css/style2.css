@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding:0
+}
+.video-parallax {
+
+    position: fixed;
+}
+.video-container { position:relative; }
+.video-container video {
+    position:relative;
+    z-index:0;
+    height: 600px;
+}
+
+#dmc {
+    background: none;
+    height: 100%;
+}
+#dmc-overlay {
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
