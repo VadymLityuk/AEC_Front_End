@@ -23,7 +23,7 @@ function imageComparison(selector) {
                 let offset = e.pageX - comparison.position().left;
                 let width = comparison.width();
 
-                // установим границы, чтобы ползунок не выходил
+
                 if (offset < 0) offset = 0;
                 if (offset > width) offset = width;
 
