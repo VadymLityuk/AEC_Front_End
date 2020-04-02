@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ad01a6c-5c24-4e2b-80bd-fa35bd2df9cd" name="Default Changelist" comment="" />
+    <list default="true" id="1bb5d36c-6a17-4bf3-8e9f-3fdc8e79e242" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,21 +16,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProjectId" id="1ZNFW4H1GVAf36nN129f6whnSFk" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1ZEQaCKrJmiYej8RzIpiNUkgJU3" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/учеба Вадим/IntegrationWEB/Final" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/GitHub/AEC_Front_End/Integration1/ExParallaxMQ" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -40,13 +36,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\vadim\Documents\GitHub\AEC_Front_End\Programation1\OrigNew" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\vadim\Documents\GitHub\AEC_Front_End\Programation1\OrigNew\media" />
-      <recent name="C:\Users\vadim\Documents\GitHub\AEC_Front_End\Programation1\OrigNew\css" />
-      <recent name="C:\Users\vadim\Documents\GitHub\AEC_Front_End\Programation1\OrigNew\js" />
+      <recent name="D:\учеба Вадим\IntegrationWEB\Final\media" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\учеба Вадим\IntegrationWEB\Final\media" />
+      <recent name="D:\учеба Вадим\IntegrationWEB\Final" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -66,30 +61,29 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8ad01a6c-5c24-4e2b-80bd-fa35bd2df9cd" name="Default Changelist" comment="" />
-      <created>1584671672881</created>
+      <changelist id="1bb5d36c-6a17-4bf3-8e9f-3fdc8e79e242" name="Default Changelist" comment="" />
+      <created>1584401834290</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1584671672881</updated>
-      <workItem from="1584671673979" duration="6575000" />
-      <workItem from="1584678984501" duration="4450000" />
+      <updated>1584401834290</updated>
+      <workItem from="1584401835426" duration="4645000" />
+      <workItem from="1584412469486" duration="4385000" />
+      <workItem from="1584480800742" duration="1591000" />
+      <workItem from="1584491819961" duration="9956000" />
+      <workItem from="1584661205475" duration="8700000" />
+      <workItem from="1584680737708" duration="3053000" />
+      <workItem from="1584736204089" duration="202000" />
+      <workItem from="1584793499582" duration="11752000" />
+      <workItem from="1585088988604" duration="8781000" />
+      <workItem from="1585264143098" duration="758000" />
+      <workItem from="1585267599291" duration="1531000" />
+      <workItem from="1585577583220" duration="13220000" />
+      <workItem from="1585749256727" duration="13909000" />
+      <workItem from="1585863264104" duration="4225000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>

@@ -1,0 +1,344 @@
+
+@font-face {
+     url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap')
+     font-family: 'Squada One'
+}
+
+p,h1,h2,h3 {
+    font-family: 'Squada One';
+}
+h3{
+    font-size: x-large;
+}
+
+body{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+header {
+    position: relative;
+    background-color : black;
+    height: 100%;
+    min-height: 35rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform : translateX(-50%) translateY(-50%);
+    -webkit-transform : translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color : white;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.hero{
+    background-color: #FF7F50;
+}
+
+.butt{
+    background-color: #FF7F50;
+}
+
+.join{
+    background-image: url("../media/banner2.jpg");
+}
+
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#story{
+    background-image: url("../media/trace4.jpg");
+}
+.char{
+    background-image: url("../media/bgtracer2.jpg");
+
+}
+
+.p_25{
+    padding: 25vh 0vh;
+}
+.tracer{
+    background-image: url("../media/missions.jpg");
+}
+.batt{
+    color: #00b8e6;
+}
+.face{
+    color: #004085;
+}
+.twitch{
+     color: mediumpurple;
+ }
+.tube{
+    color: #ff3333;
+
+}
+#section4 {
+    background-image: url("../media/footer3.jpg");
+}
+
+#footer{
+background-image: url("../media/bg2.jpg");
+}
+
+
+.foot{
+    color: #ff7f50;
+}
+/** Tracer Slider **/
+.image-comparison {
+    position: relative;
+    display: inline-block;
+    width: 520px;
+    width: 100%;
+    max-width: 520px;
+    overflow: hidden;
+}
+
+.image-comparison__before {
+    position: absolute;
+    width: 50%;
+    overflow: hidden;
+}
+
+.image-comparison__image {
+    display: block;
+}
+
+/* slider */
+.image-comparison__slider {
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 100%;
+    cursor: col-resize;
+    outline: none;
+    border: none;
+}
+
+
+.image-comparison__slider::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 15px);
+    left: -14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent url('../media/arrows.png') no-repeat center;
+    border: 2px solid #fff;
+    background-size: 90%;
+}
+
+.image-comprison__slider:hover,
+.image-comprison__slider:focus,
+.image-comprison__slider:hover::before,
+.image-comprison__slider:focus::before {
+    background-color: #ccc;
+    outline: none;
+    border: none;
+}
+/** About page**/
+#headerbg{
+    background-image: url("../media/headpic.jpg");
+}
+
+.heroes{
+    background-image: url("../media/bgclasses.jpg");
+
+}
+.modes{
+    background-image: url("../media/bgtracer2.jpg");
+}
+
+.jumbotrontr {
+    background-image: url("../media/bgtracer2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.display-4, .lead {
+    font-weight: 700;
+}
+
+.inside-jumbo {
+    min-height: calc(100vh - 3.25rem);
+    padding-left: 4rem;
+}
+
+
+
+.close {
+    font-size: 3rem;
+    color: #fff;
+    position: absolute;
+    right: 1rem;
+}
+
+.game {
+    margin-top: 2rem;
+}
+#contact-form{
+    background-color: #f8f8ff;
+}
+
+
+/** EXPLORE HEADER **/
+.header {
+    height: 100vh;
+    background-image:
+            linear-gradient(to right bottom,
+            rgba(76, 216, 255, 0.8),
+            rgba(30, 108, 217, 0.2)),
+            url('../media/ow2.jpg');
+
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+.header2{
+    height: 100vh;
+    background-image:
+            linear-gradient(to right bottom,
+            rgba(76, 216, 255, 0.8),
+            rgba(30, 108, 217, 0.2)),
+            url('../media/abouthead.jpg');
+
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+}
+
+.text-explore {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 7.4px;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+    font-size: 14px;
+}
+
+.carousel-content {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+
+@media screen and  (min-width: 577px) and (max-width: 768px)  {
+    header .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color : green;
+        opacity: .6;
+        z-index: 1;
+    }
+
+}
+
+/* hide  Trcaer slider in small devices */
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+    #tracerslider { display: block; }  /* show it on small screens */
+}
+
+@media screen and (min-width: 401px) and (max-width: 1024px) {
+    #tracerslider { display: none; }   /* hide it elsewhere */
+}
+
