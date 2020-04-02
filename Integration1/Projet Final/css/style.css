@@ -325,20 +325,33 @@ background-image: url("../media/bg2.jpg");
         left: 0;
         height: 100%;
         width: 100%;
-        background-color : green;
         opacity: .6;
         z-index: 1;
-    }
 
+    }
 }
+
 
 /* hide  Trcaer slider in small devices */
+    @media screen and (min-width: 401px) and (max-width: 1024px) {
+        #tracerslider {
+            display: none;
+        }
 
-@media screen and (min-width: 0px) and (max-width: 400px) {
-    #tracerslider { display: block; }  /* show it on small screens */
-}
+        /* Replace headers */
+        #explorehead{
 
-@media screen and (min-width: 401px) and (max-width: 1024px) {
-    #tracerslider { display: none; }   /* hide it elsewhere */
-}
+            background-image: url("../media/trace.jpg");
+        }
+        video{
+        display: none;
+        }
+        #headvideo{
+            background-image: url("../media/vd2.jpg");
+        }
+        #abouthead{
+            background-image: url("../media/explore3.jpg");
+        }
+
+    }
 
