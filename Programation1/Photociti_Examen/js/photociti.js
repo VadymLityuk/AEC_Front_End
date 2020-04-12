@@ -81,7 +81,7 @@ function erase() {
 function transciti() {
     for (i = 0; i < photocitiword.length; i++) {
         imagetag[i] = photocitiword[i];
-        imagesource[i] = "letters/" + photocitiword[i] + "/" + photocitiword[i] + "1.jpg";
+        imagesource[i] = "Letters/" + photocitiword[i] + "/" + photocitiword[i] + "1.jpg";
     }
 }
 $("#generetor").submit(function(event) {
@@ -124,7 +124,7 @@ $(".mylettre").click(function() {
     cahngemylet = $(this).attr("alt");
     mylet = $(this).attr("id");
     for (i = 0; i < 5; i++) {
-        $("#wordimage" + (i+1)).attr("src", "letters/" + cahngemylet + "/" + cahngemylet + (i+1) + ".jpg");
+        $("#wordimage" + (i+1)).attr("src", "Letters/" + cahngemylet + "/" + cahngemylet + (i+1) + ".jpg");
     }
 });
 
