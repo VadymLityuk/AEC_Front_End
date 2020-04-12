@@ -30,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/учеба Вадим/Prog/Examen2 JavaScript Photociti 2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -85,6 +85,7 @@
       <workItem from="1585749256727" duration="13909000" />
       <workItem from="1585863264104" duration="4225000" />
       <workItem from="1585867611056" duration="2032000" />
+      <workItem from="1586279530986" duration="77000" />
     </task>
     <servers />
   </component>
@@ -96,7 +97,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

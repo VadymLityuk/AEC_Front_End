@@ -1,0 +1,88 @@
+body{
+    background-color: #E6E6FA;
+
+}
+.examen{
+    max-width: 2000px;
+}
+h1{
+    color: #999999;
+    font-family: arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 1px;
+}
+.ppred{
+    color: #EA214F;
+}
+.hide {
+    display: none;
+}
+.error {
+    color: red;
+    display: none;
+}
+
+
+/* color picker section*/
+#colors {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#colors li {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 0 15px 15px 0;
+    border-radius: 30px;
+    border: 3px solid #dc3545;
+    padding: 0;
+    overflow: hidden;
+}
+
+#blanc {
+    background-image: url("../background/blanc.jpg");
+}
+#bleu {
+    background-image: url("../background/bleu.jpg");
+}
+#bleuFonce {
+    background-image: url("../background/bleuFonce.jpg");
+}
+#gris {
+    background-image: url("../background/gris.jpg");
+}
+#noir {
+    background-image: url("../background/noir.jpg");
+}
+#rose {
+    background-image: url("../background/rose.jpg");
+}
+#rouge {
+    background-image: url("../background/rouge.jpg");
+}
+/* bg standart color*/
+
+.wordsector {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 .20em;
+    background-image: url("../background/rouge.jpg");
+
+}
+
+.letterImg {
+    display: none;
+    padding: 1rem .15rem;
+    border: 3px outset #e4606d ;
+    cursor: pointer;
+}
+.carousel-item {
+    cursor: pointer;
+}
+
