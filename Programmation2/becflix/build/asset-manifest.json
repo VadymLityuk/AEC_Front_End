@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.d1b05096.chunk.css",
-    "main.js": "/static/js/main.b31d37d9.chunk.js",
-    "main.js.map": "/static/js/main.b31d37d9.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2b12ed2f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2b12ed2f.js.map",
-    "static/js/2.36b9ad29.chunk.js": "/static/js/2.36b9ad29.chunk.js",
-    "static/js/2.36b9ad29.chunk.js.map": "/static/js/2.36b9ad29.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.7e0fdd99e786e4b30ca7d6be5500b7b8.js": "/precache-manifest.7e0fdd99e786e4b30ca7d6be5500b7b8.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.36b9ad29.chunk.js.LICENSE.txt": "/static/js/2.36b9ad29.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+    "main.css": "./static/css/main.d1b05096.chunk.css",
+    "main.js": "./static/js/main.e75e60eb.chunk.js",
+    "main.js.map": "./static/js/main.e75e60eb.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.03e9e90d.js",
+    "runtime-main.js.map": "./static/js/runtime-main.03e9e90d.js.map",
+    "static/css/2.69121389.chunk.css": "./static/css/2.69121389.chunk.css",
+    "static/js/2.c04eb4ff.chunk.js": "./static/js/2.c04eb4ff.chunk.js",
+    "static/js/2.c04eb4ff.chunk.js.map": "./static/js/2.c04eb4ff.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.809d01b449f475c19c6c7e36436b759e.js": "./precache-manifest.809d01b449f475c19c6c7e36436b759e.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.69121389.chunk.css.map": "./static/css/2.69121389.chunk.css.map",
+    "static/css/main.d1b05096.chunk.css.map": "./static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.c04eb4ff.chunk.js.LICENSE.txt": "./static/js/2.c04eb4ff.chunk.js.LICENSE.txt",
+    "static/media/netflix.png": "./static/media/netflix.08e64b2e.png",
+    "static/media/witcher.jpg": "./static/media/witcher.6fd707d6.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2b12ed2f.js",
-    "static/js/2.36b9ad29.chunk.js",
+    "static/js/runtime-main.03e9e90d.js",
+    "static/css/2.69121389.chunk.css",
+    "static/js/2.c04eb4ff.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.b31d37d9.chunk.js"
+    "static/js/main.e75e60eb.chunk.js"
   ]
 }
