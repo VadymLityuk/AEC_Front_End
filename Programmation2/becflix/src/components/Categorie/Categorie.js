@@ -4,7 +4,7 @@ import {TVshow} from '../TVshow/TVshow';
 import Container from 'react-bootstrap/Container';
 
 
-const nomCategorie ='FANTASY';
+const nomCategorie ='SUPERNATURAL';
 export class Categorie extends React.Component{
     render() {
         return (
