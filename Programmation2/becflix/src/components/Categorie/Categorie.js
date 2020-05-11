@@ -1,26 +1,63 @@
 import React from 'react'; 
 import Row from 'react-bootstrap/Row';
 import {TVshow} from '../TVshow/TVshow';
-import Container from 'react-bootstrap/Container';
 
+const tabSuspense = [
+    {
+        src: require('../../img/witcher.jpg'), 
+        alt:"The Witcher" ,
+        title:"The Witcher"},
+    {
+    src: require('../../img/img/Suspense/unite9.jpg'), 
+        alt:"Unite 9" ,
+        title:"Unite 9"},
+    { 
+    src: require('../../img/img/Suspense/district31.jpg'), 
+        alt:"District 31", 
+        title:"District 31" },
+    {
+    src:require('../../img/img/Suspense/fugueuse.jpg'), 
+        alt:"Fugueuse", 
+        title:"Fugueuse"},
+    {
+    src:require('../../img/img/Suspense/lesinvincibles.jpg'), 
+        alt:"Les invincibles", 
+        title:"Les Invincibles" },
+    { 
+    src:require('../../img/img/Suspense/serienoire.jpg'), 
+        alt:"Serie noire", 
+        title:"Serie noire" }
+];
 
-const nomCategorie ='SUPERNATURAL';
 export class Categorie extends React.Component{
     render() {
         return (
-            <Container fluid>
+            <>
                 <Row>
-                    <h1>{nomCategorie}</h1>
+                    <h1>{this.props.categorie}</h1>
+                    <p>{this.props.title}</p>
                 </Row>
                 <Row>
-                    <TVshow/>
-                    <TVshow/>
-                    <TVshow/>
-                    <TVshow/>
-                    <TVshow/>
-                    <TVshow/>
+                    {this.AfficherCategorie()}
                 </Row>
-            </Container>
+            </>
         );
-    }
-};
+        }
+
+    AfficherCategorie(){
+        if (this.props.categorie === 'Suspense'){
+            return(
+                tabSuspense.map((element,i) => <TVshow  
+    
+                keys={"suspense" + i} 
+                    src={element.src} 
+                    alt={element.alt} 
+                    title={element.title}></TVshow>) 
+                )
+            }
+    
+         }
+        };
+         
+        Categorie.defaultProps = {
+            categorie : 'Suspense'};
