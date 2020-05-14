@@ -43,6 +43,7 @@ export class Accueil extends React.Component {
         return (
             <Container fluid>
               {flixlogotype}
+              <Cataloge/>
              
               {this.gestionConnexion}
             </Container>
