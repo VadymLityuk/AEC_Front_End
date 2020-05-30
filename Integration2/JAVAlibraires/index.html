@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="anime-master/lib/anime.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+
+<style>
+    .btn{
+        position: fixed;
+        top: 80px;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-family: 'Arial', sans-serif;
+        color: black;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+    }
+    #spidey{
+        width: 900px;
+        height: 1000px;
+        background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ea196117-0b64-49b7-b13f-79f43cf77e53/dcv88ir-a087164f-0545-4119-9d64-89b4a6aa156e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZWExOTYxMTctMGI2NC00OWI3LWIxM2YtNzlmNDNjZjc3ZTUzXC9kY3Y4OGlyLWEwODcxNjRmLTA1NDUtNDExOS05ZDY0LTg5YjRhNmFhMTU2ZS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.TcQ0SnhnL2Z_Fofjdyt0x9NAtDehObZdLCMvIWAK_28");
+        position: fixed;
+        top: 100px;
+        text-align: center;
+        margin-left: 300px;
+
+    }
+
+    #box {
+        margin: 0 0;
+        width: 100%;
+        height: 500vh;
+        background-image: url("https://i.kinja-img.com/gawker-media/image/upload/lhafcxexxsiynavhroom.jpg");
+        opacity: 0.2;
+
+    }
+
+</style>
+
+
+<button class="btn">Push the button and then scroll</button>
+<div id="spidey"></div>
+
+<script>
+    var blockMove = anime ({
+        targets: '#spidey',
+        translateX: -200,
+        translateY: 100,
+        autoplay: false,
+
+        borderRadius: '100%',
+        easing: 'linear',
+        duration: 4000,
+        direction: 'alternate',
+        scale: {
+            value: 2,
+            duration: 1600,
+            delay: 800,
+            easing: 'easeInOutQuart'
+        },
+        rotate: '1turn'
+    });
+
+    document.querySelector ('.btn').onclick = blockMove.restart;
+
+
+</script>
+<div id="box"></div>
+
+
+<script src="choreographer-js-master/dist/choreographer.min.js"></script>
+<script>
+    var choreographer = new Choreographer({
+        animations: [
+            {
+                range: [-1, window.innerHeight * 4],
+                selector: '#box',
+                type: 'scale',
+                style: 'opacity',
+                from: 0.2,
+                to: 1
+            }
+        ]
+    })
+
+    window.addEventListener('scroll', function() {
+        choreographer.runAnimationsAt(window.pageYOffset)
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="moncode/moncode.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
