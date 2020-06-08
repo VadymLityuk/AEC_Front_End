@@ -1,0 +1,108 @@
+
+.App{
+ 
+  background-image: url('../media/bg.jpg');
+  min-height: 100vh;
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+
+.spofy{
+  padding: 0.5rem 2rem;
+  fill:lightgreen;
+  max-width: 400px;
+  text-align: center;
+  
+}
+
+h4{
+  color: lightgreen;
+  
+}
+
+.card {
+  padding: 1rem .24rem;
+  padding: 0.2rem;
+  text-align: center;
+  background-color: #333333;
+   background-image: linear-gradient(#333333,  #0d0d0d );
+  width: 100%;
+  cursor: pointer;
+
+}
+
+
+.App .card-body {
+  padding: 1rem .24rem;
+  color: #999;
+  }
+
+.App .hovered .card-img-top {
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+   opacity: .4;
+}
+
+.App .hovered .card-body {
+  
+  color: lightgreen;
+}
+
+.songlists ul {
+  color: #999;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.songlists li {
+  padding: .5rem 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all .2s ease;
+  background-color: #333333;
+}
+
+.songlists li:hover,  .App .btn-primary:focus {
+  opacity: .9;
+  color: lightgreen;
+}
+
+
+.numbsong {
+  margin-right: 1rem;
+  font-size: .9rem;
+}
+
+.rappelInfos {
+  margin: 1rem 0;
+  color: lightgreen;
+}
+
+.songs {
+  margin-bottom: 3rem;
+}
+
+.songs p {
+  color: lightgreen;
+}
+
+.songs span {
+  display: block;
+}
+.coverAlbum {
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.albuminform {
+  color: lightgray;
+}
