@@ -1,0 +1,13 @@
+.navbar a {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+}
+.navbar a:hover {
+  color: #fff;
+}
+
+.navbar-brand img {
+  max-width: 40px;
+}
+
+/*# sourceMappingURL=nav.css.map */
