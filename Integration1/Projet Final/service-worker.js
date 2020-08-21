@@ -1,11 +1,16 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v7';
+const CACHE_NAME = 'static-cache-v10';
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
 
     'offline.html',
+    'index.html',
+    'explore.html',
+    'About.html',
+    'js/install.js',
 
 ];
+
 
 self.addEventListener('install', (evt) => {
     console.log('[ServiceWorker] Install');
@@ -18,6 +23,7 @@ self.addEventListener('install', (evt) => {
     );
     self.skipWaiting();
 });
+
 
 self.addEventListener('activate', (evt) => {
     console.log('[ServiceWorker] Activate');
@@ -35,6 +41,9 @@ self.addEventListener('activate', (evt) => {
     );
     self.clients.claim();
 });
+
+
+
 self.addEventListener('fetch', (evt) => {
     console.log('[ServiceWorker] Fetch', evt.request.url);
 //Add fetch event handler here.
@@ -47,7 +56,7 @@ self.addEventListener('fetch', (evt) => {
             .catch(() => {
                 return caches.open(CACHE_NAME)
                     .then((cache) => {
-                        return cache.match('/AEC_Front_End/Integration1/Projet Final/icon/offline.html' );
+                        return cache.match('/AEC_Front_End/Integration1/Projet%20final/offline.html' );
                     });
             })
     );
