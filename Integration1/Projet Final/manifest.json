@@ -27,7 +27,7 @@
     "type": "image/png",
     "purpose" : "any maskable"
   }, {
-    "src": "media/icon/OVER-512x512.png",
+    "src": "media/icon/ovicon-512x512.png",
     "sizes": "512x512",
     "type": "image/png",
     "purpose" : "any maskable"
