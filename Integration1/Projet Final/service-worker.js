@@ -4,6 +4,11 @@ const CACHE_NAME = 'static-cache-v3';
 const FILES_TO_CACHE = [
 
     'offline.html',
+    'index.html',
+    'explore,html',
+    'style.css',
+    'About.html',
+
 ];
 
 self.addEventListener('install', (evt) => {
