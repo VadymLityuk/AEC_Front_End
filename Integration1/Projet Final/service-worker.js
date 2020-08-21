@@ -1,12 +1,11 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v5';
+const CACHE_NAME = 'static-cache-v6';
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
 
     'offline.html',
     'index.html',
     'explore,html',
-    'style.css',
     'About.html',
     'js/install.js',
 
