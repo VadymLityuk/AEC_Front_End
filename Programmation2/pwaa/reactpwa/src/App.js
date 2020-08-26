@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './img/pwa.png';
+import logo from './img/sp.png';
 import BoutonInstallPWA from './components/BoutoninstallPWA';
 import DemoJSONLocal from './components/DemoJSONLocal';
 import './App.css';
@@ -10,9 +10,9 @@ function App() {
       <BoutonInstallPWA/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" width="400 px" height="100 px"/>
-        <p>
-          Hello PWA World!
-        </p>
+        <h1>
+          Swiiiing
+        </h1>
       </header>
       <DemoJSONLocal/>
     </div>
