@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './img/pwa.png';
-import BoutonInstallPWA from './components/BoutoninstallPWA.js';
+import BoutonInstallPWA from './components/BoutoninstallPWA';
 import DemoJSONLocal from './components/DemoJSONLocal';
 import './App.css';
 
