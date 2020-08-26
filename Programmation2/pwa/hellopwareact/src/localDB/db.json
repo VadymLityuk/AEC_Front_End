@@ -1,0 +1,30 @@
+{
+    "chars": [
+      {
+        "id": 1,
+        "name": "Joel",
+        "picture": "https://vignette.wikia.nocookie.net/thelastofus/images/e/ef/JoelPart2.png/revision/latest?cb=20200621201348",
+        "abilities": [
+          {
+            "age": "56"
+          },
+          {
+            "sexe": "Masc"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Ellie",
+        "picture": "https://vignette.wikia.nocookie.net/thelastofus/images/2/2f/ElliePart2.png/revision/latest?cb=20200621164441",
+        "abilities": [
+          {
+            "age": "19"
+          },
+          {
+            "sexe": "Femin"
+          }
+        ]
+      }
+    ]
+  }
