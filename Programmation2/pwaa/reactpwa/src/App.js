@@ -4,20 +4,26 @@ import Navi from './components/nav'
 import "bootstrap/dist/css/bootstrap.min.css";
 import './components/nav.scss'
 import { Route, Switch } from 'react-router-dom';
+import {Onlinecinema} from './components/Onlinecinema'
+
+import './components/accueil.scss'
 
 function App() {
   return (
-<>
+
+<React.Fragment>
     <Navi/>
     
       <Switch>
       <Route path="/" exact  component={Accueil} />
       <Route path="/Home" component={Accueil} />
+      <Route path="/Onlinecinema" component={Onlinecinema} />
      
       
     </Switch>
+    </React.Fragment>
     
-    </>
+    
   );
 }
 
