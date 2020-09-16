@@ -1,17 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import BoutonPWA from './components/BouttonPWA';
+import logo from './img/sp.png';
+import BoutonInstallPWA from './components/BoutonInstallPWA';
+import DemoJSONLocal from './components/DemoJSONLocal';
 import './App.css';
-import DemoTLOU from './components/DemoLASTOF.js';
 
 function App() {
   return (
     <div className="App">
-      <BoutonPWA/>
+      <BoutonInstallPWA/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" width="400 px" height="100 px"/>
+        <p>
+          Hello PWA World!
+        </p>
       </header>
-      <DemoTLOU/>
+      <DemoJSONLocal/>
     </div>
   );
 }
