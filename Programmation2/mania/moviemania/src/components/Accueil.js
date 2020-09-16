@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './style/accueil.scss'
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 import { Link } from "react-router-dom";
 
@@ -15,6 +17,11 @@ const picha= {
   };
 
 export default function Accueil() {
+    useEffect(() => {
+    
+        Aos.init({duration: 2000});
+
+    },[])
 
   
 

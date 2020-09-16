@@ -1,5 +1,7 @@
 import React from 'react'
 import { Row, Col, Container,Image,Button } from 'react-bootstrap'
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 
 import './style/nav.scss'
