@@ -22,8 +22,8 @@ export class Onlinecinema  extends React.Component {
               <li id="comedy"><Link to={"/Films"}>Ajouter un Film</Link></li>
               <li>Horreurs</li>
               <li>TvShow</li>
-              <li>Amérique du Nord</li>
-              <li>Améridque du Sud</li>
+            
+             
         
           </ul>   
       </div>
