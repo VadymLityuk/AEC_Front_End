@@ -50,7 +50,7 @@ export default function Accueil() {
               <li id="comedy"><Link to={"/Onlinecinema"}>Online Cinema</Link></li>
               <li id="comedy"><Link to={"/Films"}>Ajouter un Film</Link></li>
               <li>Horreurs</li>
-              <li>TvShow</li>
+              <li>TvShoow</li>
               <li>Noname</li>
               <li>Noname</li>
         

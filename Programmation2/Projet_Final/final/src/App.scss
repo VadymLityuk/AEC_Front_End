@@ -300,3 +300,63 @@ $cardTransition: all 150ms linear;
             }
       
 }
+
+.container-tvShow{
+
+  position: relative;
+}
+
+/* Filtre pour le sur le container de l'image*/
+.filtered{
+  background: $violet;
+  transform: scale(1.2);
+  transition: transform .7s ease-in-out; 
+}
+
+
+/* Filtre pour l'image*/
+.filtered #imgShow {
+  @include survol;
+  opacity: 0.50;
+  filter: blur(1px);
+  cursor: pointer;
+}
+
+/* Centered position text */
+.title {
+  @include bouton;
+@include arrondi;
+font-family: 'Aldrich', sans-serif;
+  text-align: center;
+  font-size: 1.4vw;
+  color: $grisPale;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px $head;
+  cursor: pointer;
+}
+
+
+.play {
+  position: absolute;
+  left: 2%;
+  top: 95%;
+  transform: translate(2%, -95%);
+  cursor: pointer;
+  z-index: 100;
+}
+
+
+.hide{
+  display: none;
+}
+
+
+.hover-play{
+  box-shadow: 5px 5px 5px $head;
+  border-radius: 5px;
+}
+
+
