@@ -31,7 +31,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/icon" />
+    <property name="last_opened_file_path" value="D:/stuff/Ampps/www/infrastructure_web_projet_final" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -88,7 +88,10 @@
       <workItem from="1585863264104" duration="4225000" />
       <workItem from="1585867611056" duration="2032000" />
       <workItem from="1586279530986" duration="77000" />
-      <workItem from="1597963811224" duration="12029000" />
+      <workItem from="1597963811224" duration="12316000" />
+      <workItem from="1598307511944" duration="217000" />
+      <workItem from="1598392359849" duration="609000" />
+      <workItem from="1598568690618" duration="533000" />
     </task>
     <servers />
   </component>
