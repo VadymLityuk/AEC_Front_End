@@ -12,7 +12,7 @@ export default function Navi() {
     return (
        
 
-        <header  data-aos="fade-right"  class="header container-fluid">
+        <header   class="header container-fluid">
  
 
     <div class="row">
