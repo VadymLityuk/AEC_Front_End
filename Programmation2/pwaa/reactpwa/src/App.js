@@ -11,7 +11,7 @@ import './components/accueil.scss'
 function App() {
   return (
 
-<React.Fragment>
+<>
     <Navi/>
     
       <Switch>
@@ -21,7 +21,7 @@ function App() {
      
       
     </Switch>
-    </React.Fragment>
+    </>
     
     
   );
