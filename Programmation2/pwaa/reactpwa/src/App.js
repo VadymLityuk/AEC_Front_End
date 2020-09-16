@@ -19,10 +19,8 @@ function App() {
 
     <Navi/>
     
-     
-      <Route path="/" exact  component={Accueil} />
-      <Route path="/Home" component={Accueil} />
-      <Route path="/Onlinecinema" component={Onlinecinema} />
+     <Accueil/>
+    
      
       
     </>

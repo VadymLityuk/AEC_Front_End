@@ -1,5 +1,7 @@
 import React from 'react'
 import { Row, Col, Container,Image,Button } from 'react-bootstrap'
+import {NavLink} from 'react-router-dom' 
+import '../App.scss'
 import Aos from "aos";
 import "aos/dist/aos.css"
 
@@ -23,6 +25,20 @@ export default function Navi() {
             </div>
         </div>
     </div>
+    <div data-aos="fade-left"class="row filtres pt-3">
+      <div class="col-12">
+          <ul>
+              <li class="boutonActif">Accueil</li>
+              <li id="comedy"><NavLink to={"/Onlinecinema"}>Online Cinema</NavLink></li>
+              <li id="comedy"><NavLink to={"/Films"}>Ajouter un Film</NavLink></li>
+              <li>Horreurs</li>
+              <li>TvShoow</li>
+              <li>Noname</li>
+              <li>Noname</li>
+        
+          </ul>   
+      </div>
+  </div>
 </header>
 
         )
