@@ -1,4 +1,4 @@
-
+@import "../style/breakpoints.scss";
 @import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 
@@ -11,9 +11,13 @@ $head : #442877;
 $H2: #8967c0;
 $shadow: 0px 15px 45px -9px rgb(159, 90, 205);
 $survol :  #c5a8f5;
+$breakpoints: (phone: 320px, tablet: 768px, desktop: 1024px);
+
+
 
 body
 {
+  
 
   font-family: Montserrat;
 
@@ -21,12 +25,22 @@ body
   font-family: Raleway;
   }
 
+  @include media(">phone", "<=tablet") {
+    width: 100%;
+    }
+
+
 }
 
 ul{
   padding-left: 0;
   margin-bottom: 0;
   list-style-type: none;
+  @include media(">phone", "<=tablet") {
+    width: 100%;
+    }
+  
+
 }
 @mixin petitTexte{
   font-size: .8rem
@@ -77,6 +91,8 @@ ul{
   li.boutonActif{
     font-weight: 700
   }
+  
+
 }
 .posts{
   display: flex;
@@ -95,6 +111,7 @@ ul{
     
   }
   
+  
 }
 .post:hover{
   box-shadow: none
@@ -102,6 +119,7 @@ ul{
   .body-card{
     border: 1px solid Gainsboro;
     border-top: none;
+    
   }
 h2{
   color: $H2;
