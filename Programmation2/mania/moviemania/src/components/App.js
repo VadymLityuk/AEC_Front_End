@@ -10,7 +10,9 @@ function App() {
 
   return (
     
-    <Route path="/" exact component={Accueil} />
+    <Accueil>
+      
+    </Accueil>
   );
 }
 
