@@ -1,23 +1,32 @@
 {
   "files": {
-    "main.css": "./static/css/main.5f361e03.chunk.css",
-    "main.js": "./static/js/main.3a0317e8.chunk.js",
-    "main.js.map": "./static/js/main.3a0317e8.chunk.js.map",
+    "main.css": "./static/css/main.bd15a3b6.chunk.css",
+    "main.js": "./static/js/main.9fa659b8.chunk.js",
+    "main.js.map": "./static/js/main.9fa659b8.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.e0e8e70b.js",
     "runtime-main.js.map": "./static/js/runtime-main.e0e8e70b.js.map",
-    "static/js/2.31a7e7bc.chunk.js": "./static/js/2.31a7e7bc.chunk.js",
-    "static/js/2.31a7e7bc.chunk.js.map": "./static/js/2.31a7e7bc.chunk.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "./static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.109b4222.chunk.js": "./static/js/2.109b4222.chunk.js",
+    "static/js/2.109b4222.chunk.js.map": "./static/js/2.109b4222.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.50aef57bb9ef0ae11f975b4bd12f232f.js": "./precache-manifest.50aef57bb9ef0ae11f975b4bd12f232f.js",
+    "precache-manifest.d204523213d5d7ab88f7f0c637be77c6.js": "./precache-manifest.d204523213d5d7ab88f7f0c637be77c6.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "./static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.31a7e7bc.chunk.js.LICENSE.txt": "./static/js/2.31a7e7bc.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "./static/media/logo.5d5d9eef.svg"
+    "static/css/2.d9ad5f5c.chunk.css.map": "./static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.bd15a3b6.chunk.css.map": "./static/css/main.bd15a3b6.chunk.css.map",
+    "static/js/2.109b4222.chunk.js.LICENSE.txt": "./static/js/2.109b4222.chunk.js.LICENSE.txt",
+    "static/media/bill.jpg": "./static/media/bill.4c00029d.jpg",
+    "static/media/billtt.jpg": "./static/media/billtt.b9ed35ec.jpg",
+    "static/media/boys2.jpeg": "./static/media/boys2.512dd5d0.jpeg",
+    "static/media/mul.jpg": "./static/media/mul.ff23fbca.jpg",
+    "static/media/mutant.jpg": "./static/media/mutant.2ec42f77.jpg",
+    "static/media/ten.jpg": "./static/media/ten.f665cda2.jpg",
+    "static/media/witcher.jpg": "./static/media/witcher.b1012e68.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.e0e8e70b.js",
-    "static/js/2.31a7e7bc.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.3a0317e8.chunk.js"
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.109b4222.chunk.js",
+    "static/css/main.bd15a3b6.chunk.css",
+    "static/js/main.9fa659b8.chunk.js"
   ]
 }
