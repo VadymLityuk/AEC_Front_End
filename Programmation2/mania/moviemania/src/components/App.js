@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import '../components/style/accueil.scss';
+import {Onlinecinema} from '../components/Onlinecinema'
 
 import Accueil from './Accueil.js'
 import Navi from '../components/nav'
@@ -15,6 +16,8 @@ function App() {
     <Switch>
           <Route path="/" exact component={Accueil} /> 
           <Route path="/Accueil" component={Accueil} /> 
+          <Route path="/Onlinecinema" component={Onlinecinema} /> 
+        
     </Switch>
     </>
 

@@ -10,6 +10,7 @@ $violet: #EE82EE;
 $head : #442877;
 $H2: #8967c0;
 $shadow: 0px 15px 45px -9px rgb(159, 90, 205);
+$survol :  #c5a8f5;
 
 body
 {
@@ -39,7 +40,7 @@ ul{
 }
 
 @mixin survol{
-  background-color: $H2;
+  background-color: $survol;
   color: #fff;
 }
 

@@ -36,12 +36,8 @@ export default function Accueil() {
       
       
   <div class="container-fluid pageContent">
-  
-      <div data-aos="fade-left"class="row filtres pt-5">
-          <div class="col-12">
-            
-          </div>
-      </div>
+   <h2  data-aos="zoom-in" className="text-center">what's hot</h2>
+
   </div>
   <div class="container-fluid pageContent">
   
