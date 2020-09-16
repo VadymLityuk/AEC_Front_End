@@ -13,7 +13,7 @@ import './App.scss';
 
 function App() {
   return (
-  <React.Fragment>
+  <>
     
     <Navi/>
     <Router>
@@ -25,7 +25,7 @@ function App() {
       
     </Switch>
     </Router>
-  </React.Fragment>
+  </>
   
   );
 }
