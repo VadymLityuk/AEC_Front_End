@@ -127,7 +127,7 @@ export default function Accueil() {
        <article class="post mb-3">
            <div class="insidePost mx-3">
                <div class="featureImg">
-               <iframe className="video" width="100%" height="220" src="https://www.youtube.com/embed/1gPGeAYo3yU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <Image fluid src={picha.bill}  />
                </div>
                <div class="postContent">
                    <div class="postPreview">
@@ -154,7 +154,7 @@ export default function Accueil() {
        <article class="post mb-3">
                 <div class="insidePost mx-3">
                     <div class="featureImg">
-                    <iframe className="video" width="100%" height="240" src="https://www.youtube.com/embed/NLOp_6uPccQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <Image fluid src={picha.witcher}  />
                     </div>
                     <div class="postContent">
                         <div class="postPreview">
