@@ -15,18 +15,18 @@ function App() {
   console.log(location.pathname); 
   return (
   
+    <>
 
-<Container fluid>
     <Navi/>
     
-      <Switch>
+     
       <Route path="/" exact  component={Accueil} />
       <Route path="/Home" component={Accueil} />
       <Route path="/Onlinecinema" component={Onlinecinema} />
      
       
-    </Switch>
-   </Container>
+    </>
+   
     
   );
 }
