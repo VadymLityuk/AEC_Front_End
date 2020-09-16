@@ -1,0 +1,361 @@
+
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+$grisTresPale: #f6f6f6;
+$grisPale: #e6e6e6;
+$grisMoyen: #8d8d8d;
+$grisFonce: #333;
+$violet: #EE82EE;
+$head : #442877;
+$H2: #8967c0;
+$shadow: 0px 15px 45px -9px rgb(159, 90, 205);
+
+body
+{
+
+  font-family: Montserrat;
+
+  p.resume{
+  font-family: Raleway;
+  }
+
+}
+
+ul{
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+@mixin petitTexte{
+  font-size: .8rem
+}
+
+@mixin bouton{
+  display: inline;
+  padding: .4rem 1rem;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+@mixin survol{
+  background-color: $H2;
+  color: #fff;
+}
+
+@mixin imgFluide{
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin arrondi{
+  border-radius: 100px
+}
+
+
+  
+.filtres{
+  ul{
+    display: flex;
+    justify-content: center;
+    
+  }
+  li{
+    @include bouton;
+    @include petitTexte;
+    border-radius: 100px;
+    color: $grisMoyen;
+    border: solid 1px $grisPale;
+    margin: 0 .5rem;
+  }
+  li:hover,li.boutonActif {
+    @include survol;
+    color: $grisPale;
+  }
+  li.boutonActif{
+    font-weight: 700
+  }
+}
+.posts{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: inherit;
+
+  .post{
+    width: 50%;
+   
+  }
+  .postContent{
+    padding: 2rem 13% 0;
+    box-shadow: $shadow;
+    border-radius: 10px 10px 10px 10px;
+    
+    
+  }
+  
+}
+.post:hover{
+  box-shadow: none
+}
+  .body-card{
+    border: 1px solid Gainsboro;
+    border-top: none;
+  }
+h2{
+  color: $H2;
+  font-weight: 700;
+  font-family: 'Aldrich', sans-serif;
+ 
+  
+}
+p, li{
+    color: $grisMoyen;
+    font-size: .9rem;
+}
+
+
+
+.poster{
+  
+img{
+@include imgFluide;
+border-radius: 21px 42px;
+cursor: pointer; 
+
+}
+.contentMeta{
+
+@include petitTexte;
+margin-bottom: 0;
+}
+p.resume{
+margin-bottom: 2rem
+}
+.postMeta{
+position: relative;
+padding-bottom: 1.25rem;
+}
+a.comment{
+@include bouton;
+@include arrondi;
+display: flex;
+align-items: center;
+position: absolute;
+top: -2rem;
+right: 0;
+background-color: $grisTresPale;
+
+}
+.nbCommentaires{
+@include petitTexte;
+padding-left: .3rem;
+}
+a.comment:hover{
+@include survol
+}
+a{
+color: $grisMoyen
+}
+a:hover{
+color: $grisFonce
+}
+hr, ul{
+width: 75%;
+margin-left: 0;
+}
+li{
+display: inline;
+text-transform: uppercase;
+@include petitTexte;
+}
+
+
+}
+
+
+.video{
+  border-radius: 21px 42px;
+  
+}
+.aside{
+
+  
+  float: right;
+}
+
+.latest-posts{
+  
+  h5{
+    color: $H2;
+    text-align: center;
+    margin-bottom: 1.325rem;
+    font-weight: bolder;
+  }
+  img{
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    margin-right: 1rem;
+    padding: 0.2rem;
+    cursor: pointer; 
+    
+  
+    
+  }
+  p{
+    color: $grisMoyen;
+    font-size: 0.725rem;
+  }
+  span{
+    color: $head;
+    font-size: 1.025rem;
+    font-weight: bolder;
+    cursor: pointer; 
+  }
+ 
+
+
+.grid-item--width2 {
+  width: 50%;
+
+  cursor: pointer; 
+
+}
+
+.grid-item--height2{
+  height: 100%;
+}
+}
+.advertisement{
+  margin-top: 2.5rem;
+  width: 100%;
+  height: 300px;
+  background-color: #E8E8E8;
+  text-align: center;
+  p{
+    color: #808080;
+    font-size: 0.8rem;
+    font-weight: bolder;
+  }
+    span{
+      color: $head;
+      font-size: 1.6rem;
+    }
+}
+
+$borderColor: rgba(181, 123, 247, 0.1);
+$cardTransition: all 150ms linear;
+
+
+
+.posters{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    h2{
+        padding-bottom: 1em;
+    }
+
+    .poster{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid;
+        padding-bottom: 0.8em;
+        
+    }
+        .img_container{
+            border-radius: 80%;
+            max-width: 20%;
+            height: auto;
+            margin-left: 1rem;
+          
+        }
+          
+        .poster_content
+      {
+            padding: 0.3em 0;
+            padding-right: 3em;
+            padding-left: 1.5em;
+      }
+            .categories{
+                display: flex;
+            }
+                p{
+                    cursor: pointer;
+                    margin-right: 2px;
+                    transition: $cardTransition;
+                }
+                    &:hover{
+                        color: $violet;
+                    }
+            .post_title{
+                font-size: 1rem;
+                font-weight: 800;
+                padding-top: 0.2em;
+                color: black;
+                cursor: pointer;
+                transition: $cardTransition;
+                margin-top: 0.8rem;
+            }
+      
+}
+
+.container-tvShow{
+
+  position: relative;
+}
+
+/* Filtre pour le sur le container de l'image*/
+.filtered{
+  background: $violet;
+  transform: scale(1.2);
+  transition: transform .7s ease-in-out; 
+}
+
+
+/* Filtre pour l'image*/
+.filtered #imgShow {
+  @include survol;
+  opacity: 0.50;
+  filter: blur(1px);
+  cursor: pointer;
+}
+
+/* Centered position text */
+.title {
+  @include bouton;
+@include arrondi;
+font-family: 'Aldrich', sans-serif;
+  text-align: center;
+  font-size: 1.4vw;
+  color: $grisPale;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px $head;
+  cursor: pointer;
+}
+
+
+.play {
+  position: absolute;
+  left: 2%;
+  top: 95%;
+  transform: translate(2%, -95%);
+  cursor: pointer;
+  z-index: 100;
+}
+
+
+.hide{
+  display: none;
+}
+
+
+.hover-play{
+  box-shadow: 5px 5px 5px $head;
+  border-radius: 5px;
+}
+
