@@ -16,15 +16,14 @@ function App() {
   <>
     
     <Navi/>
-    <Router>
+    <Accueil/>
     <Switch>
-      <Route path="/" exact  component={Accueil} />
+
       <Route path="/Home" component={Accueil} />
       <Route path="/Onlinecinema" component={Onlinecinema} />
       <Route path="/Films" component={TvShow} />
       
     </Switch>
-    </Router>
   </>
   
   );
