@@ -3,7 +3,7 @@ import './style/accueil.scss'
 import Aos from "aos";
 import "aos/dist/aos.css"
 
-import { Link } from "react-router-dom";
+
 
 import { Row, Col, Container,Image,Button } from 'react-bootstrap'
 const picha= {
@@ -45,20 +45,6 @@ export default function Accueil() {
   </div>
   <div class="container-fluid pageContent">
   
-  <div data-aos="fade-left"class="row filtres pt-3">
-      <div class="col-12">
-          <ul>
-              <li class="boutonActif">Accueil</li>
-              <li id="comedy"><Link to={"/Onlinecinema"}>Online Cinema</Link></li>
-              <li id="comedy"><Link to={"/Films"}>Ajouter un Film</Link></li>
-              <li>Horreurs</li>
-              <li>TvShoow</li>
-              <li>Noname</li>
-              <li>Noname</li>
-        
-          </ul>   
-      </div>
-  </div>
 </div>
 <section class=" col-3 posters aside">
 <div data-aos="fade-left" class="latest-posts">
