@@ -10,8 +10,11 @@ function App() {
   let location = useLocation(); 
 
   return (
-    
+    <>
     <Navi/>
+    <Accueil/>
+    </>
+
   );
 }
 
