@@ -70,30 +70,7 @@ ul{
 
 
   
-.filtres{
-  ul{
-    display: flex;
-    justify-content: center;
-    
-  }
-  li{
-    @include bouton;
-    @include petitTexte;
-    border-radius: 100px;
-    color: $grisMoyen;
-    border: solid 1px $grisPale;
-    margin: 0 .5rem;
-  }
-  li:hover,li.boutonActif {
-    @include survol;
-    color: $grisPale;
-  }
-  li.boutonActif{
-    font-weight: 700
-  }
-  
 
-}
 .posts{
   display: flex;
   flex-wrap: wrap;

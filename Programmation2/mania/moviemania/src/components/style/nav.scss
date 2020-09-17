@@ -10,15 +10,41 @@ $grisFonce: #333;
 $violet: #EE82EE;
 $head : #442877;
 $nava: #7864a7;
+$survol :  #c5a8f5;
 
 
 $myColor : #e17efa;
 $hovercolor : #a636c2;
 $breakpoints: (phone: 320px, tablet: 768px, desktop: 1024px);
 
+@mixin petitTexte{
+  font-size: .8rem
+}
+
+@mixin bouton{
+  display: inline;
+  padding: .4rem 1rem;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+@mixin survol{
+  background-color: $survol;
+  color: #fff;
+}
+
+@mixin imgFluide{
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin arrondi{
+  border-radius: 100px
+}
 
 
-.header{
+.header {
   background-image: url('../img/head2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,7 +52,7 @@ $breakpoints: (phone: 320px, tablet: 768px, desktop: 1024px);
   padding: 8rem ;
   @include media(">phone", "<=tablet") {
     width: 100%;
-    }
+  }
 }
 
 h1,h4{
@@ -40,3 +66,50 @@ h1,h4{
   color: $grisTresPale;
 }
 
+.categories{
+  
+  margin-block-start: 4rem;
+  margin-block-end: 3rem;
+  p{
+    @include bouton;
+    @include petitTexte;
+    border-radius: 100px;
+    color: $grisMoyen;
+    border: solid 1px $grisPale;
+    margin: 0 .5rem;
+  }
+  p:hover,p.boutonActif {
+  @include survol;
+    color: $grisPale;
+  }
+  p.boutonActif{
+    font-weight: 700
+  }
+ 
+}
+
+
+.filtres{
+  ul{
+    display: flex;
+    justify-content: center;
+    
+  }
+  li{
+    @include bouton;
+    @include petitTexte;
+    border-radius: 100px;
+    color: $grisMoyen;
+    border: solid 1px $grisPale;
+    margin: 0 .5rem;
+  }
+  li:hover,li.boutonActif {
+  
+    color: $grisPale;
+  }
+  li.boutonActif{
+    font-weight: 700
+  }
+  
+
+}

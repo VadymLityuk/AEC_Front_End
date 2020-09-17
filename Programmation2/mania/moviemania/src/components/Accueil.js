@@ -39,81 +39,8 @@ export default function Accueil() {
    <h2  data-aos="zoom-in" className="text-center">what's hot</h2>
 
   </div>
-  <div class="container-fluid pageContent">
-  
-</div>
-<section class=" col-3 posters aside">
-<div data-aos="fade-left" class="latest-posts">
-          
-                       <h5>Aujourd'hui au cinéma</h5>
-                       <div id="post1" class="row">
-                           <div class="col4 text-center" >
-                           <Image fluid src={picha.tenet}  />
-                           </div>
-                           <div class="col8">
-                               <p>SCIENSE-FICTION</p>
-                               <hr></hr>
-                               <span>TENET</span>
-                               
-                           </div>
-                           <div class="col12">
-                               
-                           </div>
-                           
-                       </div>
-                       <div id="post2" class="row">
-                           <div class="col4 text-center" >
-                           <Image fluid src={picha.nm}  />
-                           
-                           </div>
-                           <div class="col8">
-                               <p>HORREURS</p>
-                               <hr></hr>
-                                <span>The New Mutants</span>
-                           </div>
-                           <div class="col12">
-                               <hr></hr>
-                           </div>
-                       </div>
-
-                       <div id="post3" class="row">
-                           <div class="col4 text-center" >
-                           <Image fluid src={picha.bted}  />
-                           </div>
-                           <div class="col8">
-                               <p>COMEDIE,FANTASIE</p>
-                               <hr></hr>
-                                   <span>Bill and Tedd Face The Music</span>
-                           </div>
-                           <div class="col12">
-                               <hr></hr>
-                           </div>
-                       </div>
-
-                       <div id="post4" class="row">
-                           <div class="col4 text-center">
-                           <Image fluid src={picha.mul}  />
-                           </div>
-                           <div class="col8">
-                               <p>DISNEY</p>
-                               <hr></hr>
-                                   <span>MULAN</span>
-                           </div>
-
-                       </div>
-                   </div>
-               <div class="col-12">
-                    <div class="advertisement d-flex flex-column justify-content-center">
-                        
-
-                        
-                        <p><span>Advertisement</span> Custom Vertical Height</p>
-                    </div>
-               </div>
-            </section>
-
    <div  class="poster row pt-5">
-   <section  class="col-10 offset-2 col-lg-9  posts">
+   <section  class="offset-2 col-sm-7  col-lg-7  posts">
        <article data-aos="flip-left" class="post mb-3">
            <div class="insidePost mx-3">
                <div class="featureImg">
