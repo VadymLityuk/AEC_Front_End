@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react'
-import './style/accueil.scss'
-import Aos from "aos";
-import "aos/dist/aos.css"
-
-
-
+import React, { useState } from 'react'
 import { Row, Col, Container,Image,Button } from 'react-bootstrap'
+import './style/accueil.scss'
+import { useSpring, animated,config } from 'react-spring'
+
+
+
+
+
 const picha= {
     bill: require("../components/img/bill.jpg"),
     witcher:require("../components/img/witcher.jpg"),
@@ -13,140 +14,105 @@ const picha= {
     bted : require("../components/img/billtt.jpg"),
     nm : require("../components/img/mutant.jpg"),
     tenet : require("../components/img/ten.jpg"),
-    mul : require("../components/img/mul.jpg")
+    mul : require("../components/img/mul.jpg"),
+    sp : require("../components/img/sp.jpg")
+  
   };
 
+
 export default function Accueil() {
-    useEffect(() => {
-    
-        Aos.init({duration: 2000});
 
-    },[])
+    const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 1) / 15, 1.10]
+    const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
-  
-
-  
-       
-    
+    const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
     return (
 
  
+       
+  <div className="container">
+<div id="mygrid" className="grid-padding">
+    <div className="row  ">
+        <div className="  col-sm-4 ">
+
+        <div className=" row">
+  
+            <Image className="fitimage " fluid src={picha.tenet} />
+            
+            </div>
+            
+           
+            <div className=" row">
+            <Image className="fitimage " fluid src={picha.witcher} />
+            
+            </div>
+            <div className="row">
+  
+
+            </div>
+        
+            <div className="row">
+            <Image className=" fitimage" fluid src={picha.sp} />
+            </div>
+           
+        </div>
+        <div className="col-sm-4 ">
+           
+        <animated.div 
+      class="card" 
+      onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+      onMouseLeave={() => set({ xys: [0, 0, 1] })}
+      style={{ transform: props.xys.interpolate(trans) }}
+    />
+    
+    
+            <div className="row">
+            <Image className=" fitimage" fluid src={picha.witcher} />
+            </div>
+           
+            <div className="row">
+            <Image className=" fitimage" fluid src={picha.bted} />
+            </div>
+            <div className="row">
+            <Image className=" fitimage" fluid src={picha.mul} />
+            </div>
+           
+        </div>
+        <div className="col-sm-4 ">
+    
       
-  <section>
-      
-      
-  <div class="container-fluid pageContent">
-   <h2  data-aos="zoom-in" className="text-center">what's hot</h2>
+    
+            <div className="row">
+            <Image className="fitimage " fluid src={picha.boys} />
+            </div>
+            <div className="row">
+            <Image className=" fitimage" fluid src={picha.nm} />
+            </div>
+            <div className="row">
+            <Image className=" fitimage" fluid src={picha.witcher} />
+            </div>
+            <div className="row">
+            <Image className=" fitimage" fluid src={picha.witcher} />
+            </div>
+            <div className="row">
+            <Image className=" fitimage" fluid src={picha.witcher} />
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
 
   </div>
-   <div  class="poster row pt-5">
-   <section  class="offset-2 col-sm-7  col-lg-7  posts">
-       <article data-aos="flip-left" class="post mb-3">
-           <div class="insidePost mx-3">
-               <div class="featureImg">
-               <iframe className="video" width="100%" height="220" src="https://www.youtube.com/embed/1gPGeAYo3yU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               </div>
-               <div class="postContent">
-                   <div class="postPreview">
-                       <p class="contentMeta">
 
-                       </p>
-                       <h2> Grand Retour: Bill et Ted</h2>
-                       <p class="resume">Keanu Reeves et Alex Winters sauvent l'univers avec de la musique.Un nouveau trailer pour la comédie "Bill and Ted" a été publié. 30 ans plus tard, les héros de Keanu Reeves et Alex Winters sont de retour ensemble à l'écran et repartent pour un autre voyage dans le temps pour tenter de trouver une chanson qui unira le monde et sauvera la réalité</p>
-                       <hr />
-                   </div>
-                   <div class="postMeta">
-                       <a class="comment"><i class="far fa-comment"></i><span class="nbCommentaires">♥</span></a>
-                       <ul>
-                           <li><a href="#comedy">Comedy</a></li>
-                           
-                       </ul>
-                      
-                     
-                   </div>
-               </div>
-           </div>
-          
-       </article>
-       <article data-aos="flip-left" class="post mb-3">
-                <div class="insidePost mx-3">
-                    <div class="featureImg">
-                    <iframe className="video" width="100%" height="240" src="https://www.youtube.com/embed/NLOp_6uPccQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="postContent">
-                        <div class="postPreview">
-                            <p class="contentMeta">
-
-                            </p>
-                            <h2>"The Witcher": l'émission Netflix le plus populaires selon la Variety</h2>
-                            <p class="resume">Variety a publié une liste des séries Netflix les plus regardées. Parmi les leaders figurent des succès comme The Witcher et The Paper House, l'émission de télé-réalité Trial by Temptation et le documentaire The King of the Tigers.</p>
-                            <hr />
-                        </div>
-                        <div class="postMeta">
-                            <a class="comment"><i class="far fa-comment"></i><span class="nbCommentaires">♥</span></a>
-                            <ul>
-                                <li><a href="#">Fantasy</a></li>
-                            
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article  data-aos="fade-up" class="post mb-3">
-                <div class="insidePost mx-3">
-                    <div class="featureImg">
-                    <Image fluid src={picha.witcher}  />
-                    </div>
-                    <div class="postContent">
-                        <div class="postPreview">
-                            <p class="contentMeta">
-
-                            </p>
-                            <h2>"The Witcher": l'émission Netflix le plus populaires selon la Variety</h2>
-                            <p class="resume">Variety a publié une liste des séries Netflix les plus regardées. Parmi les leaders figurent des succès comme The Witcher et The Paper House, l'émission de télé-réalité Trial by Temptation et le documentaire The King of the Tigers.</p>
-                            <hr />
-                        </div>
-                        <div class="postMeta">
-                            <a class="comment"><i class="far fa-comment"></i><span class="nbCommentaires">♥</span></a>
-                            <ul>
-                                <li><a href="#">Fantasy</a></li>
-                            
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article data-aos="fade-up" class="post mb-3">
-                <div class="insidePost mx-3">
-                    <div class="featureImg">
-                    <Image fluid src={picha.boys}  />
-                    </div>
-                    <div class="postContent">
-                        <div class="postPreview">
-                            <p class="contentMeta">
-
-                            </p>
-                            <h2>"The Witcher": l'émission Netflix le plus populaires selon la Variety</h2>
-                            <p class="resume">Variety a publié une liste des séries Netflix les plus regardées. Parmi les leaders figurent des succès comme The Witcher et The Paper House, l'émission de télé-réalité Trial by Temptation et le documentaire The King of the Tigers.</p>
-                            <hr />
-                        </div>
-                        <div class="postMeta">
-                            <a class="comment"><i class="far fa-comment"></i><span class="nbCommentaires">♥</span></a>
-                            <ul>
-                                <li><a href="#">Fantasy</a></li>
-                            
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </article>
-</section>
-</div>
-       </section>
       
-       
     
+
 
     );
     
 }
+
+
+

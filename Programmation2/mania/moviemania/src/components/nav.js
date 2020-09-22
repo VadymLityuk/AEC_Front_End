@@ -1,7 +1,5 @@
 import React from 'react'
 import { Row, Col, Container,Image,Button } from 'react-bootstrap'
-import Aos from "aos";
-import "aos/dist/aos.css"
 import { Link } from "react-router-dom";
 import {NavLink} from 'react-router-dom' 
 import './style/mediaQuerry.scss'
@@ -17,7 +15,8 @@ export default function Navi() {
     return (
        
 <>
-        <header  data-aos="fade-right"  class="header container-fluid">
+
+        <header   class="header container-fluid">
  
 
     <div class="row">
@@ -29,7 +28,8 @@ export default function Navi() {
         </div>
     </div>
 </header>
-<div data-aos="fade-left" class="container categories">
+
+<div class="container categories">
     <div class="row justify-content-center">
         <p class="selected-bg selected-category"><Link  to={"/Accueil"}>Accueil</Link></p>
         <p ><Link to={"/Onlinecinema"}>Online Cinema</Link></p>
@@ -38,6 +38,7 @@ export default function Navi() {
         
     </div>
 </div>
+        
 
 </>
 

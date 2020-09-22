@@ -14,7 +14,66 @@ $survol :  #c5a8f5;
 $breakpoints: (phone: 320px, tablet: 768px, desktop: 1024px);
 
 
+.card {
+  width: 32sch;
+  height: 45ch;
+  background: grey;
+  box-shadow: $shadow;
+  background-image: url('../img/got.jpg');
+  background-size: cover;
+  background-position: center center;
+ 
+  will-change: transform;
+  border: 2rem;
+}
 
+ 
+
+  .fitimage{
+  height : 100%;
+  width : 100%;
+  }
+  
+
+  #mygrid{
+    margin-top: 0.2rem;
+    
+    
+  }
+  .grid-padding{
+    padding: 0 8px ;
+    
+    
+
+    img{
+      box-shadow: $shadow;
+     
+      
+      padding: 0.3rem;
+      border-radius: 10px 10px 10px 10px;
+      margin-bottom: 0 0.2rem;
+      transition: 0.8s ease;
+     
+     
+     
+    }
+    img:hover{
+      .overlay {
+        color:$violet;
+        opacity: 0.1;
+      }
+          
+  
+      -webkit-filter: blur(2px);
+      filter: blur(2px);
+      cursor: pointer;
+      border-radius: 40px 10px 40px 0px;
+     
+    }
+
+  }
+
+  
 body
 {
   
@@ -67,11 +126,30 @@ ul{
 @mixin arrondi{
   border-radius: 100px
 }
+@mixin grid($row,$column){
+  grid-row: span $row;
+  grid-column: span $column;
+}
 
 
-  
+
+
+
+  .portfolio{
+    padding-top: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: grid;
+    min-height: 100vh;
+
+  }
 
 .posts{
+  display: grid;
+  height: 90%;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 16px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: inherit;
@@ -81,7 +159,7 @@ ul{
    
   }
   .postContent{
-    padding: 2rem 13% 0;
+    
     box-shadow: $shadow;
     border-radius: 10px 10px 10px 10px;
     
@@ -90,7 +168,7 @@ ul{
   
   
 }
-.post:hover{
+.poster:hover{
   box-shadow: none
 }
   .body-card{
@@ -100,7 +178,7 @@ ul{
   }
 h2{
   color: $H2;
-  font-weight: 700;
+  font-size: .9rem;
   font-family: 'Aldrich', sans-serif;
  
   
@@ -172,73 +250,10 @@ text-transform: uppercase;
 
 .video{
   border-radius: 21px 42px;
+}
   
-}
-.aside{
-
-  
-  float: right;
-}
-
-.latest-posts{
-  
-  h5{
-    color: $H2;
-    text-align: center;
-    margin-bottom: 1.325rem;
-    font-weight: bolder;
-  }
-  img{
-    border-radius: 50%;
-    height: 130px;
-    width: 130px;
-    margin-right: 1rem;
-    padding: 0.2rem;
-    cursor: pointer; 
-    
-  
-    
-  }
-  p{
-    color: $grisMoyen;
-    font-size: 0.725rem;
-  }
-  span{
-    color: $head;
-    font-size: 1.025rem;
-    font-weight: bolder;
-    cursor: pointer; 
-  }
- 
 
 
-.grid-item--width2 {
-  width: 50%;
-
-  cursor: pointer; 
-
-}
-
-.grid-item--height2{
-  height: 100%;
-}
-}
-.advertisement{
-  margin-top: 2.5rem;
-  width: 100%;
-  height: 300px;
-  background-color: #E8E8E8;
-  text-align: center;
-  p{
-    color: #808080;
-    font-size: 0.8rem;
-    font-weight: bolder;
-  }
-    span{
-      color: $head;
-      font-size: 1.6rem;
-    }
-}
 
 $borderColor: rgba(181, 123, 247, 0.1);
 $cardTransition: all 150ms linear;
