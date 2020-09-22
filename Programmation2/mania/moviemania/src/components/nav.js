@@ -3,7 +3,7 @@ import { Row, Col, Container,Image,Button } from 'react-bootstrap'
 import { Link } from "react-router-dom";
 import {NavLink} from 'react-router-dom' 
 import './style/mediaQuerry.scss'
-
+import Zoom from 'react-reveal/Zoom';
 import './style/nav.scss'
 import './style/accueil.scss';
 
@@ -21,9 +21,12 @@ export default function Navi() {
 
     <div class="row">
         <div class="col-sm-12 col-lg-12 ">
-            <div  class="headerContent">
+            <div  class=" text-center headerContent">
+             <Zoom left>
                 <div class="text-center mb-3"><Image fluid src={pica.mania}  /></div>
                 <h4 class="text-center">PLUS GRAND SOURCE DE CINEMA</h4>
+                </Zoom>
+              
             </div>
         </div>
     </div>

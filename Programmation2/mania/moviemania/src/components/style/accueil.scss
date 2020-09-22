@@ -19,11 +19,10 @@ $breakpoints: (phone: 320px, tablet: 768px, desktop: 1024px);
   height: 45ch;
   background: grey;
   box-shadow: $shadow;
-  background-image: url('../img/got.jpg');
+  background-image: url('../img/gad.jpg');
   background-size: cover;
   background-position: center center;
- 
-  will-change: transform;
+ will-change: transform;
   border: 2rem;
 }
 
@@ -73,6 +72,13 @@ $breakpoints: (phone: 320px, tablet: 768px, desktop: 1024px);
 
   }
 
+h1{
+  color: white;
+  font-size: .9rem;
+  font-family: 'Aldrich', sans-serif;
+ 
+  
+}
   
 body
 {
@@ -129,63 +135,6 @@ ul{
 @mixin grid($row,$column){
   grid-row: span $row;
   grid-column: span $column;
-}
-
-
-
-
-
-  .portfolio{
-    padding-top: 2%;
-    padding-left: 15%;
-    padding-right: 15%;
-    display: grid;
-    min-height: 100vh;
-
-  }
-
-.posts{
-  display: grid;
-  height: 90%;
-  grid-template-rows: repeat(6, 1fr);
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 16px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: inherit;
-
-  .post{
-    width: 50%;
-   
-  }
-  .postContent{
-    
-    box-shadow: $shadow;
-    border-radius: 10px 10px 10px 10px;
-    
-    
-  }
-  
-  
-}
-.poster:hover{
-  box-shadow: none
-}
-  .body-card{
-    border: 1px solid Gainsboro;
-    border-top: none;
-    
-  }
-h2{
-  color: $H2;
-  font-size: .9rem;
-  font-family: 'Aldrich', sans-serif;
- 
-  
-}
-p, li{
-    color: $grisMoyen;
-    font-size: .9rem;
 }
 
 
@@ -248,13 +197,6 @@ text-transform: uppercase;
 }
 
 
-.video{
-  border-radius: 21px 42px;
-}
-  
-
-
-
 $borderColor: rgba(181, 123, 247, 0.1);
 $cardTransition: all 150ms linear;
 
@@ -311,63 +253,4 @@ $cardTransition: all 150ms linear;
             }
       
 }
-
-.container-tvShow{
-
-  position: relative;
-}
-
-/* Filtre pour le sur le container de l'image*/
-.filtered{
-  background: $violet;
-  transform: scale(1.2);
-  transition: transform .7s ease-in-out; 
-}
-
-
-/* Filtre pour l'image*/
-.filtered #imgShow {
-  @include survol;
-  opacity: 0.50;
-  filter: blur(1px);
-  cursor: pointer;
-}
-
-/* Centered position text */
-.title {
-  @include bouton;
-@include arrondi;
-font-family: 'Aldrich', sans-serif;
-  text-align: center;
-  font-size: 1.4vw;
-  color: $grisPale;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-shadow: 1px 1px $head;
-  cursor: pointer;
-}
-
-
-.play {
-  position: absolute;
-  left: 2%;
-  top: 95%;
-  transform: translate(2%, -95%);
-  cursor: pointer;
-  z-index: 100;
-}
-
-
-.hide{
-  display: none;
-}
-
-
-.hover-play{
-  box-shadow: 5px 5px 5px $head;
-  border-radius: 5px;
-}
-
 

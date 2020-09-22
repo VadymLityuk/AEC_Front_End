@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import { Row, Col, Container,Image,Button } from 'react-bootstrap'
 import './style/accueil.scss'
 import { useSpring, animated,config } from 'react-spring'
+import Fade from 'react-reveal/Fade';
+import makeCarousel from 'react-reveal/makeCarousel';
+import Slide from 'react-reveal/Slide';
+
 
 
 
@@ -15,9 +19,12 @@ const picha= {
     nm : require("../components/img/mutant.jpg"),
     tenet : require("../components/img/ten.jpg"),
     mul : require("../components/img/mul.jpg"),
-    sp : require("../components/img/sp.jpg")
+    sp : require("../components/img/sp.jpg"),
+    logo: require("./img/moviemania-logo.png")
   
   };
+  const CarouselUI = ({ children }) => <Container>{children}</Container>;
+const Carousel = makeCarousel(CarouselUI);
 
 
 export default function Accueil() {
@@ -36,14 +43,15 @@ export default function Accueil() {
         <div className="  col-sm-4 ">
 
         <div className=" row">
+        <Fade left>
   
             <Image className="fitimage " fluid src={picha.tenet} />
-            
+            </Fade>
             </div>
             
            
             <div className=" row">
-            <Image className="fitimage " fluid src={picha.witcher} />
+            <Image  className="fitimage " fluid src={picha.witcher} />
             
             </div>
             <div className="row">
@@ -57,19 +65,17 @@ export default function Accueil() {
            
         </div>
         <div className="col-sm-4 ">
-           
+        <Fade top>
         <animated.div 
       class="card" 
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
       style={{ transform: props.xys.interpolate(trans) }}
     />
+    </Fade>
     
     
-            <div className="row">
-            <Image className=" fitimage" fluid src={picha.witcher} />
-            </div>
-           
+         
             <div className="row">
             <Image className=" fitimage" fluid src={picha.bted} />
             </div>
@@ -83,7 +89,9 @@ export default function Accueil() {
       
     
             <div className="row">
+           < Fade right>
             <Image className="fitimage " fluid src={picha.boys} />
+            </Fade>
             </div>
             <div className="row">
             <Image className=" fitimage" fluid src={picha.nm} />
