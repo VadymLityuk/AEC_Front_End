@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e2a8ca1-b692-40c0-b285-88af0f555232" name="Default Changelist" comment="" />
+    <list default="true" id="dbb1e753-2801-4065-ae2b-aba54de1a488" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,17 +16,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1hbny2i0EaZW2JZZDd7nl67h5YH" />
+  <component name="ProjectId" id="1htKeuXM6J6gmYJHlf1obK6U6pC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Programmation2/spotify" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="last_opened_file_path" value="D:/учеба Вадим/Tech PROG/spotify" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -45,15 +39,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9e2a8ca1-b692-40c0-b285-88af0f555232" name="Default Changelist" comment="" />
-      <created>1600288909309</created>
+      <changelist id="dbb1e753-2801-4065-ae2b-aba54de1a488" name="Default Changelist" comment="" />
+      <created>1600825046885</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1600288909309</updated>
-      <workItem from="1600288910557" duration="2247000" />
-      <workItem from="1600377055402" duration="104000" />
-      <workItem from="1600732588976" duration="655000" />
-      <workItem from="1600823928249" duration="1118000" />
+      <updated>1600825046885</updated>
+      <workItem from="1600825048539" duration="269000" />
     </task>
     <servers />
   </component>
@@ -65,9 +56,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>

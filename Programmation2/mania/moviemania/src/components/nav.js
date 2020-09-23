@@ -35,7 +35,7 @@ export default function Navi() {
 <div class="container categories">
     <div class="row justify-content-center">
         <p class="selected-bg selected-category"><Link  to={"/Accueil"}>Accueil</Link></p>
-        <p ><Link to={"/Onlinecinema"}>Online Cinema</Link></p>
+        <p ><Link to={"/Films"}>Films</Link></p>
         <p><Link to={"/AjouterFilm"}>Ajouter un Film</Link></p>
         <p>Nature</p>
         
