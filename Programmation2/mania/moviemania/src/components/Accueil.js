@@ -20,7 +20,9 @@ const picha= {
     tenet : require("../components/img/ten.jpg"),
     mul : require("../components/img/mul.jpg"),
     sp : require("../components/img/sp.jpg"),
-    logo: require("./img/moviemania-logo.png")
+    logo: require("./img/moviemania-logo.png"),
+    wick: require("./img/wick.jpg"),
+    it: require("./img/it.jpg"),
   
   };
   const CarouselUI = ({ children }) => <Container>{children}</Container>;
@@ -60,14 +62,18 @@ export default function Accueil() {
             </div>
         
             <div className="row">
+            <Fade left>
             <Image className=" fitimage" fluid src={picha.sp} />
+            </Fade>
             </div>
-           
+            <div className="row">
+            <Image className=" fitimage" fluid src={picha.it} />
+            </div>
         </div>
         <div className="col-sm-4 ">
         <Fade top>
         <animated.div 
-      class="card" 
+      class="cardit" 
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
       style={{ transform: props.xys.interpolate(trans) }}
@@ -97,14 +103,9 @@ export default function Accueil() {
             <Image className=" fitimage" fluid src={picha.nm} />
             </div>
             <div className="row">
-            <Image className=" fitimage" fluid src={picha.witcher} />
+            <Image className=" fitimage" fluid src={picha.wick} />
             </div>
-            <div className="row">
-            <Image className=" fitimage" fluid src={picha.witcher} />
-            </div>
-            <div className="row">
-            <Image className=" fitimage" fluid src={picha.witcher} />
-            </div>
+          
         </div>
 
     </div>

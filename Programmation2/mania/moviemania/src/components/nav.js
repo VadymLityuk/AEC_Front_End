@@ -6,6 +6,7 @@ import './style/mediaQuerry.scss'
 import Zoom from 'react-reveal/Zoom';
 import './style/nav.scss'
 import './style/accueil.scss';
+import Fade from 'react-reveal/Fade';
 
 const pica= {
     mania: require("../components/img/moviemania-logo.png")
@@ -34,10 +35,14 @@ export default function Navi() {
 
 <div class="container categories">
     <div class="row justify-content-center">
+        <Fade left>
         <p class="selected-bg selected-category"><Link  to={"/Accueil"}>Accueil</Link></p>
+       
         <p ><Link to={"/Films"}>Films</Link></p>
         <p><Link to={"/AjouterFilm"}>Ajouter un Film</Link></p>
-        <p>Nature</p>
+        </Fade>
+        
+  
         
     </div>
 </div>

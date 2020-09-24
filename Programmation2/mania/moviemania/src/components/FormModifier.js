@@ -1,0 +1,111 @@
+import React from "react";
+import { Form, Button,Image,Container,Row,Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import {API} from "../constante";
+
+export class FormModif extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            donneesRecues: {id: 0, title: '', picture: "", moviegenre : "",year : "" },
+            setErrors : {}};
+
+            this.handleEdit = this.handleEdit.bind(this);
+            this.handlePhoto = this.handlePhoto.bind(this);
+            this.editFilm = this.editFilm.bind(this);
+    }
+
+    async componentDidMount() {
+        try {
+            await this.setState({id : this.props.location.search.substring(4, this.props.location.search.length)});
+            await console.log(this.state.id);
+            const response = await fetch(API + this.state.id);
+            const reponseDeApi = await response.json();
+            this.setState({ donneesRecues: reponseDeApi });
+
+            if (!response.ok) {
+                throw Error(response.statusText);
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    async editFilm(title, picture, genre,year  ) { 
+        try{ 
+          const response = await fetch( API , { 
+            method:'PUT', 
+            headers: {'Content-Type': 'application/json'  }, 
+            body:JSON.stringify({ id:this.state.id,
+             title : title,
+             picture : picture,
+             moviegenre: genre,
+             year : year
+            }) 
+          }); 
+          if(response.ok){ 
+            const jsonResponse = await response.json(); 
+            this.props.history.push("/");
+           
+    
+            return jsonResponse; 
+          } 
+          throw new Error('Request failed!'); 
+      } 
+       catch(error){ 
+          console.log(error); 
+       } 
+    }
+
+    handleEdit(event){
+        event.preventDefault();
+
+        const title = document.getElementById('titreFilm').value;
+       const picture = document.getElementById('photoFilm').value;
+       const genre = document.getElementById('genreFilm').value;
+       const year = document.getElementById('anFilm').value;
+
+        this.editFilm(title, picture, genre, year);
+    }
+
+    handlePhoto(){
+        const picture = document.getElementById('photoFilm').value;
+        this.setState( {picture : picture});
+    }
+
+    render() {
+        return (
+            <>
+                      <Container>
+                    <Row>
+                        <Col width={100}>
+                            <Form>
+                                <Form.Group controlId="titreFilm">
+                                    <Form.Label>Titre</Form.Label>
+                                    <Form.Control type="text" defaultValue={this.state.donneesRecues.title}/> {}
+                                </Form.Group>
+                                <Form.Group controlId="photoFilm">
+                                    <Form.Label>URL d'une image de film</Form.Label>
+                                    <Form.Control type="text" placeholder="Entrer une URL valide" onBlur={this.handlePhoto} defaultValue={this.state.donneesRecues.picture}/>
+                                </Form.Group>
+                                {this.state.donneesRecues.picture !== "" && <Image src={this.state.donneesRecues.picture} rounded width="125"/>}
+                                <Form.Group controlId="genreFilm">
+                                    <Form.Label>Genre</Form.Label>
+                                    <Form.Control type="text" placeholder="Entrer le nom du pouvoir 1" defaultValue={this.state.donneesRecues.genre}/>
+                                </Form.Group>
+                                <Form.Group controlId="anFilm">
+                                    <Form.Label>Year</Form.Label>
+                                    <Form.Control type="text" placeholder="Entrer le nom du pouvoir 2" defaultValue={this.state.donneesRecues.year }/>
+                                </Form.Group>
+
+                                <Button variant="primary" type="submit" onClick={this.handleEdit}>
+                                    Enregistrer
+                                </Button>
+                            </Form>
+                        </Col>
+                    </Row>
+                </Container>
+            </>
+          );
+        }
+      }

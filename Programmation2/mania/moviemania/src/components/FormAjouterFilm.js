@@ -64,13 +64,13 @@ export class AjouterFilms extends React.Component {
       const titre = document.getElementById('titreFilm').value;
       const photo = document.getElementById('photoFilm').value;
       const genre = document.getElementById('genreFilm').value;
-      const an = document.getElementById('anFilm').value;
+      const year = document.getElementById('anFilm').value;
      
   
   
-      if(!this.formIsValid(titre,photo,genre,an)) return;
+      if(!this.formIsValid(titre,photo,genre,year)) return;
   
-        this.addFilm(titre,photo,genre,an);
+        this.addFilm(titre,photo,genre,year);
       
     }
   
@@ -91,7 +91,7 @@ export class AjouterFilms extends React.Component {
           <Row>
             <Col>
               <Form>
-              <Form.Label><h4>Wishlist</h4></Form.Label>
+              <Form.Label><h4>Titre</h4></Form.Label>
                 <Form.Group as={Row} controlId="titre" className='border py-2'>
                   <Form.Group as={Col} xl="6" lg="6" md="12" sm="12" xs="12" controlId="titreFilm">
                     <Form.Label>Titre </Form.Label>
@@ -134,10 +134,10 @@ export class AjouterFilms extends React.Component {
                 <Form.Label className='mt-4'><h4>Date de sortie</h4></Form.Label>
                 <Form.Group as={Row} controlId="add" className='border border-black py-3'>
                 <Form.Group as={Col} xl="6" lg="6" md="12" sm="12" xs="12" controlId="anFilm">
-                    <Form.Label>An d'un Film</Form.Label>
-                    <Form.Control type="text" placeholder="Entrer an d'un film" isInvalid={!!this.state.setErrors.an} required/>
+                    <Form.Label>Date de sortie</Form.Label>
+                    <Form.Control type="text" placeholder="Entrer an d'un film" isInvalid={!!this.state.setErrors.year} required/>
                     <Form.Control.Feedback type='invalid'>
-                      {this.state.setErrors.an}
+                      {this.state.setErrors.year}
                     </Form.Control.Feedback>
                 </Form.Group>
             </Form.Group>

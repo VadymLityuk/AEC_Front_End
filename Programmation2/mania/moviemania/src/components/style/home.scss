@@ -1,4 +1,4 @@
-
+@import '../style/variables.sass';
 
 $H2: #8967c0;
 
@@ -17,6 +17,7 @@ $H2: #8967c0;
 
 
 
+
 Label {
     color: $H2;
   }
@@ -24,4 +25,50 @@ Label {
     color: #8967c0;
   
   }
+  .filmimage{
+    height : 100%;
+    width : 100%;
+    }
+    
+  
+    #myfilms{
+      margin-top: 0.2rem;
+         
+    img:hover{
+      opacity: 3;
+      -webkit-animation: flash 2.1s;
+      animation: flash 2.1s;
+    }
+    @-webkit-keyframes flash {
+      0% {
+        opacity: .4;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes flash {
+      0% {
+        opacity: .4;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  
+      
+    }
+    .grid-pad{
+      padding: 0 8px ;
+      
+      
+  
+     
+    }
+    
+      
+ 
+  
+    
+  
   
