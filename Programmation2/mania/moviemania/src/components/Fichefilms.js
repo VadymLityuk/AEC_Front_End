@@ -48,6 +48,7 @@ export class Films extends React.Component {
                                 <Link to={"/FilmInfo"}> <h1>{this.props.title}</h1></Link>
                                 <h5>{this.props.moviegenre}</h5>
                                 <h5>{this.props.year}</h5>
+                               
             
             <p><Link className=" mt-2" to={"Fichefilms/" + this.props.title + "?id=" + this.props.id}>MODIFIER</Link></p>
             <p className=" mt-1" onClick={this.removeFilm}>SUPPRIMER</p>

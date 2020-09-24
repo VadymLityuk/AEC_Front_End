@@ -14,6 +14,7 @@ import FilmInfo from './filminfo';
 
 
 
+
 function App() {
   let location = useLocation(); 
 
@@ -26,8 +27,8 @@ function App() {
           <Route path="/AjouterFilm" component={AjouterFilm} />  
           <Route path="/Films" component={ListeFilms} /> 
           <Route path="/Fichefilms/:id" component={FormModif} />
-          <Route path="/FilmInfo" component={FilmInfo} />
-        
+          <Route path="/Filminfo" component={FilmInfo} />
+         
         
         
     </Switch>
