@@ -9,7 +9,10 @@ import { useLocation, Route, Switch } from "react-router-dom";
 import { AjouterFilm } from './AjouterFilm';
 import   { ListeFilms } from './Film';
 import { FormModif } from './FormModifier';
-import FilmInfo from './filminfo';
+import {FilmInfo} from './filminfo';
+import {ShowInfo} from './ShowInfo'
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'
 
 
 
@@ -21,13 +24,15 @@ function App() {
   return (
     <>
     <Navi/>
+    <ToastContainer autoClose={3000} hideProgressBar />
     <Switch>
+      
           <Route path="/" exact component={Accueil} /> 
           <Route path="/Accueil" component={Accueil} /> 
           <Route path="/AjouterFilm" component={AjouterFilm} />  
           <Route path="/Films" component={ListeFilms} /> 
-          <Route path="/Fichefilms/:id" component={FormModif} />
-          <Route path="/Filminfo" component={FilmInfo} />
+          <Route path="/FormModif/:id" component={FormModif} />
+          <Route path="/ShowInfo/:id" component={FilmInfo} />
          
         
         

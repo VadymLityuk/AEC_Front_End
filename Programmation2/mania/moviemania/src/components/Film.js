@@ -41,7 +41,6 @@ export class ListeFilms extends React.Component {
                             key={key.title + key._id}
                             moviegenre={key.moviegenre}
                             picture={key.picture}
-                            attaque1={key.attaque1}
                             year={key.year}
                             history={this.props.history}>
                            

@@ -26,9 +26,11 @@ export default function Navi() {
              <Zoom left>
                 <div class="text-center mb-3"><Image fluid src={pica.mania}  /></div>
                 <h4 class="text-center">PLUS GRAND SOURCE DE CINEMA</h4>
+
                 </Zoom>
               
             </div>
+
         </div>
     </div>
 </header>
@@ -40,9 +42,10 @@ export default function Navi() {
        
         <p ><Link to={"/Films"}>Films</Link></p>
         <p><Link to={"/AjouterFilm"}>Ajouter un Film</Link></p>
+
         </Fade>
         
-  
+
         
     </div>
 </div>

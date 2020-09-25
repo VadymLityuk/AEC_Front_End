@@ -3,6 +3,7 @@ import { Form, Button , Image, Container, Row , Col } from "react-bootstrap";
 import {API} from "../constante";
 import { Link } from "react-router-dom";
 import './style/home.scss'
+import {toast} from "react-toastify"
 
 
 export class AjouterFilms extends React.Component {
@@ -30,6 +31,7 @@ export class AjouterFilms extends React.Component {
         if(response.ok){ 
           const jsonResponse = await response.json(); 
           this.props.history.push("/");
+          toast.success("Ajout d'un film " + titre);
          
   
           return jsonResponse; 
@@ -124,7 +126,7 @@ export class AjouterFilms extends React.Component {
                 <Form.Group as={Row} controlId="" className='border border-black py-3'>
                   <Form.Group as={Col} xl="12" lg="12" md="12" sm="12" xs="12" controlId="genreFilm">
                           <Form.Label>Genre</Form.Label>
-                          <Form.Control type="text" placeholder="Entrer du genre d'un film" isInvalid={!!this.state.setErrors.genre}  required/>
+                          <Form.Control type="text" placeholder="Entrer genre d'un film" isInvalid={!!this.state.setErrors.genre}  required/>
                           <Form.Control.Feedback type='invalid'>
                             {this.state.setErrors.genre}
                           </Form.Control.Feedback>

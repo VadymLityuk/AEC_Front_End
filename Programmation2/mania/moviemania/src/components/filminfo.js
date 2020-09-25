@@ -1,71 +1,90 @@
 import React, {useState, useEffect} from "react";
-import {Container, Row, Col} from "react-bootstrap";
+import { Col,Row,Card,Button} from "react-bootstrap";
 import {API} from "../constante";
 import Image from "react-bootstrap/Image";
 import {Link} from "react-router-dom";
 
-function FilmInfo(props){
-    const [donneesRecues , setDonneesRecues] = useState({title: '', picture:"", movigenre:"" });
-    const [moviesID] = useState(props.location.search.substring(4,props.location.search.length));
-  
-    useEffect(() => {
-      getFilmInfos();
-    },[]);
-  
-    
-    async function getFilmInfos() {
-      try {
-        
-        const response = await fetch(API + "/" + moviesID);
-        const reponseDeApi = await response.json();
-        setDonneesRecues(reponseDeApi);
-        console.log(reponseDeApi);
+
+
+export class FilmInfo extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        donneesRecues: {id: 0, title: '', picture: "", moviegenre : "",year : "" },
+        setErrors : {}};
+
        
+}
+
+async componentDidMount() {
+    try {
+        await this.setState({id : this.props.location.search.substring(4, this.props.location.search.length)});
+        await console.log(this.state.id);
+        const response = await fetch(API + this.state.id);
+        const reponseDeApi = await response.json();
+        this.setState({ donneesRecues: reponseDeApi });
+
         if (!response.ok) {
-          throw Error(response.statusText);
+            throw Error(response.statusText);
         }
-      } catch (error) {
+    } catch (error) {
         console.log(error);
-      }
     }
+}
+render() {
+  return (
+    <>
+    <Col className="text-dark">
+    <h1 className='text-center'>{this.state.donneesRecues.title} </h1>
+  <Image className="offset-lg-2 sm-1" sm={5} src={this.state.donneesRecues.picture} rounded width="300"  />
+
+  <Card.ImgOverlay>
+    <Card.Title className="text-center">
     
-  
-  
-      return (
-        <>
-          <Col xl="4" lg="6" md="6" sm="12" className="  my-4">
-                 
-                 <div id="myfilms" classname="grid-pad" >
-                 <div className='text-center'>
-                             
-                             
-                             <div class="container categories ">
-                             <Link to={"/FilmInfo"}> <h1>{donneesRecues.title}</h1></Link>
-                             <h5>{donneesRecues.moviegenre}</h5>
-                          
-         
+    <div class="container categories">
+    <div class="row justify-content-center">
+    <ul>
+       <h4>Genre :  <p > {this.state.donneesRecues.moviegenre}</p> </h4>
+       <h4>Date de Sortie :  <p > {this.state.donneesRecues.year}</p> </h4>
+       <p ><Link to={"/Films"}>Retour aux films</Link></p>
+     </ul>
+ <ul>
+
+
+ </ul>
+      
      
-         
-         
 
+</div> 
 </div>
-<hr></hr>
-                         </div>
-                <div className="card-custom">
-
-                         <Image className="filmimage"  src={donneesRecues.picture}  className='img-fluid ' />
-
-                         </div>
-               
-                     </div>
-                     
-                         
-                     
-                    
-             
-             </Col>
-        </>
-      );
-    }
+</Card.Title>
   
-    export default FilmInfo;
+  </Card.ImgOverlay>
+
+</Col>
+     
+     <Col className="text-center"sm={10}>
+
+         </Col>
+         
+     =
+        
+
+          
+      
+   
+    
+       
+      
+    
+     
+      
+      
+   
+       
+       
+      
+    </>
+  );
+}
+}

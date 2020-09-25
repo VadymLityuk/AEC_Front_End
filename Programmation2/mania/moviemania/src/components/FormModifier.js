@@ -2,6 +2,7 @@ import React from "react";
 import { Form, Button,Image,Container,Row,Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import {API} from "../constante";
+import {toast} from "react-toastify"
 
 export class FormModif extends React.Component {
     constructor(props) {
@@ -46,6 +47,7 @@ export class FormModif extends React.Component {
           if(response.ok){ 
             const jsonResponse = await response.json(); 
             this.props.history.push("/");
+            toast.success("Modification d'un film' " + title);
            
     
             return jsonResponse; 
@@ -91,15 +93,17 @@ export class FormModif extends React.Component {
                                 {this.state.donneesRecues.picture !== "" && <Image src={this.state.donneesRecues.picture} rounded width="125"/>}
                                 <Form.Group controlId="genreFilm">
                                     <Form.Label>Genre</Form.Label>
-                                    <Form.Control type="text" placeholder="Entrer le nom du pouvoir 1" defaultValue={this.state.donneesRecues.genre}/>
+                                    <Form.Control type="text" placeholder="Entrer le genre d'un film" defaultValue={this.state.donneesRecues.moviegenre}/>
                                 </Form.Group>
                                 <Form.Group controlId="anFilm">
                                     <Form.Label>Year</Form.Label>
-                                    <Form.Control type="text" placeholder="Entrer le nom du pouvoir 2" defaultValue={this.state.donneesRecues.year }/>
+                                    <Form.Control type="text" placeholder="Entre date de sortie d'un film" defaultValue={this.state.donneesRecues.year }/>
                                 </Form.Group>
 
                                 <Button variant="primary" type="submit" onClick={this.handleEdit}>
                                     Enregistrer
+                                </Button>
+                                <Button variant="danger" type="submit" ><Link to={"/Films"}> Annuler </Link>
                                 </Button>
                             </Form>
                         </Col>
