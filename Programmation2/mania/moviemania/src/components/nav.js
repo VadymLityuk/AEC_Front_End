@@ -42,10 +42,8 @@ export default function Navi() {
        
         <p ><Link to={"/Films"}>Films</Link></p>
         <p><Link to={"/AjouterFilm"}>Ajouter un Film</Link></p>
-        <p block id="boutonInstall" >Installer l'application </p>
-        <Button variant="primary" block id="boutonInstall" width={100}> Installer l'application 
-
-</Button> 
+        <p   block id="boutonInstall" ><Link>INSTALLER L'APPLICATION </Link></p>
+ 
 
         </Fade>
         

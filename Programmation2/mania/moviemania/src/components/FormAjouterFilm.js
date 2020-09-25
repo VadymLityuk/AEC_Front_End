@@ -137,7 +137,7 @@ export class AjouterFilms extends React.Component {
                 <Form.Group as={Row} controlId="add" className='border border-black py-3'>
                 <Form.Group as={Col} xl="6" lg="6" md="12" sm="12" xs="12" controlId="anFilm">
                     <Form.Label>Date de sortie</Form.Label>
-                    <Form.Control type="text" placeholder="Entrer an d'un film" isInvalid={!!this.state.setErrors.year} required/>
+                    <Form.Control type="text" placeholder="Ajouter date de sortie d'un film" isInvalid={!!this.state.setErrors.year} required/>
                     <Form.Control.Feedback type='invalid'>
                       {this.state.setErrors.year}
                     </Form.Control.Feedback>
