@@ -43,9 +43,7 @@ export default function Accueil() {
 <div id="mygrid" className="grid-padding">
     <div className="row  ">
         <div className="  col-sm-4 ">
-       <Button variant="primary" block id="boutonInstall" width={100}> Installer l'application 
 
-</Button> 
 
         <div className=" row">
         <Fade left>
