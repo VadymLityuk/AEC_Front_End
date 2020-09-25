@@ -8,9 +8,8 @@ import Navi from '../components/nav'
 import { useLocation, Route, Switch } from "react-router-dom";
 import { AjouterFilm } from './AjouterFilm';
 import   { ListeFilms } from './Film';
-import { FormModif } from './FormModifier';
+import { ModifFilm} from './FormModifier';
 import {FilmInfo} from './filminfo';
-import {ShowInfo} from './ShowInfo'
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
 
@@ -31,7 +30,7 @@ function App() {
           <Route path="/Accueil" component={Accueil} /> 
           <Route path="/AjouterFilm" component={AjouterFilm} />  
           <Route path="/Films" component={ListeFilms} /> 
-          <Route path="/FormModif/:id" component={FormModif} />
+          <Route path="/FormModif/:id" component={ModifFilm} />
           <Route path="/ShowInfo/:id" component={FilmInfo} />
          
         

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import {API} from "../constante";
 import {toast} from "react-toastify"
 
-export class FormModif extends React.Component {
+export class ModifFilm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -12,8 +12,9 @@ export class FormModif extends React.Component {
             setErrors : {}};
 
             this.handleEdit = this.handleEdit.bind(this);
-            this.handlePhoto = this.handlePhoto.bind(this);
+            this.handlePic = this.handlePic.bind(this);
             this.editFilm = this.editFilm.bind(this);
+            this.removeFilm = this.removeFilm.bind(this);
     }
 
     async componentDidMount() {
@@ -32,22 +33,24 @@ export class FormModif extends React.Component {
         }
     }
 
-    async editFilm(title, picture, genre,year  ) { 
+    async editFilm(title, picture, moviegenre,year  ) { 
         try{ 
-          const response = await fetch( API , { 
+          const response = await fetch( API + this.state.id, { 
             method:'PUT', 
             headers: {'Content-Type': 'application/json'  }, 
-            body:JSON.stringify({ id:this.state.id,
+            body:JSON.stringify({ 
+                id:this.state.id,
+
              title : title,
              picture : picture,
-             moviegenre: genre,
+             moviegenre: moviegenre,
              year : year
             }) 
           }); 
           if(response.ok){ 
             const jsonResponse = await response.json(); 
-            this.props.history.push("/");
-            toast.success("Modification d'un film' " + title);
+            this.props.history.push("/Films");
+            toast.success("Modification d'un film " + this.state.id);
            
     
             return jsonResponse; 
@@ -58,19 +61,41 @@ export class FormModif extends React.Component {
           console.log(error); 
        } 
     }
+    async removeFilm() {
+        try{
+            const response = await fetch(API + this.state.id, {
+                method:'DELETE',
+            });
+            if(response.ok){
+                const result = await response.json();
+                this.props.history.push("/Films");
+                toast.success("Supression d'un film");
+             
+                
+                
 
+                return result;
+            }
+            throw new Error('Request failed!');
+        }
+        catch(error){
+            console.log(error);
+        }
+    }
     handleEdit(event){
         event.preventDefault();
 
         const title = document.getElementById('titreFilm').value;
        const picture = document.getElementById('photoFilm').value;
-       const genre = document.getElementById('genreFilm').value;
+       const moviegenre = document.getElementById('genreFilm').value;
        const year = document.getElementById('anFilm').value;
 
-        this.editFilm(title, picture, genre, year);
+        this.editFilm(title, picture, moviegenre, year);
+      
+        toast.success("Modification d'un film' " + title );
     }
 
-    handlePhoto(){
+    handlePic(){
         const picture = document.getElementById('photoFilm').value;
         this.setState( {picture : picture});
     }
@@ -80,34 +105,54 @@ export class FormModif extends React.Component {
             <>
                       <Container>
                     <Row>
-                        <Col width={100}>
-                            <Form>
-                                <Form.Group controlId="titreFilm">
-                                    <Form.Label>Titre</Form.Label>
-                                    <Form.Control type="text" defaultValue={this.state.donneesRecues.title}/> {}
-                                </Form.Group>
-                                <Form.Group controlId="photoFilm">
-                                    <Form.Label>URL d'une image de film</Form.Label>
-                                    <Form.Control type="text" placeholder="Entrer une URL valide" onBlur={this.handlePhoto} defaultValue={this.state.donneesRecues.picture}/>
-                                </Form.Group>
-                                {this.state.donneesRecues.picture !== "" && <Image src={this.state.donneesRecues.picture} rounded width="125"/>}
-                                <Form.Group controlId="genreFilm">
-                                    <Form.Label>Genre</Form.Label>
+                        <Col width={60}>
+                        <Form>
+  <Form.Row>
+    <Form.Group as={Col} controlId="titreFilm">
+      <Form.Label><h4>Titre d'un film</h4></Form.Label>
+      <Form.Control type="text" defaultValue={this.state.donneesRecues.title}/> 
+    </Form.Group>
+
+ </Form.Row>
+ <Form.Group controlId="photoFilm">
+        <Form.Label><h4>Coller URL d'une image</h4></Form.Label>
+        <Form.Control type="text" placeholder="Entrer une URL valide" onBlur={this.handlePhoto} defaultValue={this.state.donneesRecues.picture}/>
+        {this.state.donneesRecues.picture !== "" && <Image src={this.state.donneesRecues.picture} rounded width="240"/>}
+</Form.Group>
+
+ 
+
+
+  <Form.Row>
+  <Form.Group controlId="genreFilm">
+                                    <Form.Label><h4>Gendre de film</h4></Form.Label>
                                     <Form.Control type="text" placeholder="Entrer le genre d'un film" defaultValue={this.state.donneesRecues.moviegenre}/>
                                 </Form.Group>
-                                <Form.Group controlId="anFilm">
-                                    <Form.Label>Year</Form.Label>
+ 
+
+</Form.Row>
+  <Form.Row>
+  <Form.Group controlId="anFilm">
+                                    <Form.Label><h4>Date de sortie d'un film</h4></Form.Label>
                                     <Form.Control type="text" placeholder="Entre date de sortie d'un film" defaultValue={this.state.donneesRecues.year }/>
                                 </Form.Group>
 
-                                <Button variant="primary" type="submit" onClick={this.handleEdit}>
-                                    Enregistrer
+</Form.Row>
+
+
+  <Button variant="dark" type="submit" onClick={this.handleEdit}>
+                                    Sauvegarder
                                 </Button>
-                                <Button variant="danger" type="submit" ><Link to={"/Films"}> Annuler </Link>
+
+                                <Button className="" variant="light" type="submit" ><Link to={"/Films"}> Retour aux Films </Link>
                                 </Button>
-                            </Form>
-                        </Col>
-                    </Row>
+
+                                
+                                <Button className="" variant="danger" type="submit" className=" btn btn-danger" onClick={this.removeFilm} >Supprimer
+                                </Button>
+</Form>
+                   </Col>
+                   </Row>
                 </Container>
             </>
           );
