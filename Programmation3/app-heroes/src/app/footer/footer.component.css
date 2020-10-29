@@ -1,0 +1,8 @@
+footer {
+    margin-top: auto;
+    height: 15vh;
+    width: 100%;
+    background-image: url("https://www.meddbase.com/wp-content/uploads/2019/09/header-bg.jpg");
+    position: absolute;
+    bottom: 0;
+}

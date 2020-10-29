@@ -1,0 +1,39 @@
+header {
+    width: 98%;
+    background-image: url("https://www.meddbase.com/wp-content/uploads/2019/09/header-bg.jpg");
+    border-radius: 10px;
+    height: 10vh;
+    margin: 1em auto;
+}
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 100%;
+ }
+    
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+      
+    }
+    li {
+        margin:  0.3rem;
+        padding: 0.9rem;
+        background-color:#a4a1e6;
+        border-radius: 9px;
+    }
+    
+
+
+a {
+    color: rgb(14, 14, 49);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

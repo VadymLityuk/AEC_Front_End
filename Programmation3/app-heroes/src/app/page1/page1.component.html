@@ -1,0 +1,7 @@
+<div class="container">
+    <app-recherche></app-recherche>
+    <app-crousel></app-crousel>
+    <div class="hero-container" *ngFor="let hero of heroes">
+        <app-hero1 [hero]="hero"></app-hero1>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+.carousel{
+  float: right;
+    padding: 3rem;
+    text-align: center;
+    width: 40%;
+    background-image: url("https://lymcanada.org/wp-content/uploads/sites/2/2014/12/android-bg-polygons-e1416769707972.jpg");
+    border-radius: 10px;
+    height: 10vh;
+    margin: 1em auto;
+}

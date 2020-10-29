@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+.entete-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(240, 216, 238);
+   
+}
+h3{
+    padding-left: 8%;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(145, 113, 161);
+}
+

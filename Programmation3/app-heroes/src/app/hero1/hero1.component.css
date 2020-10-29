@@ -1,0 +1,14 @@
+.hero-1 {
+    
+   padding-left: 2mm;
+    background-color:#2a2d47;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    width: 10rem;
+    height: 6rem;
+}
+  

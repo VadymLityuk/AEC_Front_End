@@ -1,0 +1,20 @@
+
+<div class="liste-prod">
+    
+    <div  class="image"  alt="produit">
+        <app-image
+        [image]="image"
+    ></app-image>
+         </div>
+    <div class="fiche-produit-details">
+        <app-produit   [nom]="nom"
+        [description]="description">
+    </app-produit>
+</div>
+    <div class="fiche-produit-price">
+        
+        <app-produit   [prix]="prix"
+        [details]="details">
+    </app-produit>
+    </div>
+</div>

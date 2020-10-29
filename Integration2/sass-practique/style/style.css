@@ -11,10 +11,8 @@
 }
 
 body {
-  font-family: Montserrat;
-}
-body p.resume {
-  font-family: Raleway;
+  background-image: url("../img/body.jpg");
+  background-image-background-color: #333;
 }
 
 h1, h2 {
@@ -64,7 +62,7 @@ a:hover {
 }
 
 header {
-  background-image: url("../img/minhead.jpg");
+  background-image: url("../img/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -1,0 +1,8 @@
+  
+.hero-container {
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}

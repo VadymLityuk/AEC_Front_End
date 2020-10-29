@@ -1,0 +1,26 @@
+
+   
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+.produit{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+
+  
+}
+h1{
+    color: rgb(109, 92, 117);
+
+    font-family: 'Bebas Neue', cursive;
+
+}
+p{
+    color: rgb(107, 106, 107);
+    font-family: 'Bebas Neue', cursive;
+}

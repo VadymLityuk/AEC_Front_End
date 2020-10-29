@@ -1,0 +1,12 @@
+.recherche{
+    
+  float: left;
+
+    padding:2rem;
+    text-align: center;
+    width: 50%;
+    background-image: url("https://www.leadrobot.co.za/wp-content/uploads/2018/01/robotics-contact-header-bg.png");
+    border-radius: 10px;
+    height: 40vh;
+    margin: 1em auto;
+}
