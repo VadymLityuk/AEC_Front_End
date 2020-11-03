@@ -1,6 +1,6 @@
 .hero-1 {
     
-   padding-left: 2mm;
+   padding-right: 5em;
     background-color:#2a2d47;
     border-radius: 11px;
     display: flex;
@@ -8,7 +8,7 @@
     align-items: center;
     color: white;
     cursor: pointer;
-    width: 10rem;
+    width: 8rem;
     height: 6rem;
 }
   
