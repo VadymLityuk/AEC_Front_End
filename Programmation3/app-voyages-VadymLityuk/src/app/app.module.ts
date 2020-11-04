@@ -12,6 +12,8 @@ import { ListeForfaitComponent } from './liste-forfait/liste-forfait.component';
 import { MiniForfaitComponent } from './mini-forfait/mini-forfait.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { EtoilesComponent } from './etoiles/etoiles.component';
+
 
 
 @NgModule({
@@ -20,7 +22,8 @@ import { MatButtonModule } from '@angular/material/button';
     ForfaitComponent,
     ForfaitCompComponent,
     ListeForfaitComponent,
-    MiniForfaitComponent
+    MiniForfaitComponent,
+    EtoilesComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +32,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatGridListModule,
     MatButtonModule,
     MatCardModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,31 @@
-<p>mini-forfait works!</p>
+<mat-card style=" background-image: url('https://static-cse.canva.com/blob/140234/Rainbow-Gradient-Pink-and-Purple-Zoom-Virtual-Background.60e555ec.png'); border: 1px solid rgb(105, 130, 184);margin: 5px" >
+    <mat-card-header style="display: flex; justify-content: space-between" >
+        <mat-card-title>{{forfait.destination}} </mat-card-title>
+        <mat-card-subtitle>de {{forfait.villeDeDepart}}</mat-card-subtitle>
+        
+    </mat-card-header>
+    <mat-card-content style="font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+    color: #fff;
+    line-height: 40px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, #593dd5, #fc2b00);">
+       Hotel {{forfait.hotel.nom}}  -       {{forfait.prix}}$
+      </mat-card-content>
+    <mat-card-actions style="padding-left: 1em;  font-size: 2em;color: rgb(91, 143, 202);">
+        <div *ngIf="forfait.rabais>0; else elseBlock" style= 'display:flex; justify-content: space-around'>
+
+       <p style=" color: #ff2b60"> Rabais de :{{forfait.rabais}}$</p>
+ </div>
+        
+        <ng-template #elseBlock><p>{{forfait.prix}}$</p></ng-template>
+        
+    </mat-card-actions>
+    <mat-card-footer style='display: flex; justify-content: space-between; margin-left: 1em;margin-right: 1em; color:#606060;'>
+        <p>{{forfait.hotel. nbetoiles}} étoiles</p>
+        
+        <p>{{forfait.dateDepart}}, 7 jours</p>
+    </mat-card-footer>
+  </mat-card>

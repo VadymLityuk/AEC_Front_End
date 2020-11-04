@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
 import { Forfait } from './forfait';
+import { Hotel } from './hotel';
 import { FORFAITS } from './mock-forfaits';
+import {HOTELS} from './mock-hotels'
 
-export interface Grandr {
-  color: string;
-  cols: number;
-  rows: number;
-  text: string;
-}
+
 
 @Component({
   selector: 'app-root',
@@ -16,10 +13,12 @@ export interface Grandr {
 })
 export class AppComponent {
   title = 'app-voyages-VadymLityuk';
-  grandeur: Grandr[] = [
-    {text: 'One', cols: 3, rows: 1, color: 'lightgray'},
-    {text: 'Two', cols: 1, rows: 2, color: 'lightpurple'},
-    {text: 'Three', cols: 1, rows: 1, color: 'lightblue'},
-    {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
-  ];
+  mesForfaits: Array<Forfait> = FORFAITS;
+  mesHotels: Array<Hotel> = HOTELS;
+  
+
+  ngOnInit(): void {
+    console.log('Mes forfaits',this.mesForfaits);
+    console.log('Mes Hotels',this.mesHotels);
+  }
 }
