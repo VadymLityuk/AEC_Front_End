@@ -1,0 +1,50 @@
+import React, { useState,useEffect } from 'react'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import {Card} from "react-bootstrap";
+
+import './style/accueil.scss'
+
+import { Link } from "react-router-dom";
+import {API} from "../constante";
+import {Film} from './Films'
+
+
+function FilmHooks() {
+  const [donneesRecues, setDonneesRecues] = useState([]);
+
+  //Ajout de la gestion des erreurs
+  useEffect(() => {
+    getFilms();
+  }, [donneesRecues.join(",")]); //Si on enlève le second paramètre, on obtient une boucle infinie.
+
+  async function getFilms() {
+    try {
+      
+      const response = await fetch(API);
+      const reponseDeApi = await response.json();
+      setDonneesRecues(reponseDeApi);
+      if (!response.ok) {
+        throw Error(response.statusText);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  return (
+    <>
+        
+    <div class="container-fluid ">
+      <h1 className="text-center">Films</h1>
+      {donneesRecues.map((key, i) => (
+        <Film title={key.title} id={key._id} key={key.title + key._id} urlPhoto={key.picture}></Film>
+        
+      ))}
+        
+    </div>
+   </>
+  );
+}
+
+export default FilmHooks;

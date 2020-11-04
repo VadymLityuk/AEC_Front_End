@@ -1,0 +1,53 @@
+import React, { useState,useEffect } from 'react'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import {Card} from "react-bootstrap";
+
+import './style/accueil.scss'
+
+import { Link } from "react-router-dom";
+import {API} from "../constante";
+import {Film} from './Films'
+
+
+export class ListeFicheHero extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {donneesRecues: []};
+
+    }
+
+    async componentDidMount() {
+        try {
+            const response = await fetch(API);
+            const reponseDeApi = await response.json();
+            this.setState({donneesRecues:reponseDeApi});
+            if (!response.ok) {
+                throw Error(response.statusText);
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    render() {
+        return (
+            <Container>
+                <Row>
+                    {this.state.donneesRecues.map((key, i) => (
+                        <Hero
+                            nom={key.nom}
+                            id={key._id}
+                            key={key.nom + key._id}
+                            pouvoir={key.pouvoir}
+                            urlPhoto={key.urlPhoto}
+                            history={this.props.history}>
+                        </Hero>
+                    ))}
+                </Row>
+            </Container>
+        );
+    }
+}
+
+export default ListeFicheHero;

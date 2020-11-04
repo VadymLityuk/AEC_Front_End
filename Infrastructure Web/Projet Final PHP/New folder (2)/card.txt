@@ -1,0 +1,11 @@
+.card {
+  width: 32sch;
+  height: 45ch;
+  background: grey;
+  box-shadow: $shadow;
+  background-image: url('../img/gad.jpg');
+  background-size: cover;
+  background-position: center center;
+ will-change: transform;
+  border: 2rem;
+}

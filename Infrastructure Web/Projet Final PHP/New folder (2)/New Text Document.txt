@@ -1,0 +1,26 @@
+
+vadim@DESKTOP-PT353T5 MINGW64 ~/Documents/GitHub/AEC_Front_End/Programmation2/pwaa (master)
+$ npm start
+npm ERR! code ENOENT
+npm ERR! syscall open
+npm ERR! path C:\Users\vadim\Documents\GitHub\AEC_Front_End\Programmation2\pwaa\package.json
+npm ERR! errno -4058
+npm ERR! enoent ENOENT: no such file or directory, open 'C:\Users\vadim\Documents\GitHub\AEC_Front_End\Programmation2\pwaa\package.json'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\vadim\AppData\Roaming\npm-cache\_logs\2020-09-16T02_55_51_586Z-debug.log
+
+vadim@DESKTOP-PT353T5 MINGW64 ~/Documents/GitHub/AEC_Front_End/Programmation2/pwaa (master)
+$ npm start
+npm ERR! code ENOENT
+npm ERR! syscall open
+npm ERR! path C:\Users\vadim\Documents\GitHub\AEC_Front_End\Programmation2\pwaa\package.json
+npm ERR! errno -4058
+npm ERR! enoent ENOENT: no such file or directory, open 'C:\Users\vadim\Documents\GitHub\AEC_Front_End\Programmation2\pwaa\package.json'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\vadim\AppData\Roaming\npm-cache\_logs\2020-09-16T02_56_46_913Z-debug.log
