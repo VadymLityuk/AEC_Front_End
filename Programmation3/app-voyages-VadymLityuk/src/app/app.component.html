@@ -1,5 +1,5 @@
 
-    <mat-grid-list cols="3" rowHeight="240" style="background-color: rgb(236, 231, 240); cursor: pointer;" >
+    <mat-grid-list cols="3"  rowHeight="240" style="background-color: rgb(236, 231, 240); cursor: pointer;" >
         <span *ngFor="let item of mesForfaits">
             <mat-grid-tile  *ngIf="item.forfaitVed" >
                     <app-mini-forfait  [forfait]="item" style="position: absolute;  height: 100%;width: 100%;" ></app-mini-forfait >
