@@ -13,6 +13,7 @@ import { MiniForfaitComponent } from './mini-forfait/mini-forfait.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { EtoilesComponent } from './etoiles/etoiles.component';
+import { FormulaireComponent } from './formulaire/formulaire.component';
 
 
 
@@ -23,7 +24,8 @@ import { EtoilesComponent } from './etoiles/etoiles.component';
     ForfaitCompComponent,
     ListeForfaitComponent,
     MiniForfaitComponent,
-    EtoilesComponent
+    EtoilesComponent,
+    FormulaireComponent
   ],
   imports: [
     BrowserModule,
