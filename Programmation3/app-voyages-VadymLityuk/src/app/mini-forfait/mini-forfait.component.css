@@ -22,7 +22,7 @@
 }
 .mat-card-content{
     font-family: 'Bebas Neue', cursive;
-    font-size: 2em;
+    font-size: 2.5em;
     color: #fff;
     line-height: 40px;
     color: transparent;
@@ -31,7 +31,8 @@
     background-image: linear-gradient(to right, #344aaf, #aecbf8);
 }
 .forfaitrabais{
-    font-size: 20px; color: rgb(91, 143, 202);
+    font-size: 20px; 
+    color: rgb(91, 143, 202);
     
 }
 .mat-card-footer{
@@ -43,3 +44,28 @@
 .subhotel{
     color: rgb(59, 63, 68);
 }
+.forfaitdiv{
+    display:flex; 
+    justify-content: space-around;
+}
+.strikethrough{
+    font-size: 20px;
+    color: rgb(250, 93, 140);
+    position: relative;
+  
+}
+.strikethrough:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    border-top: 1px solid;
+    border-color: inherit;
+  
+    -webkit-transform:rotate(-5deg);
+    -moz-transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg);
+    -o-transform:rotate(-5deg);
+    transform:rotate(-5deg);
+  }
