@@ -11,14 +11,9 @@
     <mat-card-subtitle>Du {{ forfait.dateDepart }} au {{ forfait.dateRetour }}</mat-card-subtitle>
     <p> A partir de : {{ forfait.prix }}$</p>
     <p>{{ forfait.hotel.adresse }}</p>
-    
-      <div style="display: inline; color: rgb(255, 223, 118);" *ngFor="let item of [].constructor(5);">
-        <span  class="material-icons">
-            grade
-            </span>
-     
-      </div>
-    
+    <div>
+      <app-etoiles></app-etoiles>
+    </div>
     <p>{{ forfait.hotel.nbetoiles }} étoiles</p>
     <p>{{ forfait.hotel.nbChambres }} chambres</p>
     <p>Caracteristiques:</p>
