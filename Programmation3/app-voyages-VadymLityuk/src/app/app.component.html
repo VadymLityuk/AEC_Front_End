@@ -1,11 +1,12 @@
 
-    <mat-grid-list cols="3"  rowHeight="250" style="background-color: #e6e5e5; cursor: pointer;" >
+    <mat-grid-list cols="3" rowHeight="2:1" style="background-color: #e6e5e5; cursor: pointer;" >
         <span *ngFor="let item of mesForfaits">
             <mat-grid-tile  *ngIf="item.forfaitVed" >
                     <app-mini-forfait  [forfait]="item" style="position: absolute;  height: 100%;width: 100%;" ></app-mini-forfait >
             </mat-grid-tile>
         </span>
     </mat-grid-list>
+
    
 
     <mat-grid-list cols="3" rowHeight='950px' >
