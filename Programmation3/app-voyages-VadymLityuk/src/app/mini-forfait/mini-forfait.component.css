@@ -8,6 +8,7 @@
 .mat-card-header {
     display: flex; 
     justify-content: space-between;
+    
 }
 .mat-card-title {
     color: rgb(108, 112, 117);
@@ -28,4 +29,17 @@
     -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(to right, #344aaf, #aecbf8);
+}
+.forfaitrabais{
+    font-size: 20px; color: rgb(91, 143, 202);
+    
+}
+.mat-card-footer{
+    display: flex; 
+    justify-content: space-between; 
+    margin-left: 1em;
+    margin-right: 1em; 
+}
+.subhotel{
+    color: rgb(59, 63, 68);
 }

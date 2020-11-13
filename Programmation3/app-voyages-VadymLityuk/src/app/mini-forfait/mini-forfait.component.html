@@ -16,15 +16,15 @@
     
     <div  *ngIf="forfait.rabais>0;"else style= 'display:flex; justify-content: space-around'>
    
-          <p style="  font-size: 20px; color: rgb(91, 143, 202);"> {{forfait.prix}}$</p>
-          <p style="  font-size: 20px; color: rgb(91, 143, 202);"> {{forfait.rabais}}$</p>
-       <p style="  font-size: 20px; color: rgb(91, 143, 202);"> {{forfait.prix-forfait.rabais}}$</p>
+          <p class="forfaitrabais"> {{forfait.prix}}$</p>
+          <p class="forfaitrabais"> {{forfait.rabais}}$</p>
+       <p class="forfaitrabais"> {{forfait.prix-forfait.rabais}}$</p>
 </div>
     </mat-card-actions>
-    <mat-card-footer style='display: flex; justify-content: space-between; margin-left: 1em;margin-right: 1em; '>
-        <p style=" color: rgb(59, 63, 68);">{{forfait.hotel. nbetoiles}} étoiles</p>
+    <mat-card-footer >
+        <p class="subhotel" >{{forfait.hotel. nbetoiles}} étoiles</p>
         
-        <p style=" color: rgb(59, 63, 68);">{{forfait.dateDepart}}, 7 jours</p>
+        <p class="subhotel">{{forfait.dateDepart}}, 7 jours</p>
     </mat-card-footer>
   </mat-card>
 </div>
