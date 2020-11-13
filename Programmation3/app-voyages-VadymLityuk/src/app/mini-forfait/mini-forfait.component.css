@@ -29,11 +29,11 @@
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    background-image: linear-gradient(to right, #344aaf, #aecbf8);
+    background-image: linear-gradient(to right, #9f55a1, #ff2c6b);
 }
 .forfaitrabais{
     font-size: 20px; 
-    color: rgb(91, 143, 202);
+    color: #b852a8;
     
 }
 .mat-card-footer{
