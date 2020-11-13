@@ -1,8 +1,9 @@
 .mat-card{
     background-image: url('https://www.stockvault.net/data/2019/08/28/268879/preview16.jpg'); 
-    border: 0 .5em solid rgb(105, 130, 184);
+    border: 1px solid rgb(105, 130, 184);
     margin: 0.5em;
     padding: 0.5em;
+
 
 }
 .mat-card-header {
@@ -50,7 +51,7 @@
 }
 .strikethrough{
     font-size: 20px;
-    color: rgb(250, 93, 140);
+    color: rgb(241, 75, 125);
     position: relative;
   
 }
