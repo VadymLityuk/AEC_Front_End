@@ -2,7 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatSliderModule } from '@angular/material/slider';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,6 +38,13 @@ import { FormulaireComponent } from './formulaire/formulaire.component';
     MatGridListModule,
     MatButtonModule,
     MatCardModule,
+    FormsModule, 
+    ReactiveFormsModule,
+    MatInputModule,
+    MatSliderModule,
+    MatFormFieldModule,
+    MatAutocompleteModule 
+
   
   ],
   providers: [],
