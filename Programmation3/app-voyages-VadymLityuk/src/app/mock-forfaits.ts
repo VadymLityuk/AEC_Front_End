@@ -14,7 +14,7 @@ export const FORFAITS: Forfait[] = [
      },
      {  id : "2",
      destination: "Cayo Santa Maria,Cuba",
-     villeDeDepart: "Montréal",
+     villeDeDepart: "Québec",
      hotel: HOTELS[1],
      dateDepart: "15 avril 2021",
      dateRetour: "21 avril 2021",

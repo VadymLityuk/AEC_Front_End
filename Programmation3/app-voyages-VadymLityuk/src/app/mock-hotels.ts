@@ -8,6 +8,6 @@ export const HOTELS: Hotel[] = [
     : ["Toute-Inclus", "Fitness", "Spa","Wi-Fi payant "] },
 
     { id: "3", nom: "Delphin Imperial", adresse: " Lara Cd., 07112 Aksu,Antalya",  nbetoiles: 5, nbChambres: 375, photo: "https://skyekspert.ee/wp-content/uploads/2017/12/v-15.jpg", caracteristiques
-    : ["Toute-Inclus", "Fitness", "Spa","Wi-Fi payant "]}
+    : ["Toute-Inclus", "Fitness", "Spa","Wi-Fi"]}
    
 ]
