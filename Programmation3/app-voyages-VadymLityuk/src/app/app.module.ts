@@ -7,6 +7,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { EtoilesComponent } from './etoiles/etoiles.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 
 
@@ -29,7 +31,8 @@ import { FormulaireComponent } from './formulaire/formulaire.component';
     ListeForfaitComponent,
     MiniForfaitComponent,
     EtoilesComponent,
-    FormulaireComponent
+    FormulaireComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +46,8 @@ import { FormulaireComponent } from './formulaire/formulaire.component';
     MatInputModule,
     MatSliderModule,
     MatFormFieldModule,
-    MatAutocompleteModule 
+    MatAutocompleteModule,
+    MatSidenavModule
 
   
   ],

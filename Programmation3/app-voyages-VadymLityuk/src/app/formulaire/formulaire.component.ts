@@ -12,13 +12,7 @@ import { map, startWith } from 'rxjs/operators';
 })
 
 export class FormulaireComponent implements OnInit {
-  formatLabel(value: number) {
-    if (value >= 5) {
-      return Math.round(value / 5) + 'etoiles';
-    }
 
-    return value;
-  }
   destinationsControl = new FormControl();
   villesDepartControl = new FormControl();
   filteredDestinations:  Observable<string[]>;
@@ -33,5 +27,15 @@ export class FormulaireComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  formatLabel(value: number) {
+    if (value >= 5) {
+      return Math.round(value / 5) + 'etoiles';
+    }
+
+    return value;
+  }
+
 }
+
+
 
