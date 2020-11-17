@@ -1,69 +1,25 @@
-<div class="example-container">
+
+
   <form class="example-form">
-    <input type="text"
-              placeholder="Choisissez une destination"
-              aria-label="Number"
-              matInput
-              [formControl]="destinationsControl"
-              [matAutocomplete]="autocomp">
-              <mat-autocomplete #autocomp="matAutocomplete">
-              </mat-autocomplete>
-    
-    <mat-form-field class="example-full-width">
-  
-      
-    </mat-form-field>
-      <mat-label>Select</mat-label>
-      <mat-slider
-      thumbLabel
-      tickInterval="5"
-      min="1"
-      max="5"></mat-slider>
-      <br>
-  </form>
-  <form class="example-form">
-    <mat-form-field class="example-full-width">
-      <input type="text"
-            placeholder="Choisissez la ville de départ"
-            aria-label="Number"
-            matInput
-            [formControl]="villesDepartControl"
-            [matAutocomplete]="auto2">
-      <mat-autocomplete #auto2="matAutocomplete">
+    <mat-card-content>
+  <div class="example-container">
+      <mat-form-field appearance="fill">
+        <mat-label>Input</mat-label>
+        <input matInput> 
+        <mat-autocomplete #auto="matAutocomplete"></mat-autocomplete>
+      </mat-form-field>
      
-      </mat-autocomplete>
-    </mat-form-field>
-  </form>
-  <form class="example-form">
-    <mat-form-field class="example-full-width">
-      <mat-label>Nom de l’hôtel</mat-label>
-      <input matInput placeholder="Nom de l'hotel" >
-    </mat-form-field>
-  </form>
-  <form class="example-form">
-    <mat-form-field class="example-full-width">
-      <mat-label>Coordonnées </mat-label>
-      <input matInput placeholder="Adresse de l'hotel...">
-    </mat-form-field>
-  </form>
-  <mat-label>Étoiles: </mat-label>
-    <mat-slider
-        thumbLabel
-        [displayWith]="formatLabel"  
-        tickInterval="1"
-        min="1"
-        max="5">
-      </mat-slider> 
-    <form class="example-form">
-      <mat-form-field class="example-full-width">
-        <mat-label>Nombre de chambres</mat-label>
-        <input matInput type="number" min="1" placeholder="Nombre de chambres">
+      <mat-form-field appearance="fill">
+        <mat-label>Select</mat-label>
+        <mat-select>
+          <mat-option value="option">Option</mat-option>
+        </mat-select>
       </mat-form-field>
-     </form>
-     <form class="example-form">
-      <mat-form-field class="example-full-width">
-        <mat-label>Prix</mat-label>
-        <input matInput type="number" min="1" placeholder="Prix">
+    
+      <mat-form-field appearance="fill">
+        <mat-label>Textarea</mat-label>
+        <textarea matInput></textarea>
       </mat-form-field>
-     </form>
-   </div>
+    </div>
+  </mat-card-content>
+</form>
