@@ -8,6 +8,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatSelectModule} from '@angular/material/select';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -47,7 +48,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     MatSliderModule,
     MatFormFieldModule,
     MatAutocompleteModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatSelectModule
 
   
   ],
