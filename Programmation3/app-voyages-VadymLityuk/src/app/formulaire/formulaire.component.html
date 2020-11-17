@@ -4,22 +4,40 @@
     <mat-card-content>
   <div class="example-container">
       <mat-form-field appearance="fill">
-        <mat-label>Input</mat-label>
-        <input matInput> 
-        <mat-autocomplete #auto="matAutocomplete"></mat-autocomplete>
+        <mat-label>Destination</mat-label>
+        <input type="text"
+              placeholder="Choisissez une destination"
+              aria-label="Number"
+              matInput
+              [formControl]="destinations"
+              [matAutocomplete]="auto">
+     <mat-autocomplete #auto="matAutocomplete"></mat-autocomplete>
       </mat-form-field>
-     
-      <mat-form-field appearance="fill">
-        <mat-label>Select</mat-label>
-        <mat-select>
-          <mat-option value="option">Option</mat-option>
-        </mat-select>
+      <mat-form-field class="example-full-width">
+        <input type="text"
+              placeholder="Choisissez la ville de départ"
+              aria-label="Number"
+              matInput
+              [formControl]="villesDepart"
+              [matAutocomplete]="auto2">
+        <mat-autocomplete #auto2="matAutocomplete">
+          </mat-autocomplete>
       </mat-form-field>
     
       <mat-form-field appearance="fill">
-        <mat-label>Textarea</mat-label>
-        <textarea matInput></textarea>
+        <mat-label>Coordonnées </mat-label>
+        <input matInput placeholder="Adresse de l'hotel...">
       </mat-form-field>
+      
+      <mat-label >Étoiles: </mat-label>
+      <mat-slider
+          thumbLabel
+          tickInterval="5"
+          min="1"
+          max="5">
+        </mat-slider> 
     </div>
+ 
   </mat-card-content>
+
 </form>
