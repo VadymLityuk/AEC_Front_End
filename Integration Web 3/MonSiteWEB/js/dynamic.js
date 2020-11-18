@@ -1,17 +1,4 @@
-var on = setInterval(disparait, 250);
-var off = setInterval(apparait, 500);
 
-function disparait() {
-    if(document.getElementById("monTitre")) {
-        document.getElementById("monTitre").classList.add("clignote");
-    }
-}
-
-function apparait() {
-    if(document.getElementById("monTitre")) {
-        document.getElementById("monTitre").classList.remove("clignote");
-    }
-}
 
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
