@@ -1,11 +1,15 @@
+<!DOCTYPE html>
+<html>
+
 <head>
     <title>Mon Site Web</title>
     <script src="js/dynamic.js"></script>
     <link rel="stylesheet" href="style/header.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   
 </head>
 
-<div class="header">
+<div id="app" class="header">
     <div class="sides">
       <a href="accueil.html" class="logo">ACCUEIL</a>
       <a href="apropos.html" class="logo">A PROPOS</a>
@@ -17,11 +21,20 @@
       <h1>Mon Premiere Site WEB avec VUE JS</h1>
       <div class="meta">
        
-        By <a >Vadym Lityuks</a> 17 novembre, 2020
+        By <a >{{ name }}</a> 17 novembre, 2020
+        <p>{{bien}}</p>
       </div>
     </div>
   </div>
-  <section class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl turpis, porttitor et finibus id, viverra a metus. Praesent non ante sed orci posuere varius quis sit amet dui. Cras molestie magna orci, id gravida dolor molestie in. Duis sollicitudin turpis quis tortor egestas, ut ultrices nisl elementum. Vestibulum sed ipsum eget nulla laoreet cursus in ac sem. Integer a suscipit justo, quis aliquam sapien. Maecenas et tellus nibh. Vivamus tincidunt eros id commodo pellentesque.</p>
-    
-  </section>
+ 
+  </html>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        name: 'Vadym Lityuk',
+        bien: 'Bienvenue dans mon site'
+      }
+    })
+    </script>

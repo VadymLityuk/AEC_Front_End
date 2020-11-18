@@ -2,19 +2,37 @@
 <html>
     <head>
         <title>Mon Site Web</title>
-        <script src="js/dynamic.js"></script>
         <link rel="stylesheet" href="style/style.css">
+        <script type="text/javascript" src="js/dynamic.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
       
     </head>
 
 <body>
-<div id="mytext">
-    <h1>Mon Site Web avec Vue js</h1>
-    <h2></h2>
-    <h3></h3>
-</div>
-<hr>
+    <div id="app">
+        <div w3-include-html="header.html"></div>
+        <h1 id="grandTitre">{{ monTitre }}</h1>
+        <h2>Developper par Vadym</h2>
+        <h3>avec Vue Js</h3>
+        <p>{{ message }}</p>
+        <div w3-include-html="footer.html"></div>
+    </div>
 </body>
 </html>
 
 
+<script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue !',
+        monTitre: 'Bienvenue dans mon site'
+      }
+    })
+    </script>
+    
+    <script>
+        includeHTML();
+    </script>
+    
