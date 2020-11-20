@@ -1,23 +1,20 @@
-.content{
-    background: #e6e5e5;
+
+
+.mat-sidenav-content{
+  max-width: 300px;
+  height: 200px;
 }
 
-.example-container {
-    background: #e6e5e5;
 
-     width: 400px;
-    height: 200px;
 
-  }
+.mat-sidenav, .mat-sidenav-content{
+
+ padding: 16px;
+
+}
+.mat-sidenav{
   
-  .example-sidenav-content {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .example-sidenav {
-    padding: 20px;
-  }
-  
+  width: 350px;
+}
+
+

@@ -9,6 +9,11 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatSelectModule} from '@angular/material/select';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatIconModule} from '@angular/material/icon';
+
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -49,7 +54,9 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     MatFormFieldModule,
     MatAutocompleteModule,
     MatSidenavModule,
-    MatSelectModule
+    MatSelectModule,
+    MatRadioModule,
+    MatIconModule
 
   
   ],
