@@ -92,3 +92,32 @@ p{
   display: inherit ;
 
 }
+
+a{
+  font-family: 'Bebas Neue', cursive;
+  color: #f0515e;
+  text-transform: uppercase;
+  font-size: 1rem;
+  display: inherit ;
+
+}
+
+.blink {
+  animation: blinker 2s linear infinite;
+  color: #ff798f;
+}
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+.blink-one {
+   animation: blinker-one 10s linear infinite;
+}
+@keyframes blinker-one {  
+   0% { opacity: 0; }
+}
+.blink-two {
+   animation: blinker-two 11s linear infinite;
+}
+@keyframes blinker-two {  
+   100% { opacity: 0; }
+}

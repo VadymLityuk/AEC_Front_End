@@ -6,4 +6,5 @@ export interface Hotel {
     nbChambres: number,
     photo: string,
     caracteristiques: string[],
+   
 }

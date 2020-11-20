@@ -11,6 +11,7 @@ export const FORFAITS: Forfait[] = [
         prix: 2476 ,
         rabais : 70,
         forfaitVed: true,
+        special:true
      },
      {  id : "2",
      destination: "Cayo Santa Maria,Cuba",
@@ -21,6 +22,7 @@ export const FORFAITS: Forfait[] = [
      prix: 800 ,
      rabais : 0,
      forfaitVed: false,
+     special:false
   },
   {  id : "3",
   destination: "Antalya,Turquie",
@@ -31,6 +33,7 @@ export const FORFAITS: Forfait[] = [
   prix: 1650 ,
   rabais : 120,
   forfaitVed: true,
+  special:true
 }
      
     

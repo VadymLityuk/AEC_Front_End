@@ -5,6 +5,7 @@
     
     <mat-card-title>{{ forfait.hotel.nom }}</mat-card-title>
     <mat-card-subtitle>de {{ forfait.villeDeDepart }} à {{ forfait.destination }}</mat-card-subtitle>
+    <a class="blink" *ngIf="forfait.special"> PROMOTION</a>
   </mat-card-header>
   <img mat-card-image src={{forfait.hotel.photo}} alt="Hilton">
   <mat-card-content>
@@ -15,6 +16,7 @@
       <app-etoiles></app-etoiles>
     </div>
     <p>{{ forfait.hotel.nbetoiles }} étoiles</p>
+
     <p>{{ forfait.hotel.nbChambres }} chambres</p>
     <p>Caracteristiques:</p>
     <ul>

@@ -10,5 +10,7 @@ export interface Forfait {
     prix: number;
     rabais : number;
     forfaitVed: boolean,
+    special:boolean
+    
 
 }
