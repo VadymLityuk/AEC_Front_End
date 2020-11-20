@@ -5,16 +5,17 @@
       <mat-form-field class="example-full-width">
         <mat-label>Destination</mat-label>
         <input type="text"
-              matInput
-              name="controldestination"
-              [ngModel]='filteredDestinations'
-              minlength="3"
+              matInput     placeholder="Choisissez une destination"
+              [ngModel]="destinations"
+              name="controlDestination"
+             minlength="3"
               maxlength="25"
-            
-              #controldestination="ngModel"
-              placeholder="Choisissez une destination"
-     
+             #controlDestination="ngModel"
               [matAutocomplete]="auto">
+              <mat-hint>au moins 3 lettres</mat-hint>
+    <mat-error *ngIf="controlDestination.hasError('required')">
+      La description est <strong>obligatoire</strong>
+    </mat-error>
      <mat-autocomplete #auto="matAutocomplete"></mat-autocomplete>
       </mat-form-field>
  

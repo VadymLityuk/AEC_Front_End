@@ -18,7 +18,7 @@ export class FormulaireComponent implements OnInit {
   filteredDestinations:  Observable<string[]>;
   filteredVillesDepart:  Observable<string[]>;
   villesDepart: string[] = ['Montréal','Québec', 'Kyiv'];
-  destinations: string[] = ['Panama','Cuba','Turquie' ];
+  destinations: string[] ;
 
   
 
