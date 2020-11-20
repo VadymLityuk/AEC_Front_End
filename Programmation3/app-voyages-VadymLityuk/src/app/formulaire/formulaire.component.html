@@ -5,10 +5,15 @@
       <mat-form-field class="example-full-width">
         <mat-label>Destination</mat-label>
         <input type="text"
-              placeholder="Choisissez une destination"
-              aria-label="Number"
               matInput
-              [formControl]="destinations"
+              name="controldestination"
+              [ngModel]='filteredDestinations'
+              minlength="3"
+              maxlength="25"
+            
+              #controldestination="ngModel"
+              placeholder="Choisissez une destination"
+     
               [matAutocomplete]="auto">
      <mat-autocomplete #auto="matAutocomplete"></mat-autocomplete>
       </mat-form-field>
@@ -26,7 +31,7 @@
     
       <mat-form-field class="example-full-width">
         <mat-label>Coordonnées </mat-label>
-        <input matInput placeholder="Adresse de l'hotel...">
+        <input matInput placeholder="Adresse de l'hotel">
       </mat-form-field>
       
       <mat-label  >Étoiles: </mat-label>
@@ -38,7 +43,7 @@
         </mat-slider> 
         <mat-form-field class="example-full-width">
           <mat-label>Nom de l’hôtel</mat-label>
-          <input matInput placeholder="Nom de l'hotel" >
+          <input matInput placeholder="Entrez le Nom de l'hotel" >
         </mat-form-field>
         <mat-form-field class="example-full-width">
           <mat-label>Nombre de chambres</mat-label>
