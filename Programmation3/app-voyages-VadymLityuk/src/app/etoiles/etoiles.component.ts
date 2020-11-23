@@ -7,7 +7,7 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class EtoilesComponent implements OnInit {
 
-  @Input() nbetoiles: number;
+  @Input() nbetoiles: string;
 
   constructor() { }
 
