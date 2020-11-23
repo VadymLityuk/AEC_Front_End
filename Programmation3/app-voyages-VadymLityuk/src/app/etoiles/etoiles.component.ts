@@ -1,5 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
 
+
 @Component({
   selector: 'app-etoiles',
   templateUrl: './etoiles.component.html',
@@ -7,7 +8,7 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class EtoilesComponent implements OnInit {
 
-  @Input() nbetoiles: number;
+  
 
   constructor() { }
 
