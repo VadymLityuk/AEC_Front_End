@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-etoiles',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./etoiles.component.css']
 })
 export class EtoilesComponent implements OnInit {
+
+  @Input() nbetoiles: number;
 
   constructor() { }
 
