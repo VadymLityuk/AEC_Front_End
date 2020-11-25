@@ -1,0 +1,18 @@
+
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+<div  id="app">
+    <div w3-include-html="header.html"></div>
+    <h1  id="monTitre"><span class="blink">{{ monTitre }}</span></h1>
+    <h2>Firstname : {{ firstname}}</h2>
+    <h2>Lastname : {{lastname}}</h2>
+    <h3>{{mydetails()}}</h3>
+    <p>{{ moncalcul }}</p>
+
+    <div w3-include-html="footer.html"></div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
