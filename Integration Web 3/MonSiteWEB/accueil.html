@@ -13,9 +13,11 @@
     <div  id="app">
         <div w3-include-html="header.html"></div>
         <h1  id="monTitre"><span class="blink">{{ monTitre }}</span></h1>
-        <h2>Developper par Vadym</h2>
-        <h3>avec Vue Js</h3>
+        <h2>Firstname : {{ firstname}}</h2>
+        <h2>Lastname : {{lastname}}</h2>
+        <h3>{{mydetails}}</h3>
         <p>{{ message }}</p>
+
         <div w3-include-html="footer.html"></div>
     </div>
 </body>
@@ -27,7 +29,10 @@
       el: '#app',
       data: {
         message: 'Hello Vue !',
-        monTitre: 'Bienvenue dans mon site'
+        monTitre: 'Bienvenue dans mon site',
+        firstname : 'Vadym',
+        lastname : 'Lityuk',
+        mydetails: 'Age: 28 , Eyes Color : Brown , Hair Color : Blonde'
       }
     })
     </script>
