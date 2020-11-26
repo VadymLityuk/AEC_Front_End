@@ -1,20 +1,44 @@
 .mat-card{
-    background-image: url('https://image.freepik.com/free-photo/pastel-pink-bokeh-lights_53876-88705.jpg'); 
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
     
-    border: 1px solid rgb(105, 130, 184);
+    box-shadow: 0 8px 6px -6px rgb(87, 48, 77);
     margin: 0.5em;
     padding: 1em;
 
 
 }
-
+.blink {
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: blinker 2s linear infinite;
+    color: #ff798f;
+  
+  }
+  @keyframes blinker {  
+    50% { opacity: 0; }
+  }
+  .blink-one {
+     animation: blinker-one 10s linear infinite;
+  }
+  @keyframes blinker-one {  
+     0% { opacity: 0; }
+  }
+  .blink-two {
+     animation: blinker-two 11s linear infinite;
+  }
+  @keyframes blinker-two {  
+     100% { opacity: 0; }
+  }
+  
 .mat-card-header {
     display: flex; 
     justify-content: space-between;
     
+    
 }
 .mat-card-title {
-    color:  #9f55a1;
+    color:  #e9eef3;
 }
 .mat-card-subtitle {
     color: #9f55a1;
