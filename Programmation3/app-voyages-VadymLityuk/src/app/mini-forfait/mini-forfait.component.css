@@ -1,7 +1,9 @@
+
+
 .mat-card{
     background-color: #D9AFD9;
     background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
-    
+    max-height: 180px;
     box-shadow: 0 8px 6px -6px rgb(87, 48, 77);
     margin: 0.5em;
     padding: 1em;
@@ -38,7 +40,7 @@
     
 }
 .mat-card-title {
-    color:  #e9eef3;
+    color:  #b852a8;
 }
 .mat-card-subtitle {
     color: #9f55a1;
@@ -49,16 +51,16 @@
 }
 .mat-card-content{
     font-family: 'Bebas Neue', cursive;
-    font-size: 2.5em;
+    font-size: 23px;
     color: #fff;
-    line-height: 40px;
+    
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(to right, #9f55a1, #ff2c6b);
 }
 .forfaitrabais{
-    font-size: 20px; 
+    font-size: 19px; 
     color: #b852a8;
     
 }
