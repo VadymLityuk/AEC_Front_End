@@ -7,7 +7,7 @@ import {FormControl} from '@angular/forms';
   styleUrls: ['./sidenav.component.css']
 })
 export class SidenavComponent implements OnInit {
-  opened = false;
+  showFiller = false;
   constructor() { }
 
   ngOnInit(): void {

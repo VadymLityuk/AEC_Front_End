@@ -1,12 +1,22 @@
-<mat-sidenav-container>
-  <mat-icon (click)="sidenav.toggle()" id="toolbarMenu" >subject</mat-icon> My app 
-  <span class="toolbar-spacer"></span>
-<mat-sidenav class="sidenav" #sidenav mode="side" [(opened)]="opened"><app-formulaire></app-formulaire></mat-sidenav>
-<mat-sidenav-content>
-<button mat-button (click)="sidenav.toggle()" >Faire une reserv</button>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+   <app-formulaire></app-formulaire>
+  </mat-drawer>
 
-</mat-sidenav-content>
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+    <mat-grid-list cols="3" rowHeight='950px' >
+       
 
 
-</mat-sidenav-container>
+      <app-liste-forfait  ></app-liste-forfait> 
+     
+         </mat-grid-list>
+  </div>
+  
+</mat-drawer-container>
+
+
 
