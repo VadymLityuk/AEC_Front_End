@@ -5,6 +5,7 @@
 }
 
 .mat-grid-list{
+    cursor: pointer;
     border-radius: 12px;
    background-image: url('https://www.xmple.com/wallpaper/purple-white-gradient-linear-2560x1440-c2-9370db-fff5ee-a-240-f-14.svg');   
    box-shadow: rgb(158, 103, 158) 1.32px 1.95px 1.95px;
