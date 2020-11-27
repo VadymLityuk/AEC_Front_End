@@ -1,10 +1,13 @@
 .mat-card{
-    
+    background: #d9a7c7;  
+    background: -webkit-linear-gradient(to left, #fffcdc, #d9a7c7);
+    background: linear-gradient(to left, #fffcdc, #d9a7c7); 
 }
 
 .mat-grid-list{
+    border-radius: 12px;
    background-image: url('https://www.xmple.com/wallpaper/purple-white-gradient-linear-2560x1440-c2-9370db-fff5ee-a-240-f-14.svg');   
-    border: 2px solid rgb(155, 119, 155);
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   box-shadow: rgb(158, 103, 158) 1.32px 1.95px 1.95px;
+  
 }
 
