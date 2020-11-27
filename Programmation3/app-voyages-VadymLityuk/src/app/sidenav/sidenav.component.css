@@ -1,8 +1,7 @@
 
 
-.mat-sidenav-content{
-  max-width: 300px;
-  height: 200px;
+.mat-drawer-container{
+ background-color: darkblue;
 }
 
 
