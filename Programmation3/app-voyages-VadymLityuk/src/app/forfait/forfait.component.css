@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Bebas+Neue&display=swap');
 
 .mat-card:not([class*=mat-elevation-z]) {
-  box-shadow: 0 2px 2px -1px rgb(179, 102, 153), 
-              0 3px 3px 0 rgb(158, 112, 144), 
-              0 2px 3px 0 rgb(156, 115, 156);
+  background-image: linear-gradient(to top, #dbd8da 0%, #ffe6fe 100%);
+  border-radius: 12px;
+  box-shadow: rgb(158, 103, 158) 1.32px 1.95px 1.95px;
 }
 .example-card {
   max-width: 500px;
@@ -78,7 +78,7 @@ li {
   cursor: pointer;
  
   border-radius: 100px;
-  border: solid 1px #e6e6e6;
+  border: solid 1px #7a3a67;
   margin:  0.2rem;
   width: 100px;
   
