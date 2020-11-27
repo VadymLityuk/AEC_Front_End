@@ -41,11 +41,18 @@
     
 }
 .mat-card-title {
+    font-family: 'Bebas Neue', cursive;
     color:  #b852a8;
 }
 .mat-card-subtitle {
-    color: #9f55a1;
-
+    font-size: 19px;
+    font-family: 'Bebas Neue', cursive;
+    color: #ffffff;
+      
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
 }
 .forfaitved{
     color: #9f55a1;
@@ -54,15 +61,19 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 23px;
     color: #fff;
-    
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(to right, #9f55a1, #ff2c6b);
 }
 .forfaitrabais{
-    font-size: 19px; 
-    color: #b852a8;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 22px; 
+    color: #fff;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
     
 }
 .mat-card-footer{
