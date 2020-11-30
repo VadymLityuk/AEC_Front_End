@@ -5,8 +5,8 @@ export interface Forfait {
     destination: string,
     villeDeDepart: string,
     hotel: Hotel,
-    dateDepart: string;
-    dateRetour: string;
+    dateDepart: Date;
+    dateRetour: Date;
     prix: number;
     rabais : number;
     forfaitVed: boolean,
