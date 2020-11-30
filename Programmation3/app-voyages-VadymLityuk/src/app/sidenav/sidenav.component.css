@@ -14,14 +14,15 @@
 
 }
 .reserve{
+  margin-top: 12px;
   text-align: center;
   font-family: 'Bebas Neue', cursive;
-  font-size: 21px;
-  color: #fff;
+  font-size: 25px;
+  color: #fdfbff;
+  text-shadow: -1px -1px 3px #2a173f, 
+      2px 2px 4px #2f1338;
  
-  /*-webkit-background-clip: text;
-  background-clip: text;
-  background-image: linear-gradient(to right, #593dd5, #fc2b00); */
+
 }
 
 .mat-sidenav, .mat-sidenav-content{
