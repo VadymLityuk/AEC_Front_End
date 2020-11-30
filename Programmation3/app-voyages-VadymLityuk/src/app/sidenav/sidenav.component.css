@@ -7,8 +7,21 @@
   
 }
 
-.my {
-background-color: white;
+.but{
+  
+  margin-left: 2em;  
+  box-shadow: 0 8px 6px -6px rgb(54, 23, 54);
+
+}
+.reserve{
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 21px;
+  color: #fff;
+ 
+  /*-webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, #593dd5, #fc2b00); */
 }
 
 .mat-sidenav, .mat-sidenav-content{
