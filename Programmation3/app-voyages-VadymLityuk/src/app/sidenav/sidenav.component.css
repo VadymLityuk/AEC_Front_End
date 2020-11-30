@@ -7,23 +7,43 @@
   
 }
 
-.but{
+.btn{
   
   margin-left: 2em;  
-  box-shadow: 0 8px 6px -6px rgb(54, 23, 54);
+    text-align: center;
 
 }
-.reserve{
-  margin-top: 12px;
-  text-align: center;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 25px;
-  color: #fdfbff;
-  text-shadow: -1px -1px 3px #2a173f, 
-      2px 2px 4px #2f1338;
- 
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
 
+  border-radius: 50px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
+.btn-hover:hover {
+  background-position: 100% 0;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+.btn-hover.mycolor {
+  background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+
 
 .mat-sidenav, .mat-sidenav-content{
 
