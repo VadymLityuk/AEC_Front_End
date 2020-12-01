@@ -40,7 +40,7 @@ export class FormulaireComponent implements OnInit {
   private _myfilter(value: string): string[] {
     const filterValue = value.toLowerCase();
 
-    return this.villesDepart.filter(option => option.toLowerCase().includes(filterValue));
+    return this.villesDepart.filter(depart => depart.toLowerCase().includes(filterValue));
   }
    private _myfilter2(value: string): string[] {
     const filterValue2 = value.toLowerCase();

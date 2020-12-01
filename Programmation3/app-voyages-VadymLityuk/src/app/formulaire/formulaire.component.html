@@ -3,17 +3,17 @@
 <form class="example-form">
   <mat-form-field class="example-full-width">
       <mat-label>Destination</mat-label>
-      <input required type="text" placeholder="ex.: Cuba" aria-label="Destination" matInput [formControl]="Control"
+      <input  matInput required type="text" placeholder="example:Kyiv" aria-label="Destination" matInput [formControl]="Control"
           [matAutocomplete]="auto">
       <mat-autocomplete #auto="matAutocomplete">
-          <!-- Boucle pour afficher tous les éléments du tableau transformés en tableau de string -->
-          <mat-option *ngFor="let option of Filtredform | async" [value]="option">
-              {{option}}
+          <mat-option *ngFor="let departs of Filtredform | async" [value]="departs">
+              {{departs}}
           </mat-option>
       </mat-autocomplete>
   </mat-form-field>
   <mat-form-field class="example-full-width">
-    <input required type="text" placeholder="Ville de départ" aria-label="Ville de départ" matInput [formControl]="ControlDepart"
+    <mat-label>Ville de départ</mat-label>
+    <input required type="text" placeholder="example: Antalya" aria-label="Ville de départ" matInput [formControl]="ControlDepart"
         [matAutocomplete]="auto2">
     <mat-autocomplete autoActiveFirstOption #auto2="matAutocomplete">
         <mat-option *ngFor="let destin of filtredDepart | async" [value]="destin">
