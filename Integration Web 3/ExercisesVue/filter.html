@@ -8,24 +8,25 @@
 <body>
     <div id="app">
         <h1>{{message | capitalize}}</h1>
+    </div>
         <script>
             let vm = new Vue({
                 el: "#app",
                 data: {
                     message : "capitalize first letter",
                 },
-                filters : {
-                capitalize: function (value){
-                    if(!value) return "";
-                    value - value.toString();
-                    return value.charAt(0).toUpperCase() + value.sl
-                },
-                },
-            });
-            Vue.filters("")
+                filters: {
+          capitalize: function (value) {
+              console.log('allo');
+            if (!value) return "";
+            value = value.toString();
+            return value.charAt(0).toUpperCase() + value.slice(1);
+          },
+        },
+      });
         </script>
 
-    </div>
+
 </body>
 
 
