@@ -26,6 +26,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { EtoilesComponent } from './etoiles/etoiles.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { RechercheComponent } from './recherche/recherche.component';
 
 
 
@@ -38,7 +39,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     MiniForfaitComponent,
     EtoilesComponent,
     FormulaireComponent,
-    SidenavComponent
+    SidenavComponent,
+    RechercheComponent
   ],
   imports: [
     BrowserModule,
