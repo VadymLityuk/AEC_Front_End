@@ -1,5 +1,6 @@
 //javascript natif
 let monComposant = {
+    composantApp
     //propriété du composant
 });
 
