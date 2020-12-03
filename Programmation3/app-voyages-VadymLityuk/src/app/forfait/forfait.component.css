@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Bebas+Neue&display=swap');
 
 .mat-card:not([class*=mat-elevation-z]) {
- 
+ background-color: rgb(234, 229, 236);
   border-radius: 12px;
   box-shadow: rgb(158, 103, 158) 1.32px 1.95px 1.95px;
 }
