@@ -11,6 +11,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatSelectModule} from '@angular/material/select';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatIconModule} from '@angular/material/icon';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
 
@@ -27,6 +28,7 @@ import { EtoilesComponent } from './etoiles/etoiles.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { RechercheComponent } from './recherche/recherche.component';
+import { ListeElementsComponent } from './liste-elements/liste-elements.component';
 
 
 
@@ -40,7 +42,8 @@ import { RechercheComponent } from './recherche/recherche.component';
     EtoilesComponent,
     FormulaireComponent,
     SidenavComponent,
-    RechercheComponent
+    RechercheComponent,
+    ListeElementsComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +61,8 @@ import { RechercheComponent } from './recherche/recherche.component';
     MatSidenavModule,
     MatSelectModule,
     MatRadioModule,
-    MatIconModule
+    MatIconModule,
+    MatCheckboxModule
 
   
   ],

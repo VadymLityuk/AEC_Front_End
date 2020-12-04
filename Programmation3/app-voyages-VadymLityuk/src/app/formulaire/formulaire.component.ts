@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-
+import { Forfait } from '../forfait';
+import { FORFAITS } from '../mock-forfaits';
+import {caracteristique} from '../mock-caracteristique';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 
@@ -21,10 +23,10 @@ export class FormulaireComponent implements OnInit {
   destinations: string[] =['Panama City','Antalya','Cayo Santa Maria'];
   Filtredform: Observable<string[]>;
   filtredDepart: Observable<string[]>;
-  
+  ForfaitGenerale: Forfait[] = FORFAITS;
+  CaracteristiqueGenerale: string[] = caracteristique;
 
-  constructor() { }
-  
+  hotel: string = "";
 
   ngOnInit(): void {
     this.Filtredform = this.Control.valueChanges.pipe(
