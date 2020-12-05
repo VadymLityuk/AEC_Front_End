@@ -1,6 +1,7 @@
 
   <fieldset>
- 
+ <legend>Destinations</legend>
+
 <form class="example-form">
   <mat-form-field class="example-full-width">
       <mat-label>Destination</mat-label>
@@ -33,6 +34,9 @@
 </fieldset>
 
 <fieldset>
+  <legend >
+    Hôtel et les Coordonnées
+  </legend>
 <mat-form-field class="example-full-width">
     <mat-label>Nom de l’hotel</mat-label>
     <input type="text" required minlength="2" matInput placeholder="ex. HOTEL HILTON" value=""
@@ -66,6 +70,15 @@
           <mat-slider required min="1" max="5" step="1" thumbLabel tickInterval="1" value="1"></mat-slider>
       </div>
   </div>
+  <mat-form-field>
+    <mat-label>Prix du forfait</mat-label>
+    <input matInput required [ngModel]="prix" name="prixForfait" #inPrix="ngModel" type="number" placeholder="0.00"
+        min="0.00" max="1000000.00" step="0.01" ng-model="prixForfait | number: 2"
+        ng-pattern="/^[0-9]+(.[0-9]{1,2})?$/">
+    <mat-error *ngIf="inPrix.hasError('required')">
+        Le prix du forfait est obligatoire
+    </mat-error>
+</mat-form-field>
     <mat-form-field>
         <mat-label>Nombre de chambre</mat-label>
         <input matInput required [ngModel]="nbChambres" name="inNbChambre" #inNbChambre="ngModel" type="number"

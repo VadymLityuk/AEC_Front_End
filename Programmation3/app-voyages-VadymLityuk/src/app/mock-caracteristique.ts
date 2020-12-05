@@ -6,7 +6,7 @@ export const caracteristique = [
      'Mariages',
      'Plage',
     'Restaurant', 
-    'Tout inclus',
+    'Toute inclus',
     'Spa',
     'Parking Gratiut',
     'WI-FI'
