@@ -10,6 +10,9 @@
               {{departs}}
           </mat-option>
       </mat-autocomplete>
+      <mat-error *ngIf="Control .hasError('required')">
+        Le ville de la destination est <strong>obligatoire</strong>
+    </mat-error>
   </mat-form-field>
   <mat-form-field class="example-form">
     <mat-label>Ville de départ</mat-label>
@@ -20,6 +23,9 @@
             {{destin}}
         </mat-option>
     </mat-autocomplete>
+    <mat-error *ngIf="ControlDepart .hasError('required')">
+        La ville de départ est <strong>obligatoire</strong>
+    </mat-error>
 </mat-form-field>
 </form>
 </fieldset>
@@ -32,7 +38,7 @@
       Le nom de l'hotel est obligatoire
     </mat-error>
     <mat-error *ngIf="ControlHotel.hasError('minlength')">
-     Minimum 5 caractères. 
+     Minimum 2 caractères. 
     </mat-error>
   </mat-form-field>
   <br>
