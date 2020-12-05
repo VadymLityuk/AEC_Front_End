@@ -27,9 +27,11 @@ export class FormulaireComponent implements OnInit {
   CaracteristiqueGenerale: string[] = caracteristique;
   nom: string;
   adresse: string;
-  nbrChambres: number;
+  nbChambres: number;
   dateDepart: Date;
   dateRetour: Date;
+  minimalDateDepart: Date= new Date;
+  minimalDateRetour: Date= new Date;
   prix: number;
 
   hotel: string = "";

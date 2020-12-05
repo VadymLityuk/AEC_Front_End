@@ -1,5 +1,6 @@
 
   <fieldset>
+ 
 <form class="example-form">
   <mat-form-field class="example-full-width">
       <mat-label>Destination</mat-label>
@@ -28,12 +29,14 @@
     </mat-error>
 </mat-form-field>
 </form>
+
 </fieldset>
-<br>
+
+<fieldset>
 <mat-form-field class="example-full-width">
     <mat-label>Nom de l’hotel</mat-label>
     <input type="text" required minlength="2" matInput placeholder="ex. HOTEL HILTON" value=""
-    [ngModel]="hotel" name="ControlHotel" #ControlHotel="ngModel">
+    [ngModel]="nom" name="ControlHotel" #ControlHotel="ngModel">
     <mat-error *ngIf="ControlHotel.hasError('required')">
       Le nom de l'hotel est obligatoire
     </mat-error>
@@ -41,10 +44,39 @@
      Minimum 2 caractères. 
     </mat-error>
   </mat-form-field>
-  <br>
-  <fieldset>
-    <legend class="forfaits-title">
-      Caractéristiques
-    </legend>
-  <mat-checkbox class="example-list-section" *ngFor="let caracteristiques of CaracteristiqueGenerale">{{caracteristiques}}</mat-checkbox><br>
+
+    <mat-form-field class="example-half-width">
+        <mat-label>Adresse</mat-label>
+        <input matInput required [ngModel]="adresse" name="inAdresse" #inAdresse="ngModel" type="text"
+            placeholder="ex. CAYO SANTA MARÍA, CAIBARIÉN - VILLA CLARA, CUBA">
+        <mat-error *ngIf="inAdresse.hasError('required')">
+            Adresse de l'hôtel sont obligatoires
+        </mat-error>
+    </mat-form-field>
 </fieldset>
+  
+  <fieldset>
+ 
+    <legend >
+      Caractéristiques de l'hôtel
+    </legend>
+    <div class="margeHaut">
+      <mat-label>Nombre d'étoiles</mat-label>
+      <div>
+          <mat-slider required min="1" max="5" step="1" thumbLabel tickInterval="1" value="1"></mat-slider>
+      </div>
+  </div>
+    <mat-form-field>
+        <mat-label>Nombre de chambre</mat-label>
+        <input matInput required [ngModel]="nbChambres" name="inNbChambre" #inNbChambre="ngModel" type="number"
+            step="100" placeholder="0" min="0">
+        <mat-error *ngIf="inNbChambre.hasError('required')">
+            Le nombre de chambre est obligatoire
+        </mat-error>
+    </mat-form-field>
+<section>
+  <mat-checkbox class="example-list-section" *ngFor="let caracteristiques of CaracteristiqueGenerale">{{caracteristiques}}</mat-checkbox><br>
+</section>
+
+</fieldset>
+
