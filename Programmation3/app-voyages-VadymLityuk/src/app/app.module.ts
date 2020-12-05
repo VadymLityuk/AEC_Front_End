@@ -43,7 +43,8 @@ import { ListeElementsComponent } from './liste-elements/liste-elements.componen
     FormulaireComponent,
     SidenavComponent,
     RechercheComponent,
-    ListeElementsComponent
+    ListeElementsComponent,
+    
   ],
   imports: [
     BrowserModule,

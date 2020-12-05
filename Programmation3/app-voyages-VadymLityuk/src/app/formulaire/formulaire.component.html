@@ -1,9 +1,9 @@
 
-
+  <fieldset>
 <form class="example-form">
   <mat-form-field class="example-full-width">
       <mat-label>Destination</mat-label>
-      <input  matInput required type="text" placeholder="ex. Kyiv" aria-label="Destination" matInput [formControl]="Control"
+      <input  matInput required type="text"  placeholder="ex. Kyiv" aria-label="Destination" matInput [formControl]="Control"
           [matAutocomplete]="auto">
       <mat-autocomplete #auto="matAutocomplete">
           <mat-option *ngFor="let departs of Filtredform | async" [value]="departs">
@@ -13,7 +13,7 @@
   </mat-form-field>
   <mat-form-field class="example-form">
     <mat-label>Ville de départ</mat-label>
-    <input required type="text" placeholder="ex. Antalya" aria-label="Ville de départ" matInput [formControl]="ControlDepart"
+    <input required type="text"  placeholder="ex. Antalya" aria-label="Ville de départ" matInput [formControl]="ControlDepart"
         [matAutocomplete]="auto2">
     <mat-autocomplete autoActiveFirstOption #auto2="matAutocomplete">
         <mat-option *ngFor="let destin of filtredDepart | async" [value]="destin">
@@ -21,10 +21,12 @@
         </mat-option>
     </mat-autocomplete>
 </mat-form-field>
+</form>
+</fieldset>
 <br>
 <mat-form-field class="example-full-width">
     <mat-label>Nom de l’hotel</mat-label>
-    <input type="text" required minlength="5" matInput placeholder="ex. HOTEL HILTON" value=""
+    <input type="text" required minlength="2" matInput placeholder="ex. HOTEL HILTON" value=""
     [ngModel]="hotel" name="ControlHotel" #ControlHotel="ngModel">
     <mat-error *ngIf="ControlHotel.hasError('required')">
       Le nom de l'hotel est obligatoire
@@ -33,4 +35,10 @@
      Minimum 5 caractères. 
     </mat-error>
   </mat-form-field>
-  <br><mat-checkbox class="example-list-section" *ngFor="let caracteristiques of CaracteristiqueGenerale">{{caracteristiques}}</mat-checkbox><br>
+  <br>
+  <fieldset>
+    <legend class="forfaits-title">
+      Caractéristiques
+    </legend>
+  <mat-checkbox class="example-list-section" *ngFor="let caracteristiques of CaracteristiqueGenerale">{{caracteristiques}}</mat-checkbox><br>
+</fieldset>

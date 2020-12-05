@@ -1,12 +1,13 @@
 import { Hotel } from './hotel';
+import { DatePipe } from '@angular/common';
 
 export interface Forfait {
     id : string;
     destination: string,
     villeDeDepart: string,
     hotel: Hotel,
-    dateDepart: string;
-    dateRetour: string;
+    dateDepart: Date;
+    dateRetour: Date;
     prix: number;
     rabais : number;
     forfaitVed: boolean,

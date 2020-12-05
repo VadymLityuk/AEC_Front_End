@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Forfait } from '../forfait';
 import { FORFAITS } from '../mock-forfaits';
+import { Formulaire } from '../formulaire';
 import {caracteristique} from '../mock-caracteristique';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
@@ -14,7 +15,7 @@ import { map, startWith } from 'rxjs/operators';
 })
 
 export class FormulaireComponent implements OnInit {
-
+  @Input() formulaire: Formulaire;
   Control = new FormControl();
   ControlDepart = new FormControl();
   filteredDestinations:  Observable<string[]>;

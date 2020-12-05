@@ -1,6 +1,7 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { Forfait } from '../forfait';
 
+
 @Component({
   selector: 'app-forfait',
   templateUrl: './forfait.component.html',
@@ -10,9 +11,17 @@ export class ForfaitComponent implements OnInit {
   
   @Input () forfait : Forfait;
 
-  constructor() { }
+
+
+
+  constructor() { 
+
+ 
+  }
 
   ngOnInit(): void {
+
+
   }
 
 }
