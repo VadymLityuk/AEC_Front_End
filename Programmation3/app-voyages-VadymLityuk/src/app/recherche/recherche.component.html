@@ -1,7 +1,20 @@
+<div >
+    <fieldset >
 
-    <fieldset>
-    
-                <mat-form-field appearance="fill">
+       <!--  
+                                     * * * * * La page entière disparaît avec l'apparence de DatePicker* * * *
+ <mat-form-field  appearance="fill">
+                <mat-label>Date de départ</mat-label>
+                <input matInput [min]="minDateDepart" [matDatepicker]="dp" required [ngModel]="dateDepart" (ngModelChange)="changeDateDepart($event)" name="inputDateDepart"
+                    #inputDateDepart="ngModel">
+                <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+                <mat-datepicker #dp></mat-datepicker>
+                <mat-error *ngIf="inputDateDepart.hasError('required')">
+                    La date de depart est obligatoire
+                </mat-error>
+            </mat-form-field>-->
+            
+                <mat-form-field appearance="fill" >
                     <mat-label>Choisir la durée</mat-label>
                     <mat-select required [ngModel]="duree" (ngModelChange)="changeDuree($event)" name="inputDuree"
                         #inputDuree="ngModel">
@@ -21,4 +34,5 @@
             <section class="sectionCheck">
                 <mat-checkbox class="checkCaract" *ngFor="let item of caracters">{{item}} </mat-checkbox>
             </section>
-        </fieldset>
+        </fieldset> 
+    </div>

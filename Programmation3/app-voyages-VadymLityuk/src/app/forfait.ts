@@ -1,5 +1,5 @@
 import { Hotel } from './hotel';
-import { DatePipe } from '@angular/common';
+
 
 export interface Forfait {
     id : string;

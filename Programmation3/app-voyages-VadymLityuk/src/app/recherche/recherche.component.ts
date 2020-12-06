@@ -3,10 +3,12 @@ import { Formulaire } from '../formulaire';
 import { duree } from '../mock-duree';
 import { caracterHotel } from '../mock-caracterHotel';
 
+
 @Component({
   selector: 'app-recherche',
   templateUrl: './recherche.component.html',
   styleUrls: ['./recherche.component.css']
+
 })
 export class RechercheComponent implements OnInit {
   @Input() formulaire: Formulaire;
