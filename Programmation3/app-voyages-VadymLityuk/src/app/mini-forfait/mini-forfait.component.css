@@ -43,12 +43,20 @@
 
 
 .mat-card-title {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     color:  #b852a8;
+}
+.subs{
+    font-size: 19px;
+    font-family: 'Bebas Neue';
+    color: #fde6e6;
+      
+ 
+
 }
 .mat-card-subtitle {
     font-size: 19px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     color: #ffffff;
       
     color: transparent;
@@ -60,7 +68,7 @@
     color: #9f55a1;
 }
 .mat-card-content{
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     font-size: 23px;
     color: #fff;
     color: transparent;

@@ -1,1 +1,24 @@
-<p>recherche works!</p>
+
+    <fieldset>
+    
+                <mat-form-field appearance="fill">
+                    <mat-label>Choisir la durée</mat-label>
+                    <mat-select required [ngModel]="duree" (ngModelChange)="changeDuree($event)" name="inputDuree"
+                        #inputDuree="ngModel">
+                        <mat-option *ngFor="let val of duree" value={{val}}>{{val}} jours</mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="inputDuree.hasError('required')">
+                        La duree est obligatoire
+                    </mat-error>
+                </mat-form-field>
+            <div>
+                <mat-label>Nombre d'étoiles</mat-label>
+                <div>
+                    <mat-slider [ngModel]="NombEtoiles" (ngModelChange)="changeNbetoiles($event)" min="1" max="5" step="1" thumbLabel tickInterval="1" value="1"></mat-slider> 
+                </div>
+            </div>
+                <h2>Caractéristiques de l'hôtel</h2>
+            <section class="sectionCheck">
+                <mat-checkbox class="checkCaract" *ngFor="let item of caracters">{{item}} </mat-checkbox>
+            </section>
+        </fieldset>

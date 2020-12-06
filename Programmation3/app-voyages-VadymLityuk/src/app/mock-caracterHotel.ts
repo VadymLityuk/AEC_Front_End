@@ -1,4 +1,4 @@
-export const caracteristique = [
+export const caracterHotel : string[] = [
      'Face à la plage',
      'à proximité de parc',
      'Ascenseur',

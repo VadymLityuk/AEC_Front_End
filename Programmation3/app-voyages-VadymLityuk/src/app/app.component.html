@@ -1,13 +1,16 @@
+
+  <app-recherche></app-recherche>
 <mat-card >
+  
     <mat-grid-list  cols="4"  rowHeight="2:1" >
         <span *ngFor="let item of mesForfaits">
-            
             <mat-grid-tile  *ngIf="item.forfaitVed" >
                     <app-mini-forfait  [forfait]="item" style="position: absolute;  height: 100%;width: 100%;" ></app-mini-forfait >
             </mat-grid-tile>
         </span>
     </mat-grid-list>
+    
 </mat-card>
-    <app-sidenav></app-sidenav>
+  <app-sidenav></app-sidenav>
  
 <router-outlet></router-outlet>

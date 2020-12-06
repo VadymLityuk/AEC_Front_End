@@ -2,7 +2,7 @@ import { Component, OnInit,Input } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Forfait } from '../forfait';
 import { FORFAITS } from '../mock-forfaits';
-import {caracteristique} from '../mock-caracteristique';
+import {caracterHotel} from '../mock-caracterHotel';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 
@@ -24,7 +24,7 @@ export class FormulaireComponent implements OnInit {
   Filtredform: Observable<string[]>;
   filtredDepart: Observable<string[]>;
   ForfaitGenerale: Forfait[] = FORFAITS;
-  CaracteristiqueGenerale: string[] = caracteristique;
+  CaracteristiqueGenerale: string[] = caracterHotel;
   nom: string;
   adresse: string;
   nbChambres: number;
