@@ -1,8 +1,7 @@
 <div >
     <fieldset >
 
-       <!--  
-                                     * * * * * La page entière disparaît avec l'apparence de DatePicker* * * *
+      
  <mat-form-field  appearance="fill">
                 <mat-label>Date de départ</mat-label>
                 <input matInput [min]="minDateDepart" [matDatepicker]="dp" required [ngModel]="dateDepart" (ngModelChange)="changeDateDepart($event)" name="inputDateDepart"
@@ -12,13 +11,13 @@
                 <mat-error *ngIf="inputDateDepart.hasError('required')">
                     La date de depart est obligatoire
                 </mat-error>
-            </mat-form-field>-->
+            </mat-form-field>
             
                 <mat-form-field appearance="fill" >
                     <mat-label>Choisir la durée</mat-label>
                     <mat-select required [ngModel]="duree" (ngModelChange)="changeDuree($event)" name="inputDuree"
                         #inputDuree="ngModel">
-                        <mat-option *ngFor="let val of duree" value={{val}}>{{val}} jours</mat-option>
+                        <mat-option *ngFor="let nbjours of duree" value={{nbjours}}>jours</mat-option>
                     </mat-select>
                     <mat-error *ngIf="inputDuree.hasError('required')">
                         La duree est obligatoire
