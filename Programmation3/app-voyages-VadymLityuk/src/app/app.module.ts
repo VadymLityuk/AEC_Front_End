@@ -32,6 +32,7 @@ import { FormulaireComponent } from './formulaire/formulaire.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { RechercheComponent } from './recherche/recherche.component';
 import { ListeElementsComponent } from './liste-elements/liste-elements.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 
@@ -47,6 +48,7 @@ import { ListeElementsComponent } from './liste-elements/liste-elements.componen
     SidenavComponent,
     RechercheComponent,
     ListeElementsComponent,
+    NavbarComponent,
     
   ],
   imports: [
