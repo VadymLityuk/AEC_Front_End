@@ -1,25 +1,30 @@
-<!-- Exercice 5 -->
 <!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
     <title>Manipulation de vue</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css" />
   </head>
   <body>
     <div id="app">
-      <div>
-        <label
-          ><input type="checkbox" v-model="checked" />Voulez-vous afficher le
-          paragraphe?</label
-        >
-      </div>
+      <h1>{{ title }}</h1>
+      <input-text></input-text>
     </div>
     <script>
+      Vue.component("input-text", {
+        data: function () {
+          return { message: "" };
+        },
+        template: `<div>
+                    <input v-model="message" placeholder="modifiez-moi">
+                    <p>Le message est : {{ message }}</p>
+                  </div>`,
+      });
       let vm = new Vue({
         el: "#app",
         data: {
-          checked: false,
+          title: "my component event",
         },
       });
     </script>

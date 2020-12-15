@@ -1,33 +1,82 @@
-<!-- Exercice 4 -->
 <!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
     <title>Manipulation de vue</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css" />
   </head>
   <body>
     <div id="app">
-      <input type="checkbox" v-model="converter" /> Convertir la température
-      <h4>{{temperatureConverted}}</h4>
+      <h1>{{ title }}</h1>
+      <users></users>
     </div>
     <script>
+      Vue.component("users", {
+        data: function () {
+          return {
+            users: [
+              {
+                firstname: "John",
+                lastname: "Dow",
+              },
+              {
+                firstname: "Jane",
+                lastname: "Dow",
+              },
+            ],
+          };
+        },
+        template: `<div>
+                    <ul>
+                      <li v-for="user in users">
+                        {{user.firstname}} {{user.lastname}}
+                        <userDetails></userDetails>
+                      </li>
+                    </ul>
+                  </div>`,
+      });
+      Vue.component("userDetails", {
+        data: function () {
+          return {
+            phoneNumber: "555 444 1234",
+            email: "john.dow@test.com",
+          };
+        },
+        template: `<div>
+                    phoneNumber: {{phoneNumber}}<br/>
+                    email: {{email}}
+                    <adressDetails></adressDetails>
+                  </div>`,
+      });
+      Vue.component("adressDetails", {
+        data: function () {
+          return {
+            adresses: [
+              {
+                streetNumber: "1",
+                streetName: "broadway",
+                city: "St John",
+                province: "NE",
+                postalCode: "A1A 1A1",
+              },
+            ],
+          };
+        },
+        template: `<div>
+                    <ul>
+                      <li v-for="adress in adresses">
+                        {{ adress.streetNumber }}, {{ adress.streetName }}<br/>
+                        {{ adress.city }}, {{ adress.province }}<br/>
+                        {{ adress.postalCode }}<br/>
+                      </li>
+                    </ul>
+                  </div>`,
+      });
       let vm = new Vue({
         el: "#app",
         data: {
-          temperatureC: 32,
-          converter: false,
-        },
-        computed: {
-          temperatureConverted() {
-            let tempConverted;
-            if (this.converter) {
-              tempConverted = this.temperatureC * (9.0 / 5) + 32 + " F";
-            } else {
-              tempConverted = this.temperatureC + " C";
-            }
-            return tempConverted;
-          },
+          title: "my users",
         },
       });
     </script>
