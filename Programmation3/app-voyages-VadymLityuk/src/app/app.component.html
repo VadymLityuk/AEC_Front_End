@@ -1,32 +1,6 @@
 
 
 <app-navbar></app-navbar>
-<mat-card >
-  
-    <mat-grid-list  cols="4"  rowHeight="2:1" >
-        <span *ngFor="let item of mesForfaits">
-            <mat-grid-tile  *ngIf="item.forfaitVed" >
-                    <app-mini-forfait  [forfait]="item" style="position: absolute;  height: 100%;width: 100%;" ></app-mini-forfait >
-            </mat-grid-tile>
-        </span>
-    </mat-grid-list>
-    
-</mat-card>
 
-<div class="mat-drawer-container">
-  <div >
-    <button class="btn-hover mycolor reserve"  (click)="sidenav.toggle()">
-      RECHERCHER
-      </button>
-  </div>   
-</div>
-<div class="example-sidenav-content">
-    <mat-drawer-container>
-      <mat-drawer #sidenav mode="side" >
-        <button mat-button (click)="sidenav.toggle()"></button>
-        <app-recherche [(formulaire)]="formulaire"></app-recherche>
-      </mat-drawer>
-      <app-sidenav></app-sidenav>
-  
  
 <router-outlet></router-outlet>
