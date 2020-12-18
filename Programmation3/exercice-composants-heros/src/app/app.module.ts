@@ -5,12 +5,30 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { Page1Component } from './page1/page1.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { EnteteComponent } from './entete/entete.component';
+import { HeroComponent } from './hero/hero.component';
+import { RechercheComponent } from './recherche/recherche.component';
+import { PiedPageComponent } from './pied-page/pied-page.component';
+import { Page2Component } from './page2/page2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
 
-    Page1Component
+    Page1Component,
+
+    CarouselComponent,
+
+    EnteteComponent,
+
+    HeroComponent,
+
+    RechercheComponent,
+
+    PiedPageComponent,
+
+    Page2Component
   ],
   imports: [
     BrowserModule,
