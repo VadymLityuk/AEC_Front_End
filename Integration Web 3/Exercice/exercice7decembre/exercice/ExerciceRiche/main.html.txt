@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Manipulation de vue - Exercice 1</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style/monstyle.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Exercice 1 Props -->
+
+      <titre-props valeur="Mon titre"></titre-props>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <!-- Exercice 2 Props dynamiques -->
+
+      <input type="text" v-model="titre" />
+      <titre-dynamique :valeur="titre"></titre-dynamique>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+
+      <!-- Exercice 3 Validation custom de props -->
+
+      <input type="text" v-model="titreValide" />
+      <titre-valide :valeur="titreValide"></titre-valide>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <!-- Exercice 4 Slots -->
+
+      <mes-slots>
+        <template v-slot:one>
+          <p>Contenu slot 1</p>
+        </template>
+        <template v-slot:two>
+          <p>Contenu slot 2</p>
+        </template>
+
+        <p>Contenu slot par défaut</p>
+
+        <template v-slot:three>
+          <p>Contenu slot 3</p>
+        </template>
+        <template v-slot:four>
+          <p>Contenu slot 4</p>
+        </template>
+
+        <p>Contenu slot par défaut</p>
+      </mes-slots>
