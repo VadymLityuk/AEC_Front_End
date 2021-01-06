@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style type="text/css">
+        .tasks__item__toggle_completed {
+          text-decoration: underline purple 3px;
+        }
+      </style>
+  </head>
+  <body>
+    <div id="firstDiv">
+      <li class="list-item" v-for="item in items">
+        <input type="checkbox" v-on:click="completeTask(item)" /><span 
+          v-bind:class=" {tasks__item__toggle_completed : isClassActive( item.completed ) } "
+        >
+     <h1>
+     {{ item.firstname }}
+     {{ item.lastname }}
+    </h1>
+      </span>
+      </li>
+    </div>
+    <script>
+      /* let vm = new Vue({
+        /*el: "#firstDiv",
+        data: {
+          items: [
+            {
+              id: 1,
+              name: "Vadym",
+              completed: false,
+            },
+            {
+              id: 2,
+              lastname: "Lityuk",
+              completed: false,
+            },
+          ],
+        },*/
+        var firstVue = new Vue({
+            el: '#firstDiv',
+            data: {
+                items:[
+                    {
+                        id:1,
+                        firstname: "Vadym",
+                        completed:false,
+                    },
+                    {
+                        id:2,
+                        lastname : "Lityuk",
+                        completed:false,
+                    }
+
+
+                ]
+             
+            },
+       
+        methods: {
+          completeTask(task) {
+            task.completed = !task.completed;
+          },
+          isClassActive(completed) {
+            console.log(completed);
+            return completed;
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
