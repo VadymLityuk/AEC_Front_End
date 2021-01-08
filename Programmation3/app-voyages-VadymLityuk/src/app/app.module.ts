@@ -33,6 +33,12 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { RechercheComponent } from './recherche/recherche.component';
 import { ListeElementsComponent } from './liste-elements/liste-elements.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TableForfaitComponent } from './table-forfait/table-forfait.component';
+import {MatTableModule} from '@angular/material/table';
+
+import { HttpClientModule } from '@angular/common/http';
+
+import { ForfaitService } from './forfait.service';
 
 
 
@@ -49,6 +55,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     RechercheComponent,
     ListeElementsComponent,
     NavbarComponent,
+    TableForfaitComponent,
     
   ],
   imports: [
@@ -71,10 +78,12 @@ import { NavbarComponent } from './navbar/navbar.component';
     MatCheckboxModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTableModule,  
+    HttpClientModule
   
   ],
-  providers: [],
+  providers: [ForfaitService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
