@@ -11,7 +11,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class ForfaitService {
-    forfaitUrl = 'https://forfaits-voyages.herokuapp.com/api/';
+    forfaitUrl = 'https://forfaits-voyages.herokuapp.com/api/forfait';
 
   constructor(private http: HttpClient) { }
 
