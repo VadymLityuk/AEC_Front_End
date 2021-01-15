@@ -14,6 +14,10 @@ export class ForfaitService {
     forfaitUrl = 'https://guarded-mesa-24051.herokuapp.com/api/';
 
      // forfaitUrl = 'https://forfaits-voyages.herokuapp.com/api/forfait';
+      // forfaitUrl = 'https://forfaits-voyages.herokuapp.com/api/forfait';
+     // https://forfaits-voyages.herokuapp.com/api/forfaits/da/1996300
+   // forfaitUrl = 'https://forfaits-voyages.herokuapp.com/api';
+
 
   constructor(private http: HttpClient) { }
 
