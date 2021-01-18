@@ -2,7 +2,7 @@ import { Forfait } from "./forfait";
 import { HOTELS } from "./mock-hotels";
 
 export const FORFAITS: Forfait[] = [
-    {  id : "1",
+    {  _id : "1",
         destination: "Panama City,Panama",
         villeDeDepart: "Montréal",
         hotel: HOTELS[0],
@@ -13,7 +13,7 @@ export const FORFAITS: Forfait[] = [
         forfaitVed: true,
         special:true
      },
-     {  id : "2",
+     {  _id : "2",
      destination: "Cayo Santa Maria,Cuba",
      villeDeDepart: "Québec",
      hotel: HOTELS[1],
@@ -24,7 +24,7 @@ export const FORFAITS: Forfait[] = [
      forfaitVed: false,
      special:false
   },
-  {  id : "3",
+  {  _id : "3",
   destination: "Antalya,Turquie",
   villeDeDepart: "Kyiv",
   hotel: HOTELS[2],

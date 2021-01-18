@@ -13,14 +13,16 @@ import { NgForm } from '@angular/forms';  // Permet de vérifier si le formulair
 export class TableForfaitComponent implements OnInit {
 
   forfaits: Forfait[];
-  columnsToDisplay = ['nom', 'actions'];
+  
+  columnsToDisplay = ['nomHotel','prix','destination','dateDepart','dateRetour', 'actions',];
+  //columnsToDisplay = ['nom', 'actions'];
   newForfait : Forfait;
   selectedForfait: Forfait;
 
   constructor(private forfaitService: ForfaitService) { }
 
   ngOnInit(): void {
-    this.newForfait = {_id: null, nom:''};
+    //this.newForfait = {_id: null, nom:''};
     this.getForfait();
   }
 

@@ -11,18 +11,19 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class ForfaitService {
-    forfaitUrl = 'https://guarded-mesa-24051.herokuapp.com/api/';
+    forfaitUrl = 'https://forfaits-voyages.herokuapp.com/api/forfaits';
+   
 
      // forfaitUrl = 'https://forfaits-voyages.herokuapp.com/api/forfait';
       // forfaitUrl = 'https://forfaits-voyages.herokuapp.com/api/forfait';
-     // https://forfaits-voyages.herokuapp.com/api/forfaits/da/1996300
+     // https://forfaits-voyages.herokuapp.com/api/forfaits/da/
    // forfaitUrl = 'https://forfaits-voyages.herokuapp.com/api';
 
 
   constructor(private http: HttpClient) { }
 
   getForfait(): Observable<Forfait[]> {
-    return this.http.get<Forfait[]>(this.forfaitUrl + 'heros');  
+    return this.http.get<Forfait[]>(this.forfaitUrl + '/da/1996458/');  
   }
 
   addForfait(forfait: Forfait): Observable<Forfait> {
