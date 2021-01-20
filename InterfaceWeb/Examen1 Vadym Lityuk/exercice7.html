@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice 7</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    
+</head>
+  <body>
+
+<!------------ Header -------------->
+    <div id="firstDiv">
+        <bar>
+            <template v-slot:header>
+                <div class="icon-bar">
+                    <a class="active" v-on:click="show = 1">
+                        <i class="fa fa-home "></i></span>
+                        <span class="far__glitch"></span>
+                        <span class="far__label">home__</span></a> 
+                    <a  v-on:click="show = 2">
+                        <span class="far__content" ><i class="fa fa-calculator "></i></span>
+                        <span class="far__glitch"></span>
+                        <span class="far__label">CAlculator__</span></a> 
+                    <a v-on:click="show = 3">
+                        <i class="fa fa-envelope "></i></span>
+                        <span class="far__glitch"></span>
+                        <span class="far__label">contact__</span></a> 
+                    <a v-on:click="show = 4">
+                        <i class="fa fa-globe"></i></span>
+                        <span class="far__glitch"></span>
+                        <span class="far__label">map__</span></a> 
+                    <a href="#">
+                        <i class="fa fa-window-close "></i></span>
+                        <span class="far__label">Close__</span></a>     
+                </div>
+                <hr>
+            </template>
+        </bar>
+     
+  <!------HOME------->      
+        <div v-if="show === 1">
+          <home>
+            <template v-slot:accueil>
+                <div id="container">
+                    <a href="#">
+                        <p class="plabel">WELCOME_ SAMURAI_</p></a>  
+                
+
+                    <div id="names">
+                      <div class="art-style-name" id="ENTROPISM-1">
+                        <h2>NOMADS_</h2>
+                      </div>
+                
+                      <div class="art-style-name" id="KITSCH-1">
+                        <h2>_STREET KID</h2>
+                      </div>
+                
+                      <div class="art-style-name" id="NEOMILITARISM-1">
+                        <h2>CORPO_</h2>
+                      </div>
+                
+                      <div class="art-style-name" id="NEOKITSCH-1">
+                        <h2>_NEOKITSCH</h2>
+                      </div>
+                    </div>
+                
+                    <div id="posters">
+                      <div class="art-style-poster">
+                        <img src="media/1.jpg" id="ENTROPISM-2">
+                      </div>
+                
+                      <div class="art-style-poster">
+                        <img src="media/2.jpg" id="KITSCH-2">
+                      </div>
+                
+                      <div class="art-style-poster">
+                        <img src="media/3.jpg" id="NEOMILITARISM-2">
+                      </div>
+                
+                      <div class="art-style-poster">
+                        <img src="media/4.jpg" id="NEOKITSCH-2">
+                      </div>
+                    </div>
+                
+                    <div id="descriptions">
+                      <div class="art-style-description" id="ENTROPISM-3">
+                        <p>
+                          The look of poverty that derives from humans grappling with
+                          and struggling against technology and its unforgiving advance.
+                          It denotes a lack of design blending with a general poverty of
+                          means and ideas.
+                        </p>
+                      </div>
+                
+                      <div class="art-style-description" id="KITSCH-3">
+                        <p>
+                          The look of a long lost golden age on people entirely unwilling
+                          or unable to forget it. It’s flashy, bold and usually cheap – filled
+                          with gold-plated cyberware, implants encased in brightly colored
+                          plastic and larger-than-life makeup.
+                        </p>
+                      </div>
+                
+                      <div class="art-style-description" id="NEOMILITARISM-3">
+                        <p>
+                          The look of global conflict and corporations jockeying for power.
+                          Cold, sharp and modern. Making everyone look as if they are ready
+                          to drop out of an AV’s cargo door and head straight into combat.
+                        </p>
+                      </div>
+                
+                      <div class="art-style-description" id="NEOKITSCH-3">
+                        <p>
+                          The look of infinite wealth and vanity. Synonymous with luxury, it
+                          has been blossoming among Night City’s wealthiest elites – those who
+                          can afford to buy anything, who can afford to be anything they want to
+                          be.
+                        </p>
+                      </div>
+                    </div>
+                
+                  </div>
+            </template>
+          </home>         
+        </div>
+
+<!------------ Contact -------------->
+  <div v-if="show === 3">
+    <fmcontct>
+      <template v-slot:contact>
+                <div class="my" >
+                    <div class="form">
+                      
+                      <div class="title name" for="firstName" augmented-ui="tr-clip exe">Prenom_:</div>
+                      <div class="message_container-alt">
+                          <div class="message-alt" augmented-ui="exe bl-clip tr-clip">
+                      <input  class="input" id="firstName" type="text" v-model="firstName" /><br><br>
+                      </div>
+                      <div class="title-alt email" for="firstName" augmented-ui="tr-clip exe">Nom_:</div>
+                      <div class="message_container-alt">
+                          <div class="message-alt" augmented-ui="exe bl-clip tr-clip">
+                      <input id="lastName" class="input" type="text" v-model="lastName" /><br><br>
+              
+                  </div>
+                      <hr>
+                  <input  type="radio"  v-model="genre" v-bind:value="mr[0]">_Homme_
+                  <input type="radio" v-model="genre" v-bind:value="mr[1]">_Femme_
+                      <button  class="btn " v-on:click="Modal = true">
+                          <span class="btn__content">Soumettre_</span>
+                          <span class="btn__glitch"></span>
+                          <span class="btn__label">r25</span>
+                      </button>
+                      <transition name="fade" appear>
+                        <div
+                          class="modal-overlay"
+                          v-if="Modal"
+                          @click="Modal = false"
+                        ></div>
+                      </transition>
+                      <transition name="slide" appear>
+                        <div class="modal" v-if="Modal">
+                          <input type="checkbox" @click="ColorChanger()">
+                          <label  for="click" v-bind:class="[{ 'changer': isChange }]">
+                          Click_Me_
+                          </label><br>
+                          <h1 v-bind:class="[{ 'cahnger': isChange }]">{{genre}} {{firstName}} {{lastName}}</h1>
+                          <button class="btn" v-on:click="Modal = false">
+                           
+                          <span class="btn__content">Fermer_</span>
+                          </button>
+                        </div>
+                      </transition> 
+      </template>
+    </fmcontct>         
+  </div>
+
+<!------------ About -------------->
+
+<div v-if="show === 4">
+  <about>
+    <template v-slot:about>
+        <div id="container">
+            <a href="#">
+                <p class="plabel">main  _menu_</p></a>  
+                <div class="icon-bar">
+                    <a class="menuBut" ><span class="far__content" >
+                        CRAFTING</span>
+                        <span class="far__glitch"></span>
+                        <span class="far__label">CRAFTING__</span></a> 
+                    <a  >
+                        <span class="far__content" >
+                         JOURNAL
+                        </span>
+                        <span class="far__glitch"></span>
+                        <span class="far__label"> JOURNAL__</span></a> 
+                    <a >
+                        <span class="far__content" >
+                         MAP</span>
+                        <span class="far__glitch"></span>
+                        <span class="far__label">MAP__</span></a> 
+                        <a >
+                            <span class="far__content" >
+                            INVENTORY</span>
+                            <span class="far__glitch"></span>
+                            <span class="far__label">INVENTORY__</span></a> 
+                </div>
+                
+          </div>
+   
+    </template>
+</about>         
+</div>
+
+<!------------ Calculator -------------->
+
+<div v-if="show === 2">
+  <calcul>
+    <template v-slot:calculation>
+        <div class="texte">
+          <h1 >Cm to Feet</h1>
+          <div class="formtwo">
+            <label for="cm">Cm</label><br>
+            <input class="input" id="cm" type="text" v-model="converter" />
+            <hr>
+            <label for="feet">Feet</label><br>
+            <input class="input" id="feet" type="text" v-bind:value="temperatureConverted"/>
+          </div>
+        </div>
+      </template>
+</calcul>         
+</div>
+
+<!------------ Footer -------------->
+  <div>
+    <down class="footer">
+        <template v-slot:footer>
+            <p>developper par Vadym Lityuk</p>
+        </template>
+    </down>
+  </div>
+
+
+
+
+</div><!-- fin id #app-->
+<script>
+
+// --------------- header -------------------- //
+
+  Vue.component("bar", {
+        template: `<div>
+                       <slot name="header"></slot>
+                  </div>`,
+      });
+
+// --------------- footer -------------------- //
+
+  Vue.component("down", {
+    template: `<div>
+                    <slot name="footer"></slot>
+                </div>`,
+    });
+
+// --------------- HOME -------------------- //
+    
+  Vue.component("home", {
+    template: `<div>
+                    <slot name="accueil"></slot>
+                </div>`,
+                
+    });
+
+// --------------- Contact -------------------- //
+
+  Vue.component("fmcontct", {
+    template: `<div>
+                  <slot name="contact"></slot>
+              </div>`,
+  });
+
+// --------------- ABOUT -------------------- //
+
+Vue.component("about", {
+    template: `<div>
+                  <slot name="about"></slot>
+              </div>`,
+  });
+
+// ------- CALCULATOR ----- //
+
+Vue.component("calcul", {
+    template: `<div>
+                  <slot name="calculation"></slot>
+              </div>`,
+  });
+
+
+  Vue.component("calcul", {
+    template: `<div>
+                  <slot name="calculation"></slot>
+              </div>`,
+  });
+
+
+  let firstVue = new Vue({
+    el: "#firstDiv",
+          data: {  
+            show: 1,
+            firstName: "Vadym",
+            lastName: "Lityuk",
+            Modal: false,
+            isChange: false,
+            genre:"",
+            mr:[a= "Mr.",b= "Ms."],
+            converter: 0,
+            calculation: "",
+    numbCalculation: null,
+    
+  },
+  methods: {
+            ColorChanger() {
+              this.isChange = !this.isChange
+            }
+      },
+  computed: {
+    temperatureConverted() {
+        let numbCalculation= this.converter * 0.39370079;
+        return numbCalculation.toFixed(2);
+      },
+    },
+    
+  });
+
+
+</script>
+<script>
+
+const kv = {
+    'ENTROPISM-2': ['ENTROPISM-1', 'ENTROPISM-3'],
+    'KITSCH-2': ['KITSCH-1', 'KITSCH-3'],
+    'NEOMILITARISM-2': ['NEOMILITARISM-1', 'NEOMILITARISM-3'],
+    'NEOKITSCH-2': ['NEOKITSCH-1', 'NEOKITSCH-3']
+  }
+
+  document.querySelectorAll('.art-style-poster').forEach(function(item) {
+
+    item.addEventListener('mouseover', function(e) {
+      document.querySelector('#' + kv[e.target.id][1]).style.visibility = 'visible';
+      document.querySelector('#' + kv[e.target.id][0]).style.visibility = 'visible';
+      e.target.style.border = 'solid 2px var(--colors-primary--500)';
+    });
+
+    item.addEventListener('mouseout', function(e) {
+      document.querySelector('#' + kv[e.target.id][1]).style.visibility = 'hidden';
+      document.querySelector('#' + kv[e.target.id][0]).style.visibility = 'hidden';
+      e.target.style.border = 'none';
+    });
+
+  });
+</script>
+    </body>
+</html>

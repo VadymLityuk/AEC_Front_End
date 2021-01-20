@@ -1,0 +1,88 @@
+  
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>exercice 4</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    
+    <link rel="stylesheet" href="CSS/styles.css">
+ 
+</head>
+
+
+  <body>
+    <div class="my" id="firstDiv">
+      <div class="form">
+        
+        <div class="title name" for="firstName" augmented-ui="tr-clip exe">Prenom_:</div>
+        <div class="message_container-alt">
+            <div class="message-alt" augmented-ui="exe bl-clip tr-clip">
+        <input  class="input" id="firstName" type="text" v-model="firstName" /><br><br>
+        </div>
+        <div class="title-alt email" for="firstName" augmented-ui="tr-clip exe">Nom_:</div>
+        <div class="message_container-alt">
+            <div class="message-alt" augmented-ui="exe bl-clip tr-clip">
+        <input id="lastName" class="input" type="text" v-model="lastName" /><br><br>
+
+    </div>
+    
+        <hr>
+        
+    <input  type="radio"  v-model="genre" v-bind:value="mr[0]">_Homme_
+    <input type="radio" v-model="genre" v-bind:value="mr[1]">_Femme_
+
+       
+        <button  class="btn " v-on:click="Modal = true">
+            <span class="btn__content">Soumettre_</span>
+            <span class="btn__glitch"></span>
+            <span class="btn__label">r25</span>
+        </button>
+        
+        <transition name="fade" appear>
+          <div
+            class="modal-overlay"
+            v-if="Modal"
+            @click="Modal = false"
+          ></div>
+        </transition>
+        <transition name="slide" appear>
+          <div class="modal" v-if="Modal">
+            <input type="checkbox" @click="ColorChanger()">
+            <label  for="click" v-bind:class="[{ 'changer': isChange }]">
+            Click_Me_
+            </label><br>
+            <h1 v-bind:class="[{ 'cahnger': isChange }]">{{genre}} {{firstName}} {{lastName}}</h1>
+            <button class="btn" v-on:click="Modal = false">
+             
+            <span class="btn__content">Fermer_</span>
+            </button>
+          </div>
+        </transition> 
+        
+
+      </div>
+    </div>
+    
+
+      <script>
+       var firstVue = new Vue({
+          el: "#firstDiv",
+          data: { 
+            firstName: "Vadym",
+            lastName: "Lityuk",
+            Modal: false,
+            isChange: false,
+            genre:"",
+            mr:[a= "Mr.",b= "Ms."],
+          },    
+          methods: {
+            ColorChanger() {
+              this.isChange = !this.isChange
+            }
+          } 
+        });
+      </script>
+
+  </body>
