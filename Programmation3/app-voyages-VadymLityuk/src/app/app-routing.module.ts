@@ -2,12 +2,15 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ForfaitCompComponent} from './forfait-comp/forfait-comp.component'
 import {TableForfaitComponent} from './table-forfait/table-forfait.component'
+import {GraphiqueComponent} from './graphique/graphique.component'
 
 const routes: Routes = [
 
   {path: 'Accueil', component: ForfaitCompComponent, pathMatch: 'full' },
    
   {path: 'TableForfait', component: TableForfaitComponent, pathMatch: 'full' },
+
+  {path: 'Graphique', component: GraphiqueComponent, pathMatch: 'full' }
 ];  
 
 @NgModule({

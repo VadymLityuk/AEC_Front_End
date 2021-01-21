@@ -36,9 +36,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { TableForfaitComponent } from './table-forfait/table-forfait.component';
 import {MatTableModule} from '@angular/material/table';
 
+import { ChartsModule } from 'ng2-charts';
 import { HttpClientModule } from '@angular/common/http';
 
 import { ForfaitService } from './forfait.service';
+import { GraphiqueComponent } from './graphique/graphique.component';
+import { PiechartComponent } from './piechart/piechart.component';
 
 
 
@@ -56,6 +59,8 @@ import { ForfaitService } from './forfait.service';
     ListeElementsComponent,
     NavbarComponent,
     TableForfaitComponent,
+    GraphiqueComponent,
+    PiechartComponent,
     
   ],
   imports: [
@@ -80,7 +85,8 @@ import { ForfaitService } from './forfait.service';
     MatNativeDateModule,
     MatToolbarModule,
     MatTableModule,  
-    HttpClientModule
+    HttpClientModule,
+    ChartsModule
   
   ],
   providers: [ForfaitService],
