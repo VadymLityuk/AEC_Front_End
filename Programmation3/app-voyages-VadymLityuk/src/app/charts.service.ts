@@ -16,7 +16,7 @@ export class ChartsService {
 
     constructor(private http: HttpClient) { }
 
-
+ 
   /*  dailyCharts(){
         return this.http.get("https://forfaits-voyages.herokuapp.com/api/reservations")
       // .map(result => result);
