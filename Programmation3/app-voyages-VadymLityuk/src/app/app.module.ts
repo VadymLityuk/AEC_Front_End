@@ -16,9 +16,6 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
-
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ForfaitComponent } from './forfait/forfait.component';
@@ -38,7 +35,7 @@ import {MatTableModule} from '@angular/material/table';
 
 import { ChartsModule } from 'ng2-charts';
 import { HttpClientModule } from '@angular/common/http';
-
+ import {ChartsService} from './charts.service';
 import { ForfaitService } from './forfait.service';
 import { GraphiqueComponent } from './graphique/graphique.component';
 import { PiechartComponent } from './piechart/piechart.component';
@@ -86,10 +83,10 @@ import { PiechartComponent } from './piechart/piechart.component';
     MatToolbarModule,
     MatTableModule,  
     HttpClientModule,
-    ChartsModule
+    ChartsModule,
   
   ],
-  providers: [ForfaitService],
+  providers: [ForfaitService,ChartsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

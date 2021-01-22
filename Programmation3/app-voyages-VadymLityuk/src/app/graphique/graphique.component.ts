@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-@Component({
+import { ChartsService } from '../charts.service';
+
+@Component({ 
   selector: 'app-graphique',
   templateUrl: './graphique.component.html',
   styleUrls: ['./graphique.component.css']
@@ -10,7 +12,9 @@ export class GraphiqueComponent implements OnInit {
     type : 'bar',
     legende : true,
     options : { responsive: true, maintainAspectRatio: false }
-  };
+
+    
+  }; 
 
   public mesdonnees = {
     etiquettes : ['2006', '2007', '2008', '2009', '2010', '2011', '2012'],
@@ -22,9 +26,17 @@ export class GraphiqueComponent implements OnInit {
   };
 
 
-  constructor() { }
+  
+  constructor(private ChartsService: ChartsService) { }
 
   ngOnInit(): void {
+    this.ChartsService.getCharts()
+    .subscribe(res=> { 
+     
+
+    //  let dateReservation = res['[]'].map(res =>res.main.dateReservation)
+
+    })
   }
 
 }
