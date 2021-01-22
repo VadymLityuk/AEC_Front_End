@@ -17,6 +17,7 @@ export class GraphiqueComponent implements OnInit {
     data : [
       { data: [65, 59, 80, 81, 56, 55, 40], label: 'Série A' },
       { data: [28, 48, 40, 19, 86, 27, 90], label: 'Série B' }
+      //https://forfaits-voyages.herokuapp.com/api/reservations
     ]
   };
 

@@ -3,7 +3,7 @@ import { Hotel } from './hotel';
 
 export interface Forfait {
     _id : string;
-    da:string;
+    //da:string;
     destination: string,
     villeDeDepart: string,
     hotel: Hotel,
@@ -13,11 +13,7 @@ export interface Forfait {
     rabais : number;
     forfaitVed: boolean,
     special:boolean,
-    villeDepart: string,
-    dateDepartD: Date,
-    dateRetourD: Date,
-    vedette: boolean,
-    forfaitEnVedette: string,
+    
     
 
 }
