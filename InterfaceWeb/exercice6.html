@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>exercice 6</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+
+
+    <div id="approp">
+        <top>
+            <template v-slot:header>
+                <div class="icon-bar">
+                    <a class="active" href="#">
+                        <i class="fa fa-home "></i></span>
+                        <span class="far__glitch"></span>
+                        <span class="far__label">home__</span></a> 
+                    <a  href="#">
+                        <span class="far__content" ><i class="fa fa-calculator "></i></span>
+                        <span class="far__glitch"></span>
+                        <span class="far__label">CAlculator__</span></a> 
+                    <a href="#">
+                        
+                        <i class="fa fa-envelope "></i></span>
+                        <span class="far__glitch"></span>
+                        <span class="far__label">contact__</span></a> 
+                    <a href="#">
+                        <i class="fa fa-globe"></i></span>
+                        <span class="far__glitch"></span>
+                        <span class="far__label">map__</span></a> 
+                    <a href="#">
+                        
+                        <i class="fa fa-window-close "></i></span>
+                        <span class="far__label">Close__</span></a>     
+                </div>
+            </template>
+        </top>         
+    </div>
+
+    <hr>
+
+
+    <div id="firstDiv">
+        <h1>{{firstname}}</h1>
+        <h1 v-text="lastname"></h1>
+    </div>
+
+
+    <div id="down">
+        <down class="footer">
+            <template v-slot:footer>
+                <p>developper par Vadym Lityuk</p>
+            </template>
+        </down>
+    </div>
+
+
+    <script>
+
+      Vue.component("top", {
+        template: `<div>
+                       <slot name="header"></slot>
+                  </div>`,
+      });
+
+      Vue.component("down", {
+    template: `<div>
+                    <slot name="footer"></slot>
+                </div>`,
+    });
+
+    let firstVue = new Vue({
+        el: "#firstDiv",
+        data: {
+          firstname: "Vadym",
+          lastname: "Lityuk",
+        },
+      });
+
+
+    let prop = new Vue({
+        el: "#approp",
+    });
+
+     
+    let down = new Vue({
+        el: "#down",
+    });
+
+
+    </script>
+
+    </body>
+</html>
