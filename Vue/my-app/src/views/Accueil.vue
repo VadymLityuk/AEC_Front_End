@@ -107,7 +107,6 @@
   }
 
  
-
 const kv = {
     'ENTROPISM-2': ['ENTROPISM-1', 'ENTROPISM-3'],
     'KITSCH-2': ['KITSCH-1', 'KITSCH-3'],
@@ -130,6 +129,7 @@ const kv = {
     });
 
   });
+
 
 </script>
 
