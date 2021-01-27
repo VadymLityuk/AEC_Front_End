@@ -9,7 +9,7 @@ MyPlugin.install = function (Vue, options) {
     bind (el, binding, vnode, oldVnode) {
       // de la logique de code...
     }
-    ...
+    
   })
 
   // 3. injecter des options de composant
@@ -17,7 +17,7 @@ MyPlugin.install = function (Vue, options) {
     created: function () {
       // de la logique de code...
     }
-    ...
+    
   })
 
   // 4. ajouter une méthode d'instance
