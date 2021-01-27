@@ -26,7 +26,5 @@ export default {
 </script>
 
 <style scopped>
-    .linear-gradient {
-        background: linear-gradient(white,#E56525, #75CCD2,#273370);
-    }
+    
 </style>

@@ -100,27 +100,12 @@
 
 <style scoped>
     
-    #pageContact{
-    background-image: url("../assets/img/cyb.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: blue;
-    background-size: cover;
-    min-height: 100%;
-    padding: 2%;
-    }
+  
     #formContact{
     width: 80%;
     margin: auto;
     }
-    fieldset {
-    font-size: 1.5rem;
-    width: 90%;
-    margin: auto;
-    border: 1px dashed gray;
-    border-radius: 15px;
-    background-color: white;
-    }
+   
     legend {
     color: #008cba;
     }

@@ -64,7 +64,7 @@
                     <option v-for="ville in villes" :key="ville">{{ville}}</option>
                 </select>
             </div>                
-            <button type="submit" class="btn btn-primary mt-5 mb-5">Enregistrer</button>
+            <button type="submit" class="btn btn-primary mt-5 mb-5">SUBMIT</button>
         </form>
         </fieldset>
     </div>
@@ -84,11 +84,8 @@
       confirmMotDePasse: null,
       sexe: null,
       villes: [
-        "Jonquière",
-        "Montréal",
+        "KYIV",
         "Québec",
-        "Trois-Rivières",
-        "Victoriaville",
       ],
       villeChoisie: null,
     };
@@ -106,7 +103,6 @@
       }
       if (!this.courriel) {
         this.erreurs.push("Un courriel est requis");
-        //Si la fonction retourne faux ajouter un message d'erreur
       } else if (!this.checkEmail(this.courriel)) {
         this.erreurs.push("Un courriel valide est requis");
       }
@@ -144,10 +140,6 @@
     /*Centrer le formulaire*/
     
     #pageInscription {
-    background-image: url("../assets/img/cyb.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: blue;
     background-size: cover;
     min-height: 100%;
     padding: 2%;
@@ -157,23 +149,14 @@
     width: 80%;
     margin: auto;
     }
-    /*encadrement*/
-    fieldset {
-    font-size: 1.5rem;
-    width: 90%;
-    margin: auto;
-    border: 1px dashed gray;
-    border-radius: 15px;
-    background-color: white;
-    }
+  
     legend {
     color: #008cba;
     }
-    /*Bouton submit*/
     button{
     font-size: 1.5rem;
     float: right;
-    background-color: #008cba;
+    background-color: #f0f358;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -183,7 +166,6 @@
     button:hover {
     background-color: #024257;
     }
-    /*boutons radio pour le sexe*/  
     .form-check-label {
     font-size: 1rem;
     }
