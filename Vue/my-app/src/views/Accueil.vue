@@ -107,30 +107,6 @@
   }
 
  
-const kv = {
-    'ENTROPISM-2': ['ENTROPISM-1', 'ENTROPISM-3'],
-    'KITSCH-2': ['KITSCH-1', 'KITSCH-3'],
-    'NEOMILITARISM-2': ['NEOMILITARISM-1', 'NEOMILITARISM-3'],
-    'NEOKITSCH-2': ['NEOKITSCH-1', 'NEOKITSCH-3']
-  }
-
-  document.querySelectorAll('.art-style-poster').forEach(function(item) {
-
-    item.addEventListener('mouseover', function(e) {
-      document.querySelector('#' + kv[e.target.id][1]).style.visibility = 'visible';
-      document.querySelector('#' + kv[e.target.id][0]).style.visibility = 'visible';
-      e.target.style.border = 'solid 2px var(--colors-primary--500)';
-    });
-
-    item.addEventListener('mouseout', function(e) {
-      document.querySelector('#' + kv[e.target.id][1]).style.visibility = 'hidden';
-      document.querySelector('#' + kv[e.target.id][0]).style.visibility = 'hidden';
-      e.target.style.border = 'none';
-    });
-
-  });
-
-
 </script>
 
 <style>
@@ -576,8 +552,6 @@ padding: 25px;
   
   
   .active {
-    width: 230px;
-    height: 50px; 
     border: 2px ridge var( --colors-primary--300);
     background-color: var(--colors-primary--700 0.5);
     cursor: pointer;
@@ -773,12 +747,13 @@ padding: 25px;
 
 
 h2 {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  
+  font-family: Tomorrow, sans-serif;
   font-weight: lighter;
   font-size: 1.25em;
   letter-spacing: 2px;
   padding-left: 5px;
-  color:  var(--colors-secondary--500);
+  color:  var(--yellow-color);
   margin-top: 1%;
 }
 
@@ -788,7 +763,8 @@ img {
 }
 
 p {
-  font-family: sans-serif;
+  
+  font-family: Tomorrow, sans-serif;
   letter-spacing: 0.25px;
   font-weight: lighter;
   padding-left: 4px;
@@ -810,7 +786,6 @@ p {
 #posters, #descriptions, #names {
   display: flex;
   flex-direction: row;
-  overflow: hidden;
   margin: 0 auto;
   width: 100%;
 }
@@ -828,14 +803,12 @@ p {
 }
 
 .art-style-description {
-  visibility: hidden;
   height: 118px;
   width: 328px;
   margin: 10px;
 }
 
 .art-style-name {
-  visibility: hidden;
   height: 20px;
   width: 400px;
   margin: 10px;
