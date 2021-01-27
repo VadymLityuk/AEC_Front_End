@@ -1,10 +1,13 @@
 <template>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <div class="icon-bar">
+      <router-link to="/"> home
+                        <span class="far__glitch"></span>
+                        <span class="far__label">home__</span></router-link> |
       <router-link to="/contact">Contact</router-link> |
       <router-link to="/inscription">Inscription</router-link> |
       <router-link to="/login">Connexion</router-link>
-    </div>
+      </div>
+  
 </template>
 <script>
     export default {
