@@ -1,6 +1,12 @@
 <h1 id="heroFormAjout" >Tableau des forfaits voyage</h1>
 
-<!---forfait.hotel.nom = "Mon hotel"-->
+
+<h1>Ajout d'un nouveau forfait</h1>
+<button matSuffix type="submit" mat-icon-button color="primary" >
+    <i class="material-icons">add</i>
+</button>
+
+<!---forfait.hotel.nom = "Mon hotel"--  (click)="openDialogNewForfait() --->
 <table id="heroFormAjout" mat-table #tableForfaits [dataSource]="forfaits">
     <!-- TABLE HOTEL DATA-->
     <ng-container matColumnDef="dateDepart">

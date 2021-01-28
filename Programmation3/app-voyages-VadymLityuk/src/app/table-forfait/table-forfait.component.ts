@@ -54,6 +54,6 @@ export class TableForfaitComponent implements OnInit {
         .subscribe(result => this.forfaits = this.forfaits.filter(h => h !== forfait));
    }
    
-
-
 }
+
+
