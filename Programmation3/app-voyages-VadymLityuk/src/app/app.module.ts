@@ -39,6 +39,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ForfaitService } from './forfait.service';
 import { GraphiqueComponent } from './graphique/graphique.component';
 import { PiechartComponent } from './piechart/piechart.component';
+import { ForfaitCubaComponent } from './forfait-cuba/forfait-cuba.component';
 
 
 
@@ -58,6 +59,7 @@ import { PiechartComponent } from './piechart/piechart.component';
     TableForfaitComponent,
     GraphiqueComponent,
     PiechartComponent,
+    ForfaitCubaComponent,
     
   ],
   imports: [
