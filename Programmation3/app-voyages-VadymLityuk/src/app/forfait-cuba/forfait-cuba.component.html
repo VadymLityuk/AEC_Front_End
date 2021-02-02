@@ -1,1 +1,6 @@
-<p>forfait-cuba works!</p>
+
+    <span *ngFor="let item of mesForfaits">
+        <ng-template [ngIf]="contains(item.destination,'Cuba')">
+           <app-forfait  [forfait]="item"  style="padding-left: 12px; text-align: center;"></app-forfait>
+        </ng-template>
+    </span>

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ForfaitCompComponent} from './forfait-comp/forfait-comp.component'
 import {TableForfaitComponent} from './table-forfait/table-forfait.component'
 import {GraphiqueComponent} from './graphique/graphique.component'
+import { ForfaitCubaComponent } from './forfait-cuba/forfait-cuba.component';
 
 const routes: Routes = [
 
@@ -10,7 +11,14 @@ const routes: Routes = [
    
   {path: 'TableForfait', component: TableForfaitComponent, pathMatch: 'full' },
 
-  {path: 'Graphique', component: GraphiqueComponent, pathMatch: 'full' }
+  {path: 'Graphique', component: GraphiqueComponent, pathMatch: 'full' },
+
+  
+  {path: 'Cuba', component: ForfaitCubaComponent, pathMatch: 'full' }
+
+
+
+  //app-forfait-cuba
 ];  
 
 @NgModule({
