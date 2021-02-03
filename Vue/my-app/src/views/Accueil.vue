@@ -73,7 +73,7 @@
                           has been blossoming among Night City’s wealthiest elites – those who
                           can afford to buy anything, who can afford to be anything they want to
                           be.
-                          
+
                         </p>
                       </div>
                     </div>
@@ -120,6 +120,8 @@
   --black-color: #050a0e;
   --blue-color: #00f0ff;
   --white-color: #fafafa;
+
+  
 }
 html,
 body {
