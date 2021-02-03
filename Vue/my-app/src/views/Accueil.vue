@@ -73,6 +73,7 @@
                           has been blossoming among Night City’s wealthiest elites – those who
                           can afford to buy anything, who can afford to be anything they want to
                           be.
+                          
                         </p>
                       </div>
                     </div>
