@@ -40,6 +40,7 @@ import { ForfaitService } from './forfait.service';
 import { GraphiqueComponent } from './graphique/graphique.component';
 import { PiechartComponent } from './piechart/piechart.component';
 import { ForfaitCubaComponent } from './forfait-cuba/forfait-cuba.component';
+import { MexiqueComponent } from './mexique/mexique.component';
 
 
 
@@ -60,6 +61,7 @@ import { ForfaitCubaComponent } from './forfait-cuba/forfait-cuba.component';
     GraphiqueComponent,
     PiechartComponent,
     ForfaitCubaComponent,
+    MexiqueComponent,
     
   ],
   imports: [
