@@ -35,7 +35,7 @@
       return {
         erreurs: [],
         courriel: null,
-        motDePasse: null,
+        pass: null,
       };
     },
   methods: {
@@ -44,7 +44,7 @@
         //Vider le tableau des erreurs
         this.erreurs = [];
         //Si il n'y a aucune erreur l'attribut submit du formulaire est vrai
-        if (this.courriel && this.motDePasse) {
+        if (this.courriel && this.pass) {
           return true;
         }
         if (!this.courriel) {
