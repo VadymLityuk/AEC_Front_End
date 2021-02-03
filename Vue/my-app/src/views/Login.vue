@@ -18,7 +18,7 @@
           </div>
           
           <div class="form-group">
-              <label for="motDePasse">Mot de passe</label>
+              <label for="motDePasse">Password</label>
               <input v-model="motDePasse" required type="password" class="form-control" id="motDePasse" aria-describedby="passwordHelp">
               <small id="passwordHelp" class="form-text text-muted">!!</small>
           </div>
