@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 const port = 3000;
 const bodyParser = require("body-parser")
 const messages =require("./src/db/messages")
-
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -11,10 +11,6 @@ app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
-});
-
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
 });
 
 app.post("/messages", (req, res) => {
@@ -31,4 +27,8 @@ res.json(error);
 
 });
 })
+
+app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}`);
+  });
 
