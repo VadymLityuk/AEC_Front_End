@@ -20,7 +20,7 @@
           <div class="form-group">
               <label for="motDePasse">Mot de passe</label>
               <input v-model="motDePasse" required type="password" class="form-control" id="motDePasse" aria-describedby="passwordHelp">
-              <small id="passwordHelp" class="form-text text-muted">Ne partager pas votre mot de passe</small>
+              <small id="passwordHelp" class="form-text text-muted">!!</small>
           </div>
           <button type="submit" class="btn btn-primary mt-5">Connexion</button>
       </form>
