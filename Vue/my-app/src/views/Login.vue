@@ -50,7 +50,7 @@
         if (!this.courriel) {
           this.erreurs.push("Votre courriel est requis");
         }
-        if (!this.motDePasse) {
+        if (!this.pass) {
           this.erreurs.push("Votre mot de passe est requis");
         }
         //Empêche de rafraîchir la page lors du submit
