@@ -10,7 +10,7 @@ import { ForfaitService } from '../forfait.service';
 })
 export class ForfaitCubaComponent implements OnInit {
 
-  mesForfaits: Array<Forfait> ;
+  CubaForfaits: Array<Forfait> ;
  
 
   contains(destination, pays) {
@@ -28,7 +28,7 @@ export class ForfaitCubaComponent implements OnInit {
   getForfaits(): void {
     this.forfaitsService.getForfait()
         .subscribe(resultat => {
-          this.mesForfaits = resultat
+          this.CubaForfaits = resultat
         });
 
 }
