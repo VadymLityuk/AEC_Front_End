@@ -1,6 +1,4 @@
 
-
-
 <h1>Administration</h1>
 
 <hr>
@@ -43,11 +41,35 @@
             </form>
         </td>
      </ng-container>
+ 
 
     <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
     <tr mat-row *matRowDef="let myRowData; columns: columnsToDisplay"></tr>
 </table>
-<hr>
-<button class="btn-hover mycolor reserve" (click)="openDialogNewForfait()">
+   <!-- ACTIONS <button class="btn-hover mycolor reserve" (click)="openDialogNewForfait()">
     Ajout d'un forfait
- </button>
+ </button> -->
+ <hr>
+ <h1>  Ajout d'un forfait</h1>
+ <form #tableadimn="ngForm" id="heroFormAjout" (ngSubmit)="onAdd(tableForfaits, tableadimn);">
+    <mat-form-field class="input-full-width">
+        <input type="text" name="nom" required minlength="2" maxlength="50" [(ngModel)]="newForfait.destination" matInput #nom="ngModel" placeholder="Destination">
+        <button matSuffix  type="submit" mat-icon-button color="primary" [disabled]="!tableadimn.form.valid"><i class="material-icons">add</i></button>
+        <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('required')">Le nom est obligatoire.</mat-error>
+        <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('minlength')">Le nom doit contenir au moins 2 caractères.</mat-error>
+        <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('maxlength')">Le nom doit contenir au maximum 50 caractères.</mat-error>
+    </mat-form-field>
+    <mat-form-field class="input-full-width">
+        <input type="text" name="nom" required minlength="2" maxlength="50" [(ngModel)]="newForfait.hotel.nom" matInput #nom="ngModel" placeholder="Nom">
+        <button matSuffix  type="submit" mat-icon-button color="primary" [disabled]="!tableadimn.form.valid"><i class="material-icons">add</i></button>
+        <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('required')">Le nom est obligatoire.</mat-error>
+        <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('minlength')">Le nom doit contenir au moins 2 caractères.</mat-error>
+        <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('maxlength')">Le nom doit contenir au maximum 50 caractères.</mat-error>
+    </mat-form-field>
+ </form>
+
+
+   
+ 
+ 
+ 
