@@ -6,6 +6,7 @@ import {caracterHotel} from '../mock-caracterHotel';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-formulaire',
@@ -20,7 +21,7 @@ export class FormulaireComponent implements OnInit {
   filteredDestinations:  Observable<string[]>;
   filteredVillesDepart:  Observable<string[]>;
   villesDepart: string[] = ['Montréal','Québec', 'Kyiv'];
-  destinations: string[] =['Panama City','Antalya','Cayo Santa Maria'];
+  destinations: string[] =['Panama City','Antalya','Cayo Santa Maria','Cuba', 'Jamaïque', 'Mexique', 'Japon', 'ALASKA' ];
   Filtredform: Observable<string[]>;
   filtredDepart: Observable<string[]>;
   ForfaitGenerale: Forfait[] = FORFAITS;

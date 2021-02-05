@@ -11,7 +11,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class ForfaitService {
-    forfaitUrl = 'https://forfaits-voyages.herokuapp.com/api/forfaits/da/1996458/';
+    forfaitUrl = 'https://forfaits-voyages.herokuapp.com/api/forfaits/';
    
 
      // forfaitUrl = 'https://forfaits-voyages.herokuapp.com/api/forfait';
@@ -23,7 +23,7 @@ export class ForfaitService {
 
   getForfait(): Observable<Forfait[]> {
     //return this.http.get<Forfait[]>(this.forfaitUrl + '/da/1996458/');  
-    return this.http.get<Forfait[]>(this.forfaitUrl); 
+    return this.http.get<Forfait[]>(this.forfaitUrl+'da/1996458/');  
   }
 
   addForfait(forfait: Forfait): Observable<Forfait> {

@@ -1,32 +1,29 @@
-<h1 id="heroFormAjout" >Tableau des forfaits voyage</h1>
 
 
-<h1>Ajout d'un nouveau forfait</h1>
-<button matSuffix type="submit" mat-icon-button color="primary" >
-    <i class="material-icons">add</i>
-</button>
 
-<!---forfait.hotel.nom = "Mon hotel"--  (click)="openDialogNewForfait() --->
-<table id="heroFormAjout" mat-table #tableForfaits [dataSource]="forfaits">
+<h1>Administration</h1>
+
+<hr>
+<table id="tableadimn" mat-table #tableForfaits [dataSource]="forfaits">
     <!-- TABLE HOTEL DATA-->
     <ng-container matColumnDef="dateDepart">
-        <th mat-header-cell *matHeaderCellDef> Date de départ </th><!-- TITLE-->
-        <td mat-cell *matCellDef="let forfait"> {{forfait.dateDepart}} </td> 
+        <th mat-header-cell *matHeaderCellDef> Date de départ </th>
+        <td mat-cell *matCellDef="let forfait"> {{forfait.dateDepart }} </td> 
     </ng-container>
     <ng-container matColumnDef="dateRetour">
-        <th mat-header-cell *matHeaderCellDef> Date de retour </th><!-- TITLE -->
+        <th mat-header-cell *matHeaderCellDef> Date de retour </th>
         <td mat-cell *matCellDef="let forfait"> {{forfait.dateRetour}} </td>
     </ng-container>
     <ng-container matColumnDef="nomHotel">
-        <th mat-header-cell *matHeaderCellDef> Nom de l'hôtel</th><!-- TITLE -->
+        <th mat-header-cell *matHeaderCellDef> Nom de l'hôtel</th>
         <td mat-cell *matCellDef="let forfait"> {{forfait.hotel.nom}} </td>
     </ng-container>
     <ng-container matColumnDef="prix">
-        <th mat-header-cell *matHeaderCellDef> Prix </th><!-- TITLE -->
+        <th mat-header-cell *matHeaderCellDef> Prix </th>
         <td mat-cell *matCellDef="let forfait"> {{forfait.prix}} </td> Valeur associé à la colonne
     </ng-container>
     <ng-container matColumnDef="destination">
-        <th mat-header-cell *matHeaderCellDef> Destination </th><!-- TITLE -->
+        <th mat-header-cell *matHeaderCellDef> Destination </th>
         <td mat-cell *matCellDef="let forfait"> {{forfait.destination}} </td> Valeur associé à la colonne
     </ng-container>
     <!-- ACTIONS -->
@@ -36,8 +33,9 @@
             <button *ngIf="(selectedForfait && selectedForfait === forfait);else editButton;" color="primary" form="heroFormEdition" 
      mat-button><i class="material-icons">done</i></button>
             <ng-template #editButton>
-                <form (ngSubmit)="onSelect(forfait)">
-                    <button mat-button><i class="material-icons">edit</i></button>
+                <form (ngSubmit)="openDialogEditForfait(forfait)">
+                    <button matSuffix mat-icon-button type="submit">
+                        <i class="material-icons">edit</i></button>
                 </form>
             </ng-template>
             <form (ngSubmit)="onDelete(forfait)">
@@ -49,4 +47,7 @@
     <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
     <tr mat-row *matRowDef="let myRowData; columns: columnsToDisplay"></tr>
 </table>
-
+<hr>
+<button class="btn-hover mycolor reserve" (click)="openDialogNewForfait()">
+    Ajout d'un forfait
+ </button>

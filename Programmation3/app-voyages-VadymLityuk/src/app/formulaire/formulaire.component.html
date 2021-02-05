@@ -4,8 +4,8 @@
 
 <form class="example-form">
   <mat-form-field class="example-full-width">
-      <mat-label>Destination</mat-label>
-      <input  matInput required type="text"  placeholder="ex. Kyiv" aria-label="Destination" matInput [formControl]="Control"
+      <mat-label>Ville de départ</mat-label>
+      <input  matInput required type="text"  placeholder="ex. Kyiv" aria-label="La ville de départ" matInput [formControl]="Control"
           [matAutocomplete]="auto">
       <mat-autocomplete #auto="matAutocomplete">
           <mat-option *ngFor="let departs of Filtredform | async" [value]="departs">
@@ -13,12 +13,12 @@
           </mat-option>
       </mat-autocomplete>
       <mat-error *ngIf="Control .hasError('required')">
-        Le ville de la destination est <strong>obligatoire</strong>
+        La ville de départ est <strong>obligatoire</strong>
     </mat-error>
   </mat-form-field>
   <mat-form-field class="example-form">
-    <mat-label>Ville de départ</mat-label>
-    <input required type="text"  placeholder="ex. Antalya" aria-label="Ville de départ" matInput [formControl]="ControlDepart"
+    <mat-label>Destination </mat-label>
+    <input required type="text"  placeholder="ex. Antalya" aria-label="Destination " matInput [formControl]="ControlDepart"
         [matAutocomplete]="auto2">
     <mat-autocomplete autoActiveFirstOption #auto2="matAutocomplete">
         <mat-option *ngFor="let destin of filtredDepart | async" [value]="destin">
@@ -26,7 +26,7 @@
         </mat-option>
     </mat-autocomplete>
     <mat-error *ngIf="ControlDepart .hasError('required')">
-        La ville de départ est <strong>obligatoire</strong>
+      Le ville de la destination est <strong>obligatoire</strong>
     </mat-error>
 </mat-form-field>
 </form>
