@@ -30,11 +30,11 @@ export class GraphiqueComponent implements OnInit {
   constructor(private ChartsService: ChartsService) { }
 
   ngOnInit(): void {
-    this.ChartsService.getCharts()
+    this.ChartsService.dailyCharts()
     .subscribe(res=> { 
+     console.log(res)
      
-
-    //  let dateReservation = res['[]'].map(res =>res.main.dateReservation)
+     let dateReservation = res['[0 … 99]'].map(res =>res.dateReservation.dateReservation)
 
     })
   }
