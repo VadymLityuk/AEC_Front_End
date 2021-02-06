@@ -34,7 +34,7 @@ export class GraphiqueComponent implements OnInit {
     .subscribe(res=> { 
      console.log(res)
      
-     let dateReservation = res['[0 … 99]'].map(res =>res.dateReservation.dateReservation)
+     let dateReservation = res['[200]'].map(res =>res.dateReservation.dateReservation)
 
     })
   }
