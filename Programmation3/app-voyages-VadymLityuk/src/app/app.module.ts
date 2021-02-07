@@ -41,6 +41,7 @@ import { GraphiqueComponent } from './graphique/graphique.component';
 import { PiechartComponent } from './piechart/piechart.component';
 import { ForfaitCubaComponent } from './forfait-cuba/forfait-cuba.component';
 import { MexiqueComponent } from './mexique/mexique.component';
+//import { ChartPieComponent } from './chart-pie/chart-pie.component';
 
 
 
