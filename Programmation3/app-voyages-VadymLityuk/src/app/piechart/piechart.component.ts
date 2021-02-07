@@ -24,7 +24,7 @@ export class PiechartComponent implements OnInit {
   public pieChartLegend = true;
   public pieChartPlugins = [];
   public pieChartColors:Array<any> = [{
-    backgroundColor: ['#FFEBCD', '#FFE4B5', '#F4A460', '#F0FFFF'],
+    backgroundColor: ['#DA70D6', '#663399', '#DB7093', '#F0FFFF'],
     borderColor: ['rgba(135,206,250,1)', 'rgba(106,90,205,1)', 'rgba(148,159,177,1)', 'green']
   }];
 
