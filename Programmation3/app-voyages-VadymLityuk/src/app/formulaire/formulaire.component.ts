@@ -1,10 +1,14 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit,Input,Inject } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { Forfait } from '../forfait';
-import { FORFAITS } from '../mock-forfaits';
+//import { Forfait } from '../forfait';
+
+  //ForfaitGenerale: Forfait[] = FORFAITS;
+//import { FORFAITS } from '../mock-forfaits';
 import {caracterHotel} from '../mock-caracterHotel';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
+
+import { Forfait } from '../forfaittest';
 
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
@@ -24,7 +28,6 @@ export class FormulaireComponent implements OnInit {
   destinations: string[] =['Panama City','Antalya','Cayo Santa Maria','Cuba', 'Jamaïque', 'Mexique', 'Japon', 'ALASKA' ];
   Filtredform: Observable<string[]>;
   filtredDepart: Observable<string[]>;
-  ForfaitGenerale: Forfait[] = FORFAITS;
   CaracteristiqueGenerale: string[] = caracterHotel;
   nom: string;
   adresse: string;
@@ -37,6 +40,12 @@ export class FormulaireComponent implements OnInit {
 
   hotel: string = "";
 
+
+  constructor(
+    public dialogRef: MatDialogRef<FormulaireComponent>, 
+    @Inject(MAT_DIALOG_DATA) public newForfait: Forfait) {
+      
+     }
   ngOnInit(): void {
     this.Filtredform = this.Control.valueChanges.pipe(
       startWith(''),
