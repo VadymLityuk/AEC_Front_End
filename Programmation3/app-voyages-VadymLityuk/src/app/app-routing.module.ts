@@ -8,14 +8,14 @@ import { ForfaitCubaComponent } from './forfait-cuba/forfait-cuba.component';
 
 const routes: Routes = [
 
-  {path: '', component: ForfaitCompComponent, pathMatch: 'full' },
+  {path: 'Accueil', component: ForfaitCompComponent},
    
-  {path: 'TableForfait', component: TableForfaitComponent, pathMatch: 'full' },
+  {path: 'TableForfait', component: TableForfaitComponent},
 
-  {path: 'Graphique', component: GraphiqueComponent, pathMatch: 'full' },
+  {path: 'Graphique', component: GraphiqueComponent},
 
   
-  {path: 'Cuba', component: ForfaitCubaComponent, pathMatch: 'full' },
+  {path: 'Cuba', component: ForfaitCubaComponent},
   
   //{path: 'Mexique', component: MexiqueComponent, pathMatch: 'full' }
 
@@ -25,7 +25,7 @@ const routes: Routes = [
 ];  
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
