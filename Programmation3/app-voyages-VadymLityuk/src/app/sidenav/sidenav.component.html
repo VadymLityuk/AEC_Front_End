@@ -2,15 +2,9 @@
 
 
 <mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-   <app-formulaire></app-formulaire>
-  </mat-drawer>
 
   <div class="example-sidenav-content">
-    <button class="btn-hover mycolor reserve"  (click)="drawer.toggle()">
-    RESERVE MAITENANT
-     
-    </button>
+   
     <mat-grid-list cols="3" rowHeight='950px' >
         <app-liste-forfait  ></app-liste-forfait> 
         
@@ -21,4 +15,12 @@
 </mat-drawer-container>
 
 
-
+<!------------------------
+  
+  
+   <div class="example-sidenav-content">
+    <button class="btn-hover mycolor reserve"  (click)="drawer.toggle()">
+    RESERVE MAITENANT
+     
+    </button>
+    ---------------------------------------->
