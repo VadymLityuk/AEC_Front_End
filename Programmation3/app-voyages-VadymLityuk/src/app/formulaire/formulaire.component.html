@@ -19,7 +19,7 @@
   <mat-form-field class="example-form">
     <mat-label>Destination </mat-label>
     <input required type="text"  placeholder="ex. Antalya" aria-label="Destination " matInput [formControl]="ControlDepart"
-        [matAutocomplete]="auto2">
+        [matAutocomplete]="auto2"  [(ngModel)]="newForfait.destination"   >
     <mat-autocomplete autoActiveFirstOption #auto2="matAutocomplete">
         <mat-option *ngFor="let destin of filtredDepart | async" [value]="destin">
             {{destin}}
@@ -90,6 +90,9 @@
 <section>
   <mat-checkbox class="example-list-section" *ngFor="let caracteristiques of CaracteristiqueGenerale">{{caracteristiques}}</mat-checkbox><br>
 </section>
+
+
+
 
 </fieldset>
 
