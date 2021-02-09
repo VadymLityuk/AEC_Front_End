@@ -8,7 +8,7 @@ import { ForfaitCubaComponent } from './forfait-cuba/forfait-cuba.component';
 
 const routes: Routes = [
 
-  {path: 'Accueil', component: ForfaitCompComponent, pathMatch: 'full' },
+  {path: '', component: ForfaitCompComponent, pathMatch: 'full' },
    
   {path: 'TableForfait', component: TableForfaitComponent, pathMatch: 'full' },
 
