@@ -6,7 +6,7 @@
   <mat-form-field class="example-full-width">
       <mat-label>Ville de départ</mat-label>
       <input  matInput required type="text"  placeholder="ex. Kyiv" aria-label="La ville de départ" matInput [formControl]="Control"
-          [matAutocomplete]="auto">
+          [matAutocomplete]="auto" [(ngModel)]="newForfait.destination" >
       <mat-autocomplete #auto="matAutocomplete">
           <mat-option *ngFor="let departs of Filtredform | async" [value]="departs">
               {{departs}}
@@ -81,9 +81,9 @@
 </mat-form-field>
     <mat-form-field>
         <mat-label>Nombre de chambre</mat-label>
-        <input matInput required [ngModel]="nbChambres" name="inNbChambre" #inNbChambre="ngModel" type="number"
+        <input matInput required [ngModel]="nbChambres" name="NbChambre" #NbChambre="ngModel" type="number"
             step="100" placeholder="0" min="0">
-        <mat-error *ngIf="inNbChambre.hasError('required')">
+        <mat-error *ngIf="NbChambre.hasError('required')">ß
             Le nombre de chambre est obligatoire
         </mat-error>
     </mat-form-field>
