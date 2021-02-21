@@ -2,7 +2,6 @@ import { Component, OnInit,Input,Inject } from '@angular/core';
 import { FormControl } from '@angular/forms';
 //import { Forfait } from '../forfait';
 
-  //ForfaitGenerale: Forfait[] = FORFAITS;
 //import { FORFAITS } from '../mock-forfaits';
 import {caracterHotel} from '../mock-caracterHotel';
 import { Observable } from 'rxjs';
@@ -56,6 +55,12 @@ export class FormulaireComponent implements OnInit {
     map(value => this._myfilter2(value))
   );
   }
+
+  onClose(): void {
+    this.dialogRef.close();
+  }
+
+  
   
   private _myfilter(value: string): string[] {
     const filterValue = value.toLowerCase();

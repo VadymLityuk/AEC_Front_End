@@ -5,7 +5,11 @@
 
 <table  id="tableadimn" mat-table #tableForfaits [dataSource]="forfaits" >
     <!-- TABLE HOTEL DATA-->
-      
+    
+    <ng-container matColumnDef="rabais">
+        <th mat-header-cell *matHeaderCellDef> Rabais Applicable </th>
+        <td mat-cell *matCellDef="let forfait"> {{forfait.rabais}} </td>
+    </ng-container>
     <ng-container matColumnDef="dateDepart">
         <th mat-header-cell *matHeaderCellDef> Date de retour </th>
         <td mat-cell *matCellDef="let forfait"> {{forfait.dateDepart}} </td>
@@ -21,6 +25,10 @@
     <ng-container matColumnDef="prix">
         <th mat-header-cell *matHeaderCellDef> Prix </th>
         <td mat-cell *matCellDef="let forfait"> {{forfait.prix}} </td> Valeur associé à la colonne
+    </ng-container>
+    <ng-container matColumnDef="villeDepart">
+        <th mat-header-cell *matHeaderCellDef> Ville de Depart </th>
+        <td mat-cell *matCellDef="let forfait"> {{forfait.villeDepart}} </td>
     </ng-container>
     <ng-container matColumnDef="destination">
         <th mat-header-cell *matHeaderCellDef> Destination </th>
@@ -81,6 +89,7 @@
             Le prix du forfait est obligatoire*
         </mat-error>
     </mat-form-field>
+    
  
     
     <button matSuffix  class="btn-hover mycolor reserve"  type="submit" mat-icon-button color="primary" [disabled]="!tableadimn.form.valid"><i class="material-icons">add</i></button>

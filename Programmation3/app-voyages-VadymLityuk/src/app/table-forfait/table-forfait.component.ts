@@ -15,7 +15,7 @@ export class TableForfaitComponent implements OnInit {
 
   forfaits: Forfait[];
   
-  columnsToDisplay = ['nomHotel','prix','destination','dateDepart','dateRetour', 'actions',];
+  columnsToDisplay = ['nomHotel','villeDepart','prix','destination','dateDepart','dateRetour', 'rabais','actions'];
   //columnsToDisplay = ['nom', 'actions'];
   newForfait : Forfait;
   selectedForfait: Forfait;

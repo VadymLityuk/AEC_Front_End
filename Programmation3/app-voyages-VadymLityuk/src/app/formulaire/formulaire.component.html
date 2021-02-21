@@ -1,5 +1,4 @@
 
-  <fieldset>
  <legend>Destinations</legend>
 
 <form class="example-form">
@@ -31,9 +30,6 @@
 </mat-form-field>
 </form>
 
-</fieldset>
-
-<fieldset>
   <legend >
     Hôtel et les Coordonnées
   </legend>
@@ -57,9 +53,7 @@
             Adresse de l'hôtel sont obligatoires
         </mat-error>
     </mat-form-field>
-</fieldset>
-  
-  <fieldset>
+
  
     <legend >
       Caractéristiques de l'hôtel
@@ -83,16 +77,17 @@
         <mat-label>Nombre de chambre</mat-label>
         <input matInput required [ngModel]="nbChambres" name="NbChambre" #NbChambre="ngModel" type="number" [(ngModel)]="newForfait.hotel.nbChambres" 
             step="100" placeholder="0" min="0">
-        <mat-error *ngIf="NbChambre.hasError('required')">ß
+        <mat-error *ngIf="NbChambre.hasError('required')">
             Le nombre de chambre est obligatoire
         </mat-error>
     </mat-form-field>
 <section>
   <mat-checkbox class="example-list-section" *ngFor="let caracteristiques of CaracteristiqueGenerale">{{caracteristiques}}</mat-checkbox><br>
 </section>
+<hr>
+<div mat-dialog-actions>
+  <button mat-button (click)="onClose()">Annuler</button>
+  <button  mat-button  (click)="onClose()">Confirmer</button>
+</div>
 
-
-
-
-</fieldset>
 
