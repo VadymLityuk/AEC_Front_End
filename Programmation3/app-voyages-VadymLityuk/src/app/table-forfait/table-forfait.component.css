@@ -24,22 +24,28 @@ table {
  .boutonsAction { padding:0}
  .boutonsAction form { display: inline-block; }
 
+.addform{
 
- 
+  
+  margin-left: 1em;  
+  text-align: center;
+
+}
 .btn{
   
-    margin-left: 2em;  
-      text-align: center;
-  
-  }
+  margin-left: 12em;  
+
+}
+ 
+
   .btn-hover {
-    width: 200px;
+    width: 50px;
     font-size: 16px;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
     margin: 20px;
-    height: 55px;
+    height: 50px;
     text-align:center;
     border: none;
     background-size: 300% 100%;
@@ -75,10 +81,9 @@ table {
     background-image: linear-gradient(to bottom,#d53d5e,#593dd5);
   }
   .mat-button{
-    font-size: 17px;
-   
-    line-height: 40px;
-    margin: 2px 0 20px 0;
+    font-size: 10px;
+    line-height: 20px;
+    margin: 2px 0 10px 0;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;

@@ -6,14 +6,14 @@
   <mat-form-field class="example-full-width">
       <mat-label>Ville de départ</mat-label>
       <input  matInput required type="text"  placeholder="ex. Kyiv" aria-label="La ville de départ" matInput [formControl]="Control"
-          [matAutocomplete]="auto" [(ngModel)]="newForfait.destination" >
+          [matAutocomplete]="auto" [(ngModel)]="newForfait.villeDepart" >
       <mat-autocomplete #auto="matAutocomplete">
           <mat-option *ngFor="let departs of Filtredform | async" [value]="departs">
               {{departs}}
           </mat-option>
       </mat-autocomplete>
       <mat-error *ngIf="Control .hasError('required')">
-        La ville de départ est <strong>obligatoire</strong>
+        La ville de départ est <strong>obligatoire</strong> 
     </mat-error>
   </mat-form-field>
   <mat-form-field class="example-form">
@@ -39,8 +39,8 @@
   </legend>
 <mat-form-field class="example-full-width">
     <mat-label>Nom de l’hotel</mat-label>
-    <input type="text" required minlength="2" matInput placeholder="ex. HOTEL HILTON" value=""
-    [ngModel]="nom" name="ControlHotel" #ControlHotel="ngModel">
+    <input required type="text"  minlength="2" matInput placeholder="ex. HOTEL HILTON"  [(ngModel)]="newForfait.hotel.nom" 
+    [ngModel]="nom" name="ControlHotel"  #ControlHotel="ngModel" >
     <mat-error *ngIf="ControlHotel.hasError('required')">
       Le nom de l'hotel est obligatoire
     </mat-error>
@@ -51,7 +51,7 @@
 
     <mat-form-field class="example-half-width">
         <mat-label>Adresse</mat-label>
-        <input matInput required [ngModel]="adresse" name="inAdresse" #inAdresse="ngModel" type="text"
+        <input matInput required [ngModel]="adresse" name="inAdresse" #inAdresse="ngModel" type="text" [(ngModel)]="newForfait.hotel.adresse" 
             placeholder="ex. CAYO SANTA MARÍA, CAIBARIÉN - VILLA CLARA, CUBA">
         <mat-error *ngIf="inAdresse.hasError('required')">
             Adresse de l'hôtel sont obligatoires
@@ -72,7 +72,7 @@
   </div>
   <mat-form-field>
     <mat-label>Prix du forfait</mat-label>
-    <input matInput required [ngModel]="prix" name="prixForfait" #inPrix="ngModel" type="number" placeholder="0.00"
+    <input matInput required [ngModel]="prix" name="prixForfait" #inPrix="ngModel" type="number" placeholder="0.00" [(ngModel)]="newForfait.prix" 
         min="0.00" max="1000000.00" step="0.01" ng-model="prixForfait | number: 2"
         ng-pattern="/^[0-9]+(.[0-9]{1,2})?$/">
     <mat-error *ngIf="inPrix.hasError('required')">
@@ -81,7 +81,7 @@
 </mat-form-field>
     <mat-form-field>
         <mat-label>Nombre de chambre</mat-label>
-        <input matInput required [ngModel]="nbChambres" name="NbChambre" #NbChambre="ngModel" type="number"
+        <input matInput required [ngModel]="nbChambres" name="NbChambre" #NbChambre="ngModel" type="number" [(ngModel)]="newForfait.hotel.nbChambres" 
             step="100" placeholder="0" min="0">
         <mat-error *ngIf="NbChambre.hasError('required')">ß
             Le nombre de chambre est obligatoire

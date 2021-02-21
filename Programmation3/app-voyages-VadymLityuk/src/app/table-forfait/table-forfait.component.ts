@@ -74,7 +74,7 @@ export class TableForfaitComponent implements OnInit {
       this.newForfait = result;
       this.forfaitService.addForfait(this.newForfait)
           .subscribe(forfait  => { this.forfaits.push(forfait); this.newForfait._id = null; this.newForfait.destination=''; this.newForfait.hotel.nom='';this.newForfait.hotel.adresse=''; this.newForfait.hotel.nbetoiles=0; this.newForfait.hotel.nbChambres=null; this.newForfait.hotel.caracteristiques; this.newForfait.villeDepart='';  this.newForfait.dateDepart= null; this.newForfait.dateRetour= null; this.newForfait.prix= null; this.newForfait.rabais= null; this.newForfait.vedette= false; 
-       // this.MatTable.renderRows()
+       //this.tableForfaits.renderRows()
         });
     }
   });

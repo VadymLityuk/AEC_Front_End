@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ChartsService } from '../charts.service';
+import {ForfaitService} from '../forfait.service'
+
 
 @Component({ 
   selector: 'app-graphique',
@@ -12,6 +14,8 @@ export class GraphiqueComponent implements OnInit {
     type : 'bar',
     legende : true,
     options : { responsive: true, maintainAspectRatio: false }
+
+    
 
     
   }; 
@@ -34,7 +38,7 @@ export class GraphiqueComponent implements OnInit {
     .subscribe(res=> { 
      console.log(res)
      
-     let dateReservation = res['[200]'].map(res =>res.dateReservation.dateReservation)
+     //let dateReservation = res.map(res =>res.dateReservation.dateReservation)
 
     })
   }
