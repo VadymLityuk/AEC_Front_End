@@ -1,6 +1,6 @@
 
-    <span *ngFor="let item of CubaForfaits">
+    <div *ngFor="let item of CubaForfaits"  style="padding-left: 12px; text-align: center;">
         <ng-template [ngIf]="contains(item.destination,'Cuba')">
            <app-forfait  [forfait]="item"  style="padding-left: 12px; text-align: center;"></app-forfait>
         </ng-template>
-    </span>
+    </div>

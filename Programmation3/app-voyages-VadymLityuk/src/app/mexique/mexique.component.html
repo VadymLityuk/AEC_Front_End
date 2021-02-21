@@ -1,6 +1,8 @@
 
-    <span *ngFor="let item of MexForfaits">
-        <ng-template [ngIf]="contains(item.destination,'Méxique')">
-           <app-forfait  [forfait]="item"  style="padding-left: 12px; text-align: center;"></app-forfait>
-        </ng-template>
-    </span>
+
+<div  style="padding-left: 12px; text-align: center;">
+  <div *ngFor="let forfait of MexForfaits ">
+      <app-forfait [forfait]="forfait"   style="padding-left: 12px; text-align: center;"></app-forfait>
+  </div>
+</div>  
+

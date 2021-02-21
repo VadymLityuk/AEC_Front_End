@@ -4,7 +4,8 @@ import { ForfaitCompComponent} from './forfait-comp/forfait-comp.component'
 import {TableForfaitComponent} from './table-forfait/table-forfait.component'
 import {GraphiqueComponent} from './graphique/graphique.component'
 import { ForfaitCubaComponent } from './forfait-cuba/forfait-cuba.component';
-//import {MexiqueComponent} from './Mexique/Mexique.component';
+import {AproposComponent} from './apropos/apropos.component';
+import {MexiqueComponent} from './Mexique/Mexique.component';
 
 const routes: Routes = [
 
@@ -12,12 +13,15 @@ const routes: Routes = [
    
   {path: 'TableForfait', component: TableForfaitComponent},
 
+  
+  {path: 'Apropos', component: AproposComponent},
+
   {path: 'Graphique', component: GraphiqueComponent},
 
   
   {path: 'Cuba', component: ForfaitCubaComponent},
   
-  //{path: 'Mexique', component: MexiqueComponent, pathMatch: 'full' }
+  {path: 'Mexique', component: MexiqueComponent, pathMatch: 'full' }
 
 
 

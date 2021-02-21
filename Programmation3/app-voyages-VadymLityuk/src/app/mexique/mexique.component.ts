@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 import { Forfait } from '../forfaittest';
 import { ForfaitService } from '../forfait.service';
@@ -10,28 +10,21 @@ import { ForfaitService } from '../forfait.service';
 })
 export class MexiqueComponent implements OnInit {
 
-  MexForfaits: Array<Forfait> ;
- 
+  @Input () forfait : Forfait;
 
-  contains(destination, pays) {
-    if (destination.includes(pays))
-    {
-      return true;
-    }
-  }
-  constructor(private forfaitsService: ForfaitService) { }
+  MexForfaits: Forfait[];
+
+
+  constructor(private forfaitService: ForfaitService) { }
 
   ngOnInit(): void {
-    this.getForfaits();
-
+    this.getForfait();
   }
-  getForfaits(): void {
-    this.forfaitsService.getForfait()
-        .subscribe(resultat => {
-          this.MexForfaits = resultat
-        });
+
+  getForfait(): void {
+    this.forfaitService.getForfait()
+        .subscribe(resultat => this.MexForfaits = resultat);
+  }
+
 
 }
-
-}
-
