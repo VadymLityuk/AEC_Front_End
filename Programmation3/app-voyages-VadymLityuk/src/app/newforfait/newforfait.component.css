@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Bebas+Neue&display=swap');
+
+.mat-card:not([class*=mat-elevation-z]) {
+ background-color: rgb(234, 229, 236);
+  border-radius: 12px;
+  box-shadow: rgb(158, 103, 158) 1.32px 1.95px 1.95px;
+}
+.example-card {
+  max-width: 500px;
+}
+  
+  .img {
+    
+    background-size: cover;
+   
+    
+
+  }
+  img:hover{
+
+     opacity: 0.78;
+  -webkit-filter: blur(1px);
+   filter: blur(1px);
+   cursor: pointer;
+   border-radius: 3px 3px 3px 0px;
+  
+ }
+
+ .mat-card-title{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
+  color: #fff;
+  line-height: 40px;
+  margin: 2px 0 20px 0;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, #593dd5, #fc2b00);
+}
+.mat-button{
+  font-size: 17px;
+ 
+  line-height: 40px;
+  margin: 2px 0 20px 0;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, #593dd5, #fc2b00);
+
+}
+
+.mat-card-subtitle{
+  font-family: 'Bebas Neue', cursive;
+  color: #968cc0;
+  text-decoration: none;
+  display: block;
+  font-size: 0.9rem;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+}
+.mat-card-subtitle:hover{
+  cursor: pointer;
+  color: #593dd5;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+}
+
+li {
+  text-align: center;
+  color: #938dad;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  display: inherit ;
+  padding: 0.2rem ;
+  cursor: pointer;
+ 
+  border-radius: 100px;
+  border: solid 1px #7a3a67;
+  margin:  0.2rem;
+  width: 100px;
+  
+
+}
+li:hover{
+  background-color:#d1cde2;
+  color: #fff;
+}
+
+p{
+  font-family: 'Bebas Neue', cursive;
+  color: #74477e;
+  text-transform: uppercase;
+  font-size: 1rem;
+  display: inherit ;
+
+}
+
+a{
+  font-family: 'Bebas Neue', cursive;
+  color: #f0515e;
+  text-transform: uppercase;
+  font-size: 1rem;
+  display: inherit ;
+
+}
+
+.blink {
+  animation: blinker 2s linear infinite;
+  color: #ff798f;
+}
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+.blink-one {
+   animation: blinker-one 10s linear infinite;
+}
+@keyframes blinker-one {  
+   0% { opacity: 0; }
+}
+.blink-two {
+   animation: blinker-two 11s linear infinite;
+}
+@keyframes blinker-two {  
+   100% { opacity: 0; }
+}

@@ -1,6 +1,19 @@
 
+  <mat-card >
+  
+    <mat-grid-list  cols="4"  rowHeight="2:1" >
+        <span *ngFor="let item of CubaForfaits">
+            <mat-grid-tile  *ngIf="item.vedette" >
+                    <app-mini-forfait  [forfait]="item" style="position: absolute;  height: 100%;width: 100%;" ></app-mini-forfait >
+            </mat-grid-tile>
+        </span>
+    </mat-grid-list>
+    
+</mat-card>
+  
+
     <div *ngFor="let item of CubaForfaits"  style="padding-left: 12px; text-align: center;">
         <ng-template [ngIf]="contains(item.destination,'Cuba')">
-           <app-forfait  [forfait]="item"  style="padding-left: 12px; text-align: center;"></app-forfait>
+           <app-newforfait  [forfait]="item"  style="padding-left: 12px; text-align: center;"></app-newforfait>
         </ng-template>
     </div>

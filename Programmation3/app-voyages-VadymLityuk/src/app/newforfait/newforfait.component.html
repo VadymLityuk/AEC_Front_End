@@ -1,0 +1,40 @@
+<div >
+    <mat-card class="example-card">
+      
+  <mat-card-header>
+    
+    <mat-card-title>{{ forfait.hotel.nom }}</mat-card-title>
+    <mat-card-subtitle>de {{ forfait.villeDepart }} à {{ forfait.destination }}</mat-card-subtitle>
+    <a class="blink" *ngIf="forfait.vedette"> PROMOTION</a>
+  </mat-card-header>
+  <img mat-card-image src={{forfait.hotel.photo}} alt="Hilton">
+  <mat-card-content>
+    <mat-card-subtitle>Du {{ forfait.dateDepart  | date : 'fullDate'  }}, Au {{ forfait.dateRetour  | date : 'fullDate' }}  </mat-card-subtitle>
+    <p> A partir de : {{ forfait.prix }}$</p>
+    <p>{{ forfait.hotel.adresse }}</p>
+    <div>
+      <app-etoiles  *ngFor="let item of [].constructor(forfait.hotel.nbetoiles)"></app-etoiles>
+    </div>
+    <p>{{ forfait.hotel.nbetoiles }} étoiles</p>
+
+    <p>{{ forfait.hotel.nbChambres }} chambres</p>
+    <p>Caracteristiques:</p>
+    <ul>
+   
+    <li *ngFor="let caracter of forfait.hotel.caracteristiques
+    ">{{ caracter }}</li>
+           
+    </ul>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>RESERVE</button>
+    <button mat-button>PARTAGE</button>
+  </mat-card-actions>
+
+</mat-card>
+</div>
+
+
+
+
+
