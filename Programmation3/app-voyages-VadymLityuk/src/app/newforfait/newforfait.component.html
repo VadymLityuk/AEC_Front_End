@@ -7,7 +7,7 @@
     <mat-card-subtitle>de {{ forfait.villeDepart }} à {{ forfait.destination }}</mat-card-subtitle>
     <a class="blink" *ngIf="forfait.vedette"> PROMOTION</a>
   </mat-card-header>
-  <img mat-card-image src={{forfait.hotel.photo}} alt="Hilton">
+  <img mat-card-image src="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Hilton">
   <mat-card-content>
     <mat-card-subtitle>Du {{ forfait.dateDepart  | date : 'fullDate'  }}, Au {{ forfait.dateRetour  | date : 'fullDate' }}  </mat-card-subtitle>
     <p> A partir de : {{ forfait.prix }}$</p>
