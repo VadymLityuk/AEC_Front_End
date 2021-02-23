@@ -4,17 +4,23 @@
     <h1>  Statistiques</h1>
     <hr>
 
+
+   <h2> Statistiques des réservations par âge</h2> 
+
 <div>
     <canvas id="monGraphique" baseChart
-        [datasets]="mesdonnees.data"
-        [labels]="mesdonnees.etiquettes"
-        [options]="mongraphique.options"
-        [legend]="mongraphique.legende"
-        [chartType]="mongraphique.type"
+    [datasets]="mesdonnees.data"
+    [labels]="mesdonnees.annes"
+    [options]="mongraphique.options"
+    [legend]="mongraphique.legende"
+    [chartType]="mongraphique.type"
         height="300px">
     </canvas>
 </div>
 <hr>
+
+
+<h2> Statistiques des réservations par région</h2> 
 
 <app-piechart></app-piechart>
 
