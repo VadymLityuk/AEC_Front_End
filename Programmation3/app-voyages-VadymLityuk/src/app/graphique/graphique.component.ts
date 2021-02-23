@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { ChartsService } from '../charts.service';
 import {ForfaitService} from '../forfait.service'
+import { Forfait } from '../forfaittest';
 
 
 @Component({ 
