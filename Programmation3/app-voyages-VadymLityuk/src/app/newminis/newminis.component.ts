@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
+import { Forfait } from '../forfaittest';
+
+
+
 
 @Component({
   selector: 'app-newminis',
@@ -6,6 +10,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./newminis.component.css']
 })
 export class NewminisComponent implements OnInit {
+
+  @Input () forfait : Forfait;
 
   constructor() { }
 

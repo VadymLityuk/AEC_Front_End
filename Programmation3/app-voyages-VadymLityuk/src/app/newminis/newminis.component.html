@@ -1,1 +1,32 @@
-<p>newminis works!</p>
+
+  <div class="minirofrait">
+    <mat-card  >
+        <mat-card-header  >
+            <mat-card-title >{{forfait.destination}} </mat-card-title>
+            <mat-card-title >de {{forfait.villeDepart}}</mat-card-title>
+            <div class="forfaitved" *ngIf="forfait.vedette">
+              <mat-card-subtitle class="blink">Forfait Vedette</mat-card-subtitle>
+             </div>
+            
+        </mat-card-header>
+        <mat-card-content>
+           Hotel {{forfait.hotel.nom}} 
+          </mat-card-content>
+        <mat-card-actions >
+        
+        <div class="forfaitdiv"  *ngIf="forfait.rabais>0;"else >
+       
+              <p class="strikethrough"> {{forfait.prix}}$</p>
+              <p class="forfaitrabais"> Rabais de :{{forfait.rabais}}$</p>
+           <p class="forfaitrabais"> Prix finale:  {{forfait.prix-forfait.rabais}}$</p>
+    </div>
+        </mat-card-actions>
+        <mat-card-footer >
+            <p class="subs" >{{forfait.hotel. nbetoiles}} étoiles</p>
+            
+            <p class="subs">{{ forfait.dateDepart  | date : 'fullDate'  }} 7 jours</p>
+        </mat-card-footer>
+      </mat-card> 
+    </div>
+    
+    

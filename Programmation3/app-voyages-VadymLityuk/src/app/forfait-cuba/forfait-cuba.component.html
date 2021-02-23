@@ -4,7 +4,7 @@
     <mat-grid-list  cols="4"  rowHeight="2:1" >
         <span *ngFor="let item of CubaForfaits">
             <mat-grid-tile  *ngIf="item.vedette" >
-                    <app-mini-forfait  [forfait]="item" style="position: absolute;  height: 100%;width: 100%;" ></app-mini-forfait >
+                    <app-newminis  [forfait]="item" style="position: absolute;  height: 100%;width: 100%;" ></app-newminis >
             </mat-grid-tile>
         </span>
     </mat-grid-list>
