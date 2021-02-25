@@ -1,0 +1,19 @@
+
+  <mat-card >
+  
+    <mat-grid-list  cols="4"  rowHeight="2:1" >
+        <span *ngFor="let item of MexForfaits">
+            <mat-grid-tile  *ngIf="item.vedette" >
+                    <app-newminis  [forfait]="item" style="position: absolute;  height: 100%;width: 100%;" ></app-newminis >
+            </mat-grid-tile>
+        </span>
+    </mat-grid-list>
+    
+</mat-card>
+
+<div  style="padding-left: 12px; text-align: center;">
+  <div *ngFor="let forfait of MexForfaits ">
+      <app-newforfait [forfait]="forfait"   style="padding-left: 12px; text-align: center;"></app-newforfait>
+  </div>
+</div>  
+

@@ -2,12 +2,13 @@ import { Component, OnInit,Input } from '@angular/core';
 import { Forfait } from '../forfaittest';
 import { ForfaitService } from '../forfait.service';
 
+
 @Component({
-  selector: 'app-mexique',
-  templateUrl: './mexique.component.html',
-  styleUrls: ['./mexique.component.css']
+  selector: 'app-touteforfaits',
+  templateUrl: './touteforfaits.component.html',
+  styleUrls: ['./touteforfaits.component.css']
 })
-export class MexiqueComponent implements OnInit {
+export class TouteforfaitsComponent implements OnInit {
 
   @Input () forfait : Forfait;
 

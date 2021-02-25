@@ -44,6 +44,7 @@ import { MexiqueComponent } from './mexique/mexique.component';
 import { AproposComponent } from './apropos/apropos.component';
 import { NewforfaitComponent } from './newforfait/newforfait.component';
 import { NewminisComponent } from './newminis/newminis.component';
+import { TouteforfaitsComponent } from './touteforfaits/touteforfaits.component';
 //import { ChartPieComponent } from './chart-pie/chart-pie.component';
 
 
@@ -69,6 +70,7 @@ import { NewminisComponent } from './newminis/newminis.component';
     AproposComponent,
     NewforfaitComponent,
     NewminisComponent,
+    TouteforfaitsComponent,
     
   ],
   imports: [
