@@ -1,7 +1,7 @@
 <template>
     <div id="pageInscription" class="container-fluid">
         <div v-if="erreurs.length">
-            <b>Corriger les erreurs suivantes:</b>
+            <b>Fix errors:</b>
                 <ul>
                 <li v-for="erreur in erreurs" :key="erreur">
                 {{erreur}}
