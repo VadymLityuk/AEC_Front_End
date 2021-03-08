@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Test axios ");
 });
 
 app.post("/messages", (req, res) => {
