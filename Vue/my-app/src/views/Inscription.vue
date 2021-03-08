@@ -16,7 +16,7 @@
                 <input v-model="nom" required type="text" class="form-control" id="nom" name="nom">
             </div>
             <div class="form-group">
-                <label for="prenom">Prénom</label>
+                <label for="prenom">Lastname</label>
                 <input v-model="prenom" required type="text" class="form-control" id="prenom" name="prenom">
             </div>
             <div class="form-group">
