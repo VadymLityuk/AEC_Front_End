@@ -20,7 +20,7 @@
                 <input v-model="prenom" required type="text" class="form-control" id="prenom" name="prenom">
             </div>
             <div class="form-group">
-                <label for="courriel">Courriel</label>
+                <label for="courriel">Email</label>
                 <input v-model="courriel" required type="text" class="form-control" id="courriel" name="courriel" aria-describedby="emailHelp">
                 <small id="emailHelp" class="form-text text-muted">Le courriel doit être valide</small>
             </div>                
