@@ -1,4 +1,31 @@
-https://github.com/VadymLityuk/AEC_Front_End/tree/master/Integration1/Projet%20Final 
+https://github.com/VadymLityuk/AEC_Front_End/tree/master/Integration1/Projet%20Final  
 
+import { createStore } from "vuex";
+
+export default createStore({
+  state: {
+    user: JSON.parse(localStorage.getItem("currentUser")),
+  },
+  getters: { user: (state) => state.user,
+             csvData: (state) => state.csvData
+  },
+  mutations: {
+    ["UPDATE_USER"](s, user) {
+      s.user = user;
+    },
+    ////need to add mutations then
+  },
+  actions: {
+    updateUser({ commit }, user) {
+      if (user) {
+        localStorage.setItem("currentUser", JSON.stringify(user));
+      } else {
+        localStorage.removeItem("currentUser");
+      }
+      commit("UPDATE_USER", user);
+    },
+  },
+  modules: {},
+});
 
 //test to
