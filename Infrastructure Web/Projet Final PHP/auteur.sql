@@ -1,11 +1,4 @@
--- phpMyAdmin SQL Dump
--- version 4.9.1
--- https://www.phpmyadmin.net/
---
--- Хост: localhost
--- Время создания: Сен 18 2020 г., 01:22
--- Версия сервера: 8.0.18
--- Версия PHP: 7.3.11
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -18,8 +11,6 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
---
--- База данных: `projet_final`
 --
 
 -- --------------------------------------------------------
